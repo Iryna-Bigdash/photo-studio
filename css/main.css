@@ -1,0 +1,58 @@
+.logo {
+    color: var(--title-text-color);
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--accent-color);
+}
+
+.site-nav a {
+    color: var(--accent-color);
+}
+
+.site-nav a:hover, 
+.site-nav a:focus {
+    color: var(--title-text-color);
+}
+
+.site-nav .link.current{
+    color: var(--title-text-color); 
+}
+
+
+
+.hero-title {
+    color: var(--title-text-color); 
+}
+
+.section-title {
+    color: var(--title-text-color); 
+}
+
+.features-title {
+    color: var(--title-text-color); 
+}
+
+.features-link {
+    color: var(--accent-color);
+}
+
+.examples-title {
+color: var(--title-text-color);
+}
+
+.button{
+color: var(--title-text-color);
+background: var(--primary-white-color);
+}
+
+.button.primary{
+color: var(--primary-white-color);
+background: var(--accent-color);
+}
+
+.button.secondary{
+    color: var(--accent-color);
+    background: var(--primary-white-color);
+}
