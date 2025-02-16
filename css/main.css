@@ -1,10 +1,9 @@
 .logo {
     color: var(--title-text-color);
 
-font-weight: 400;
-font-size: 28px;
-letter-spacing: -0.01em;
-text-align: center;
+    font-family: Comfortaa, cursive;
+    font-size: 28px;
+    line-height: 1.14;
 }
 
 .logo:hover,
@@ -14,50 +13,74 @@ text-align: center;
 
 .site-nav a {
     color: var(--accent-color);
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.14;
 }
 
-.site-nav a:hover, 
+.site-nav a:hover,
 .site-nav a:focus {
     color: var(--title-text-color);
 }
 
-.site-nav .link.current{
-    color: var(--title-text-color); 
+.site-nav .link.current {
+    color: var(--title-text-color);
 }
 
-
-
 .hero-title {
-    color: var(--title-text-color); 
+    color: var(--title-text-color);
+
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.43;
+    text-align: center;
 }
 
 .section-title {
-    color: var(--title-text-color); 
+    color: var(--title-text-color);
+
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
 }
 
-.features-title {
-    color: var(--title-text-color); 
+.section-description {
+    font-size: 36px;
+    line-height: 1.39;
+    text-align: center;
+}
+
+.features-title,
+.examples-title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
 }
 
 .features-link {
     color: var(--accent-color);
 }
 
-.examples-title {
-color: var(--title-text-color);
+
+.button {
+    color: var(--title-text-color);
+    background: var(--primary-white-color);
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.14;
 }
 
-.button{
-color: var(--title-text-color);
-background: var(--primary-white-color);
+.button.primary {
+    color: var(--primary-white-color);
+    background: var(--accent-color);
 }
 
-.button.primary{
-color: var(--primary-white-color);
-background: var(--accent-color);
-}
-
-.button.secondary{
+.button.secondary {
     color: var(--accent-color);
     background: var(--primary-white-color);
 }

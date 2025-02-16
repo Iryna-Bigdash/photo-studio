@@ -1,21 +1,24 @@
-:root{
+:root {
     --primary-text-color: rgba(0, 0, 0, 0.8);
     --title-text-color: #000;
     --accent-color: #18A0FB;
     --primary-white-color: #fff;
 }
 
-body{
+body {
     color: var(--primary-text-color);
     background: var(--primary-white-color);
 
     font-family: Montserrat, sans-serif;
-
+    letter-spacing: -0.01em;
+    font-size: 18px;
+    line-height: 1.67;
 }
+
 ul {
     list-style: none;
 }
 
 a {
-   text-decoration: none;
+    text-decoration: none;
 }
