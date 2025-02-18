@@ -1,3 +1,11 @@
+.container {
+    width: 1540px;
+    margin: 0 auto;
+    outline: 2px solid teal;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .logo {
     color: var(--title-text-color);
 
@@ -28,13 +36,30 @@
     color: var(--title-text-color);
 }
 
+.hero {
+    text-align: center;
+}
+
 .hero-title {
     color: var(--title-text-color);
 
     font-weight: 400;
     font-size: 56px;
     line-height: 1.43;
-    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section {
+    padding: 120px 0;
+}
+
+.section-bg {
+    background-color: var(--secondary-bg-color);
+}
+
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .section-title {
@@ -43,6 +68,11 @@
     font-weight: 400;
     font-size: 48px;
     line-height: 1.5;
+
+    margin-bottom: 60px;
+}
+
+.section-title.centered {
     text-align: center;
 }
 
@@ -52,6 +82,19 @@
     text-align: center;
 }
 
+.section-description.sub-title {
+    margin-bottom: 80px;
+}
+
+.examples>.item {
+    padding-top: 80;
+    padding-bottom: 80px;
+}
+
+.examples>.item:nth-child(2n) {
+    background-color: var(--secondary-bg-color);
+}
+
 .features-title,
 .examples-title {
     color: var(--title-text-color);
@@ -59,12 +102,17 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 1.5;
+
+    margin-bottom: 24px;
+}
+
+.features-description {
+    margin-bottom: 24px;
 }
 
 .features-link {
     color: var(--accent-color);
 }
-
 
 .button {
     color: var(--title-text-color);
@@ -73,6 +121,14 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 1.14;
+
+    display: inline-block;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    padding: 11px 34px;
+    min-width: 130px;
+    text-align: center;
+
 }
 
 .button.primary {
@@ -83,4 +139,5 @@
 .button.secondary {
     color: var(--accent-color);
     background: var(--primary-white-color);
+    border-color: var(--accent-color);
 }

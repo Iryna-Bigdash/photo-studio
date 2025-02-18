@@ -1,8 +1,19 @@
+/* html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+} */
+
 :root {
     --primary-text-color: rgba(0, 0, 0, 0.8);
     --title-text-color: #000;
     --accent-color: #18A0FB;
     --primary-white-color: #fff;
+    --secondary-bg-color: #F5F5F5;
 }
 
 body {
@@ -17,8 +28,22 @@ body {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+
 }
