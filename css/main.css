@@ -1,12 +1,19 @@
 .container {
+    padding-left: 20px;
+    padding-right: 20px;
+
     width: 1540px;
     margin: 0 auto;
     outline: 2px solid teal;
-    padding-left: 20px;
-    padding-right: 20px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
+    margin-right: 70px;
     color: var(--title-text-color);
 
     font-family: Comfortaa, cursive;
@@ -19,12 +26,25 @@
     color: var(--accent-color);
 }
 
-.site-nav a {
-    color: var(--accent-color);
+.site-nav {
+    display: flex;
+}
 
+.site-nav li:not(:last-child) {
+    margin-right: 40px;
+}
+
+.site-nav a {
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    color: var(--accent-color);
     font-weight: 500;
     font-size: 15px;
     line-height: 1.14;
+
+
 }
 
 .site-nav a:hover,
@@ -34,6 +54,15 @@
 
 .site-nav .link.current {
     color: var(--title-text-color);
+}
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-nav li:not(:last-child) {
+    margin-right: 12px;
 }
 
 .hero {
@@ -87,13 +116,27 @@
 }
 
 .examples>.item {
-    padding-top: 80;
+    display: flex;
+    align-items: center;
+
     padding-bottom: 80px;
+    padding-top: 80px;
 }
 
 .examples>.item:nth-child(2n) {
     background-color: var(--secondary-bg-color);
+    flex-direction: row-reverse;
 }
+
+.examples>.item:nth-child(2n+1) .content {
+    margin-left: 84px;
+}
+
+.examples>.item:nth-child(2n) .content {
+    margin-right: 84px;
+    line-height: 1.4;
+}
+
 
 .features-title,
 .examples-title {
@@ -110,9 +153,54 @@
     margin-bottom: 24px;
 }
 
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    column-gap: 148px;
+}
+
+.features li {
+    flex-basis: calc((100% - 148px) / 2);
+}
+
 .features-link {
     color: var(--accent-color);
 }
+
+.client-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.client-list li {
+    margin: 30px 45px;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+
+}
+
+.signup-content {
+    width: 944px;
+}
+
+.signup-content p {
+    font-size: 36px;
+}
+
+.signup-list {
+    display: flex;
+    gap: 45px;
+    margin-left: 84px;
+}
+
+
 
 .button {
     color: var(--title-text-color);

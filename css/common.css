@@ -32,6 +32,10 @@ ul {
     padding: 0;
 }
 
+li {
+    outline: 1px solid red;
+}
+
 a {
     text-decoration: none;
 }
