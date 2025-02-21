@@ -197,7 +197,8 @@
 .signup-list {
     display: flex;
     gap: 45px;
-    margin-left: 84px;
+    /* margin-left: 84px; */
+    margin-left: auto;
 }
 
 
