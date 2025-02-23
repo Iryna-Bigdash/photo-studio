@@ -103,14 +103,13 @@
     margin-bottom: 60px;
 }
 
-.section-title.centered {
+.centered {
     text-align: center;
 }
 
 .section-description {
     font-size: 36px;
     line-height: 1.39;
-    text-align: center;
 }
 
 .section-description.sub-title {
@@ -199,10 +198,30 @@
 .signup-list {
     display: flex;
     gap: 45px;
-    /* margin-left: 84px; */
     margin-left: auto;
 }
 
+.upper-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 48px;
+    border-bottom: 1px solid;
+
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 80px;
+}
+
+.flex-list {
+    display: flex;
+    gap: 80px;
+}
 
 
 .button {
@@ -232,6 +251,8 @@
     background: var(--primary-white-color);
     border-color: var(--accent-color);
 }
+
+
 
 /* Community page */
 .section-title.cards {
@@ -296,4 +317,80 @@
 
 .signup-content.right-margin {
     margin-right: 148px;
+}
+
+.flex-company {
+    display: flex;
+    justify-content: space-between;
+    gap: 84px;
+    align-items: center;
+}
+
+.company-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 84px;
+}
+
+.company-list li {
+    flex-basis: calc((100% - 168px) / 3);
+}
+
+.footer-upper {
+    display: flex;
+    align-items: top;
+    padding-bottom: 60px;
+
+    border-bottom: 1px solid;
+}
+
+.footer-list {
+    display: flex;
+    column-gap: 80px;
+    margin-right: 140px;
+    margin-left: auto;
+
+}
+
+.footer-list .item {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+
+}
+
+.footer-list .item h3 {
+    margin-bottom: 16px;
+}
+
+.footer-signup .item:first-child {
+    margin-bottom: 16px;
+}
+
+.bottom-footer {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.copyright {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.network-container {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    align-items: center;
+}
+
+.network-list {
+    display: flex;
+    gap: 21px;
+}
+
+.company-card {
+    border: 1px solid;
+    max-width: 686px;
 }
