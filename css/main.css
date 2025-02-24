@@ -89,7 +89,7 @@
     padding: 160px 0;
 
     background-image: linear-gradient(to right, rgba(236, 233, 230, 0.4), rgba(255, 255, 255, 0.2)),
-        url('./images/hero-main.jpg');
+        url('../images/hero-main.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
