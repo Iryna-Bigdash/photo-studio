@@ -4,27 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poster</title>
+    <title>Features</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
+
   <body>
     <header class="page-header">
-      <nav>
-        <a class="logo" href="./index.html" class="logo"
+      <nav class="container main-nav">
+        <a class="logo" href="./index.html"
           ><img src="./images/logo.svg" alt="Logo" />photo</a
         >
         <ul class="site-nav">
           <li><a href="./index.html">Features</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Community</a></li>
-          <li><a href="">Support</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./сommunity.html">Community</a></li>
+          <li><a href="./support.html">Support</a></li>
           <li><a href="./poster.html" class="link current">Blurb</a></li>
         </ul>
 
@@ -36,30 +41,33 @@
     </header>
     <main>
       <article>
-        <img src="./images/placeholder.png" width="750" alt="placeholder" />
-        <h1>Lorem ipsum dolor sit amet.</h1>
-        <p>
-          Consectetur adipisicing elit. Cumque natus nostrum voluptatibus nam
-          est magni. Laboriosam voluptatibus quia dolore architecto.
-        </p>
-        <ul>
-          <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-            molestiae?
-          </li>
-          <li>
-            Harum labore saepe assumenda laborum animi expedita accusamus
-            molestias quia illum nostrum.
-          </li>
-          <li>
-            Autem amet corporis quos perferendis aliquam delectus expedita ea,
-            necessitatibus non ipsa, ratione nisi praesentium commodi facere
-            perspiciatis omnis recusandae! Eveniet, nulla?
-          </li>
-        </ul>
+        <div class="container">
+          <img src="./images/placeholder.png" width="750" alt="placeholder" />
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <p>
+            Consectetur adipisicing elit. Cumque natus nostrum voluptatibus nam
+            est magni. Laboriosam voluptatibus quia dolore architecto.
+          </p>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+              molestiae?
+            </li>
+            <li>
+              Harum labore saepe assumenda laborum animi expedita accusamus
+              molestias quia illum nostrum.
+            </li>
+            <li>
+              Autem amet corporis quos perferendis aliquam delectus expedita ea,
+              necessitatibus non ipsa, ratione nisi praesentium commodi facere
+              perspiciatis omnis recusandae! Eveniet, nulla?
+            </li>
+          </ul>
+        </div>
       </article>
 
-      <!-- <section class="section">
+      <section class="section">
+        <div class="container">
           <h2 class="section-title">Lorem ipsum dolor sit amet.</h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum,
@@ -89,7 +97,8 @@
             </li>
           </ul>
           <img src="./images/rectangle.jpg" alt="" />
-        </section> -->
+        </div>
+      </section>
     </main>
   </body>
 </html>

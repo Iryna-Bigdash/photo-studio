@@ -116,6 +116,29 @@
     margin-bottom: 80px;
 }
 
+.preferences-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.preferences-list li {
+    flex-basis: calc((100% - 160px)/3);
+
+}
+
+.preferences-thumb {
+    margin-bottom: 40px;
+}
+
+.preferences-description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    margin-bottom: 24px;
+}
+
 .examples>.item {
     display: flex;
     align-items: center;
@@ -255,6 +278,15 @@
 
 
 /* Community page */
+.community-hero {
+    background: linear-gradient(to right, rgba(236, 233, 230, 0.9), rgba(255, 255, 255, 0.9)),
+        url('../images/community-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+
+}
+
 .section-title.cards {
     margin-bottom: 30px;
     max-width: 750px;
