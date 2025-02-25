@@ -135,10 +135,33 @@
 
 .preferences-list li {
     flex-basis: calc((100% - 160px)/3);
-
 }
 
+.preferences-list li::before {
+    display: inline-block;
+    content: '';
+    width: 108px;
+    height: 108px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.preferences-list li:nth-child(1)::before {
+    background-image: url('../images/photost.svg');
+}
+
+.preferences-list li:nth-child(2)::before {
+    background-image: url('../images/masters.svg');
+}
+
+.preferences-list li:nth-child(3)::before {
+    background-image: url('../images/online-community.svg');
+}
+
+
 .preferences-thumb {
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
@@ -348,6 +371,25 @@
     flex-basis: calc((100% - 148px) / 2);
 }
 
+.community-set li::before {
+    display: block;
+    content: '';
+    height: 160px;
+    width: 160px;
+    margin-bottom: 40px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.community-set li:first-child:before {
+    background-image: url('../images/online-community.svg');
+}
+
+.community-set li:nth-child(2):before {
+    background-image: url('../images/masters.svg');
+}
+
 .community-thumb {
     margin-bottom: 40px;
 }
@@ -445,7 +487,8 @@
 }
 
 .company-card {
-    border: 1px solid;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    background: #FFF;
     max-width: 686px;
 }
 
@@ -475,4 +518,20 @@
     font-size: 15px;
     font-weight: 700;
     line-height: 1.6;
+}
+
+/* support page */
+
+.register {
+    display: inline-flex;
+    align-items: center;
+}
+
+.register::before {
+    content: "";
+    margin-right: 6px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/send.svg');
+    background-size: contain;
 }
