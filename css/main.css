@@ -229,13 +229,22 @@
 .client-list {
     display: flex;
     flex-wrap: wrap;
-    width: 1060px;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 64px;
 }
 
 .client-list li {
-    margin: 30px 45px;
+    flex-basis: calc((100% - 192px)/4);
+    border: 1px solid var(--secondary-bg-color);
+}
+
+.client-list li:hover {
+    border: 1px solid var(--accent-color);
+}
+
+
+.client-list li>a {
+    display: inline-block;
+    width: 100%;
 }
 
 .signup {
