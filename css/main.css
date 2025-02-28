@@ -337,24 +337,6 @@
     line-height: 1.6;
 }
 
-.network-list li {
-    border-radius: 50%;
-}
-
-.network-list li:hover .social-networks-icon,
-.network-list li:focus .social-networks-icon,
-.network-list li:active .social-networks-icon {
-    stroke: var(--accent-color);
-    fill: var(--accent-color);
-}
-
-.social-networks-icon {
-    display: block;
-    width: 38px;
-    height: 38px;
-    stroke: #e5e5e5;
-    fill: #e5e5e5;
-}
 
 .button {
     color: var(--title-text-color);
@@ -588,6 +570,46 @@
     gap: 21px;
 }
 
+.network-list li {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+    background-color: var(--accent-color);
+}
+
+.network-list li:hover,
+.network-list li:focus,
+.network-list li:active {
+    background-color: var(--primary-white-color);
+    border: 1px solid var(--accent-color);
+
+}
+
+.network-list li:hover .social-networks-icon,
+.network-list li:focus .social-networks-icon,
+.network-list li:active .social-networks-icon {
+    stroke: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+.network-list li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.social-networks-icon {
+    width: 28px;
+    height: 28px;
+    stroke: white;
+    fill: white;
+}
+
 .company-card {
     border: 1px solid rgba(0, 0, 0, 0.50);
     background: #FFF;
@@ -611,18 +633,12 @@
     justify-content: space-between;
 }
 
-.network-container ul {
-    justify-content: space-between;
-}
-
 .footer-link {
     color: #000;
     font-size: 15px;
     font-weight: 700;
     line-height: 1.6;
 }
-
-
 
 /* support page */
 
