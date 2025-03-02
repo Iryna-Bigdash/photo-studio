@@ -162,6 +162,9 @@
 
 .preferences-list li {
     flex-basis: calc((100% - 160px)/3);
+    background-color: var(--secondary-bg-color);
+
+    border-radius: 26% 74% 77% 23% / 42% 28% 72% 58%;
 }
 
 .preferences-list li::before {
@@ -206,6 +209,7 @@
 
     padding-bottom: 80px;
     padding-top: 80px;
+
 }
 
 .examples>.item:nth-child(2n) {
@@ -285,6 +289,7 @@
     height: 76px;
     border: 2px solid var(--secondary-bg-color);
     border-radius: 4px;
+
 }
 
 
@@ -656,4 +661,75 @@
     fill: var(--primary-white-color);
     width: 16px;
     height: 16px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* poster page */
+.poster {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 84px;
+    align-items: center;
+}
+
+.poster-thumb {
+    min-width: 830px;
+}
+
+.poster-title {
+    margin-bottom: 24px;
+}
+
+.description.with-padding {
+    padding-bottom: 31px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+    margin-bottom: 32px;
+
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.description {
+    color: rgba(0, 0, 0, 0.60);
+}
+
+.poster-thumb {
+    position: relative;
+}
+
+.network-list.poster-networks {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    gap: 5px
+}
+
+.flex-thumb {
+    display: flex;
+    align-items: center;
+    gap: 148px;
+    margin-top: 100px;
+}
+
+.preference-poster.list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    text-align: left;
+}
+
+.preference-poster li h3 {
+    margin-bottom: 24px;
 }
