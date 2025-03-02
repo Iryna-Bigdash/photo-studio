@@ -226,6 +226,26 @@
     line-height: 1.4;
 }
 
+.examples-caption {
+    position: relative;
+}
+
+.examples-caption-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    font-weight: bold;
+    padding: 4px;
+
+    background-color: var(--secondary-bg-color);
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+
 
 .features-title,
 .examples-title {
@@ -393,7 +413,7 @@
         url('../images/community-hero.jpg');
     background-size: cover;
     background-position: center;
-    background-blend-mode: overlay;
+    background-blend-mode: caption;
 
 }
 
@@ -445,6 +465,9 @@
 
 .community-set li {
     flex-basis: calc((100% - 148px) / 2);
+
+    background-color: var(--secondary-bg-color);
+    border-radius: 100% 0% 76% 24% / 99% 39% 61% 1%;
 }
 
 .community-set li::before {
@@ -732,4 +755,19 @@
 
 .preference-poster li h3 {
     margin-bottom: 24px;
+}
+
+.thumb-overlay {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-text {
+    width: 100%;
+    position: absolute;
+}
+
+.thumb-overlay img {
+    max-width: 100%;
 }
