@@ -54,12 +54,16 @@
       </nav>
     </header>
     <main>
-      <section class="section">
+      <article class="section">
         <h2 class="hidden-title">Our networks</h2>
-        <article class="poster">
-          <div class="container poster">
+        <div class="container">
+          <div class="flex-container">
             <div class="poster-thumb">
-              <img src="./images/baby.jpg" width="830" alt="placeholder" />
+              <img
+                src="./images/baby.jpg"
+                alt="photo of baby"
+                class="poster-thumb-img"
+              />
               <ul class="network-list poster-networks">
                 <li>
                   <a href="https://github.com/" aria-label="github link">
@@ -102,6 +106,7 @@
                 </li>
               </ul>
             </div>
+
             <div class="poster-meta">
               <h2 class="poster-title">Sed ut perspiciatis unde omnis</h2>
               <p class="description with-padding">
@@ -117,8 +122,8 @@
               </p>
             </div>
           </div>
-        </article>
-      </section>
+        </div>
+      </article>
 
       <article class="section no-padding centered preference-poster">
         <div class="container">
@@ -276,5 +281,6 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts/fixed-header.js"></script>
   </body>
 </html>

@@ -7,6 +7,16 @@
     outline: 2px solid teal;
 }
 
+.page-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-white-color);
+
+    z-index: 999;
+}
+
 .main-nav {
     display: flex;
     align-items: center;
@@ -207,9 +217,7 @@
     display: flex;
     align-items: center;
 
-    padding-bottom: 80px;
-    padding-top: 80px;
-
+    padding: 80px 20px;
 }
 
 .examples>.item:nth-child(2n) {
@@ -700,14 +708,10 @@
 /* poster page */
 .poster {
     display: flex;
-    justify-content: space-between;
-
+    /* flex-basis: calc(50% - 42px);
     gap: 84px;
-    align-items: center;
-}
+    align-items: center; */
 
-.poster-thumb {
-    min-width: 830px;
 }
 
 .poster-title {
@@ -728,6 +732,14 @@
     color: rgba(0, 0, 0, 0.60);
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 54px;
+    align-items: center;
+}
+
+
 .poster-thumb {
     position: relative;
 }
@@ -737,6 +749,10 @@
     bottom: 10px;
     right: 10px;
     gap: 5px
+}
+
+.poster-meta {
+    max-width: 686px;
 }
 
 .flex-thumb {
@@ -761,7 +777,6 @@
     display: flex;
     width: 100%;
     position: relative;
-    /* overflow: hidden; */
 }
 
 .overlay-text {
