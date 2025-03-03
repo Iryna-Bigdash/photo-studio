@@ -35,20 +35,20 @@
 
         <ul class="auth-nav">
           <li>
-            <a href="" class="button primary">
+            <a type="button" class="button primary">
               <svg class="auth-icon icon-enter">
                 <use href="./images/icons.svg#icon-enter" />
               </svg>
-              Login</a
-            >
+              Login
+            </a>
           </li>
           <li>
-            <a href="" class="button secondary">
+            <a class="button secondary">
               <svg class="auth-icon icon-register">
                 <use href="./images/icons.svg#icon-user-plus" />
               </svg>
-              Register</a
-            >
+              Register
+            </a>
           </li>
         </ul>
       </nav>
@@ -57,7 +57,7 @@
       <section class="section-hero">
         <div class="container">
           <h1 class="hero-title">The largest community of photo enthusiast</h1>
-          <a href="" class="button primary">Join Today</a>
+          <button class="button primary" data-open-modal>Join Today</button>
         </div>
       </section>
 
@@ -287,7 +287,7 @@
             </p>
           </div>
           <div class="signup-list">
-            <a href="" class="button primary">Join Today</a>
+            <button type="button" class="button primary">Join Today</button>
             <a href="" class="button secondary">Contact us</a>
           </div>
         </div>
@@ -352,6 +352,20 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal" data-modal>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
+          quos, quisquam illum facere blanditiis similique sit dolores voluptate
+          eligendi, debitis ut recusandae omnis natus numquam consectetur
+          commodi minus maxime dolorum.
+        </p>
+        <button type="button" data-close-modal>X</button>
+      </div>
+    </div>
+
     <script src="./scripts/fixed-header.js"></script>
+    <script src="./scripts/modal.js"></script>
   </body>
 </html>
