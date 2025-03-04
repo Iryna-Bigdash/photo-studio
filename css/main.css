@@ -57,7 +57,7 @@
     font-size: 15px;
     line-height: 1.14;
 
-
+    transition: color 300ms var(--transition-func);
 }
 
 .site-nav a:hover,
@@ -87,6 +87,8 @@
     min-width: 240px;
 
     display: none;
+
+    transition: background-color 300ms var(--transition-func);
 }
 
 .site-nav li:hover .support-submenu {
@@ -118,15 +120,20 @@
 
 .icon-enter {
     fill: var(--primary-white-color);
+
+    transition: fill 300ms var(--transition-func);
 }
 
 .icon-register {
     fill: var(--accent-color);
+
+    transition: fill 300ms var(--transition-func);
 }
 
 .auth-nav li:hover .icon-enter,
 .auth-nav li:focus .icon-enter {
     fill: var(--accent-color);
+
 }
 
 .auth-nav li:hover .icon-register,
@@ -348,6 +355,8 @@
     border: 2px solid var(--secondary-bg-color);
     border-radius: 4px;
 
+    transition: border 300ms var(--transition-func);
+
 }
 
 
@@ -420,7 +429,9 @@
 
 .button.primary {
     color: var(--primary-white-color);
-    background: var(--accent-color);
+    background-color: var(--accent-color);
+
+    transition: background-color 300ms var(--transition-func), color 300ms var(--transition-func);
 }
 
 .button.primary:hover,
@@ -432,8 +443,10 @@
 
 .button.secondary {
     color: var(--accent-color);
-    background: var(--primary-white-color);
+    background-color: var(--primary-white-color);
     border-color: var(--accent-color);
+
+    transition: background-color 300ms var(--transition-func), color 300ms var(--transition-func);
 }
 
 .button.secondary:hover,
@@ -645,6 +658,9 @@
 
     background-color: var(--primary-white-color);
     border: 1px solid var(--accent-color);
+
+    transition: background-color 300ms var(--transition-func),
+        border 300ms var(--transition-func);
 }
 
 .network-list li:hover,
@@ -673,6 +689,9 @@
     height: 28px;
     stroke: var(--accent-color);
     fill: var(--accent-color);
+
+    transition: fill 300ms var(--transition-func),
+        stroke 300ms var(--transition-func);
 }
 
 .company-card {
@@ -722,6 +741,8 @@
     fill: var(--primary-white-color);
     width: 16px;
     height: 16px;
+
+    transition: fill 300ms var(--transition-func);
 }
 
 .visually-hidden {
@@ -778,7 +799,7 @@
     position: absolute;
     bottom: 10px;
     right: 10px;
-    gap: 5px
+    gap: 5px;
 }
 
 .poster-meta {

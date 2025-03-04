@@ -14,7 +14,10 @@
     --accent-color: #18A0FB;
     --primary-white-color: #fff;
     --secondary-bg-color: #F5F5F5;
+    --transition-func: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 body {
     color: var(--primary-text-color);
