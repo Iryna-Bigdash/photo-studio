@@ -26,37 +26,66 @@
           ><img src="./images/logo.svg" alt="Logo" />photo</a
         >
         <ul class="site-nav">
-          <li><a href="./index.html">Features</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./сommunity.html">Community</a></li>
-          <li><a href="./support.html">Support</a></li>
+          <li><a href="./index.html" class="link">Features</a></li>
+          <li><a href="./pricing.html" class="link">Pricing</a></li>
+          <li><a href="./сommunity.html" class="link">Community</a></li>
+          <li>
+            <a href="./support.html" class="link">Support</a>
+
+            <ul class="support-submenu">
+              <li class="support-item">
+                <a href="#network-list" class="support-link"
+                  >contact by networks</a
+                >
+              </li>
+
+              <li class="support-item">
+                <a href="tel:+1234567890" class="support-link"
+                  >contact by phone</a
+                >
+              </li>
+
+              <li class="support-item">
+                <a href="mailto:imbigdash@email.com" class="support-link"
+                  >contact by email</a
+                >
+              </li>
+            </ul>
+          </li>
           <li><a href="./poster.html" class="link current">Blurb</a></li>
         </ul>
 
         <ul class="auth-nav">
           <li>
-            <a href="" class="button primary">
+            <a type="button" class="button primary">
               <svg class="auth-icon icon-enter">
                 <use href="./images/icons.svg#icon-enter" />
               </svg>
-              Login</a
-            >
+              Login
+            </a>
           </li>
           <li>
-            <a href="" class="button secondary">
+            <a class="button secondary">
               <svg class="auth-icon icon-register">
                 <use href="./images/icons.svg#icon-user-plus" />
               </svg>
-              Register</a
-            >
+              Register
+            </a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <article class="section">
-        <h2 class="hidden-title">Our networks</h2>
+      <section class="section-hero">
         <div class="container">
+          <h1 class="hero-title">The largest community of photo enthusiast</h1>
+          <button class="button primary" data-open-modal>Join Today</button>
+        </div>
+      </section>
+
+      <article class="section">
+        <div class="container">
+          <h2 class="section-title hidden-title">Our networks</h2>
           <div class="flex-container">
             <div class="poster-thumb">
               <img
@@ -108,7 +137,9 @@
             </div>
 
             <div class="poster-meta">
-              <h2 class="poster-title">Sed ut perspiciatis unde omnis</h2>
+              <h2 class="poster-title">
+                A professional photoshoot for your babies
+              </h2>
               <p class="description with-padding">
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
                 aut fugit, sed quia consequuntur magni dolores eos qui ratione
@@ -185,6 +216,19 @@
         </div>
       </article>
     </main>
+
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal" data-modal>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
+          quos, quisquam illum facere blanditiis similique sit dolores voluptate
+          eligendi, debitis ut recusandae omnis natus numquam consectetur
+          commodi minus maxime dolorum.
+        </p>
+        <button type="button" data-close-modal>X</button>
+      </div>
+    </div>
+
     <footer class="section">
       <div class="container">
         <div class="footer-upper">
@@ -282,5 +326,6 @@
       </div>
     </footer>
     <script src="./scripts/fixed-header.js"></script>
+    <script src="./scripts/modal.js"></script>
   </body>
 </html>
