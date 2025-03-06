@@ -778,10 +778,6 @@
 /* poster page */
 .poster {
     display: flex;
-    /* flex-basis: calc(50% - 42px);
-    gap: 84px;
-    align-items: center; */
-
 }
 
 .poster-title {
@@ -941,6 +937,7 @@
     padding: 64px;
     border: 1px solid rgba(0, 0, 0, 0.50);
     width: 622px;
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -977,4 +974,9 @@
 .form-button {
     width: 130px;
     align-self: flex-start;
+}
+
+.form-wrapper.support {
+    margin-left: auto;
+    margin-right: 0;
 }

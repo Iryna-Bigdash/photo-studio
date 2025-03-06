@@ -57,7 +57,7 @@
 
         <ul class="auth-nav">
           <li>
-            <a type="button" class="button primary">
+            <a class="button primary" href="">
               <svg class="auth-icon icon-enter">
                 <use href="./images/icons.svg#icon-enter" />
               </svg>
@@ -65,7 +65,7 @@
             </a>
           </li>
           <li>
-            <a class="button secondary">
+            <a class="button secondary" href="">
               <svg class="auth-icon icon-register">
                 <use href="./images/icons.svg#icon-user-plus" />
               </svg>
@@ -81,7 +81,7 @@
           <h1 class="hero-title">
             Learn about all the features of the Photo app
           </h1>
-          <img src="./images/support-hero.png" alt="" />
+          <img src="./images/support-hero.png" alt="hero poster" />
         </div>
       </section>
 
@@ -90,7 +90,7 @@
           <h2 class="section-title">
             The largest community of photo enthusiasts
           </h2>
-          <form action="">
+          <form>
             <input type="text" placeholder="First name" />
             <input type="text" placeholder="Last name" />
             <input type="text" placeholder="Email address" />
@@ -138,24 +138,60 @@
       </section>
 
       <section class="section no-padding">
-        <div class="container">
-          <h2 class="section-title">Ready to take a free trial?</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore
-          </p>
-          <form action="">
-            <p>Sign up for a free account</p>
-            <input type="text" placeholder="First name" />
-            <input type="text" placeholder="Last name" />
-            <input type="email" placeholder="Email address" />
-            <input type="text" placeholder="Create password" />
-            <button type="submit" class="button primary support-register">
-              <svg class="icon-sent">
-                <use href="./images/icons.svg#icon-compass" /></svg
-              >Send
-            </button>
-          </form>
+        <div class="container flex-container">
+          <h2 class="hero-title">
+            The largest community<br />of photo enthusiasts
+          </h2>
+          <div class="form-wrapper support">
+            <p class="form-title">Sign up for a free account</p>
+            <form class="js-speaker-form form">
+              <div class="input-row">
+                <!-- <label for="user-name">First name</label> -->
+                <input
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  placeholder="First name"
+                />
+                <!-- <label for="last-name">Last name</label> -->
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Last name"
+                />
+              </div>
+
+              <!-- <label for="phone">Phone</label> -->
+              <input name="phone" type="tel" id="phone" placeholder="Phone" />
+
+              <!-- <label for="email">Email</label> -->
+              <input type="email" name="email" id="email" placeholder="Email" />
+
+              <!-- <label for="password">Create password</label> -->
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Create password"
+              />
+
+              <button
+                type="submit"
+                class="button primary support-register form-button"
+              >
+                <svg class="icon-sent">
+                  <use href="./images/icons.svg#icon-compass" /></svg
+                >Send
+              </button>
+            </form>
+          </div>
+
+          <button type="button" data-close-modal class="modal-close-btn">
+            <svg class="close-btn-svg">
+              <use href="./images/close-modal.svg" />
+            </svg>
+          </button>
         </div>
       </section>
     </main>
