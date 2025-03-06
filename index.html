@@ -377,15 +377,72 @@
 
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal" data-modal>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
-          quos, quisquam illum facere blanditiis similique sit dolores voluptate
-          eligendi, debitis ut recusandae omnis natus numquam consectetur
-          commodi minus maxime dolorum.
+        <h2 class="section-title modal-title">Ready to take a free trial?</h2>
+        <p class="sub-title modal-sub-title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore
         </p>
-        <button type="button" data-close-modal>X</button>
+
+        <div class="form-wrapper">
+          <p class="form-title">Sign up for a free account</p>
+          <form class="js-speaker-form form">
+            <div class="input-row">
+              <!-- <label for="user-name">First name</label> -->
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="First name"
+              />
+              <!-- <label for="last-name">Last name</label> -->
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Last name"
+              />
+            </div>
+
+            <!-- <label for="phone">Phone</label> -->
+            <input name="phone" type="tel" id="phone" placeholder="Phone" />
+
+            <!-- <label for="email">Email</label> -->
+            <input type="email" name="email" id="email" placeholder="Email" />
+
+            <!-- <label for="password">Create password</label> -->
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Create password"
+            />
+
+            <button type="submit" class="button primary form-button">
+              Register
+            </button>
+          </form>
+        </div>
+
+        <button type="button" data-close-modal class="modal-close-btn">
+          <svg class="close-btn-svg">
+            <use href="./images/close-modal.svg" />
+          </svg>
+        </button>
       </div>
     </div>
+    <script>
+      (() => {
+        document
+          .querySelector('.js-speaker-form')
+          .addEventListener('submit', e => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`),
+            );
+          });
+      })();
+    </script>
 
     <script src="./scripts/fixed-header.js"></script>
     <script src="./scripts/modal.js"></script>
