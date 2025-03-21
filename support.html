@@ -85,29 +85,36 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section register no-padding">
         <div class="container">
-          <h2 class="section-title">
+          <h2 class="section-title centered-title">
             The largest community of photo enthusiasts
           </h2>
-          <form>
+          <form class="flex-form">
             <input type="text" placeholder="First name" />
             <input type="text" placeholder="Last name" />
             <input type="text" placeholder="Email address" />
             <input type="text" placeholder="Create password" />
-            <button type="submit">Register</button>
+            <button
+                type="submit"
+                class="button primary support-register form-button"
+              >
+                Register
+              </button>
           </form>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Snap photos and share like never before</h2>
-          <p>
+          <h2 class="section-title centered-title">Snap photos and share like never before</h2>
+          <p class="centered-title sub-title">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore
           </p>
-          <ul>
+          <div class="support-preference">
+            <img src="./images/support.jpg" alt=""/>
+          <ul class="preference-poster list">
             <li>
               <h3>
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
@@ -133,7 +140,8 @@
               </p>
             </li>
           </ul>
-          <img src="./images/support.jpg" alt="" />
+        
+        </div>
         </div>
       </section>
 
@@ -181,17 +189,12 @@
                 class="button primary support-register form-button"
               >
                 <svg class="icon-sent">
-                  <use href="./images/icons.svg#icon-compass" /></svg
-                >Send
+                  <use href="./images/icons.svg#icon-compass" />
+               </svg>
+                Send
               </button>
             </form>
           </div>
-
-          <button type="button" data-close-modal class="modal-close-btn">
-            <svg class="close-btn-svg">
-              <use href="./images/close-modal.svg" />
-            </svg>
-          </button>
         </div>
       </section>
     </main>

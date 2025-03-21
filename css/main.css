@@ -94,6 +94,10 @@
     color: var(--title-text-color);
 }
 
+/* support page*/
+.centered-title{
+    text-align: center;
+}
 .support-submenu {
     position: absolute;
     padding: 10px;
@@ -101,7 +105,7 @@
     background-color: var(--accent-color);
 
     top: 100%;
-    lef: 0;
+    left: 0;
     min-width: 240px;
 
     display: none;
@@ -117,6 +121,12 @@
 .support-submenu .support-link {
     color: var(--primary-white-color);
     padding: 14px;
+}
+
+.support-preference{
+    display: flex;
+    gap: 84px;
+    align-items: center;
 }
 
 .auth-nav {
@@ -446,21 +456,21 @@
 
 }
 
-.button.primary {
+.primary {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 
     transition: background-color 300ms var(--transition-func), color 300ms var(--transition-func);
 }
 
-.button.primary:hover,
-.button.primary:focus {
+.primary:hover,
+.primary:focus {
     color: var(--accent-color);
     background: var(--primary-white-color);
     border: 1px solid var(--accent-color);
 }
 
-.button.secondary {
+.secondary {
     color: var(--accent-color);
     background-color: var(--primary-white-color);
     border-color: var(--accent-color);
@@ -468,8 +478,8 @@
     transition: background-color 300ms var(--transition-func), color 300ms var(--transition-func);
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
+.secondary:hover,
+.secondary:focus {
     color: var(--primary-white-color);
     background: var(--accent-color);
     border-color: var(--accent-color);
@@ -917,11 +927,19 @@
     color: var(--secondary-bg-color);
     background-color: var(--primary-white-color);
     border-radius: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px; /* You can adjust this width and height to fit the button size */
+    height: 36px; 
 }
 
 .close-btn-svg {
     width: 18px;
     height: 18px;
+    fill: #000;
+    stroke: #000;
 }
 
 .backdrop.is-hidden {
@@ -949,7 +967,8 @@
     max-width: 622px;
 }
 
-.form input {
+.form input,
+.flex-form input {
     height: 40px;
 }
 
@@ -980,3 +999,14 @@
     margin-left: auto;
     margin-right: 0;
 }
+
+.flex-form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.flex-form input {
+    min-width: calc(20% - 16px);
+}
+
