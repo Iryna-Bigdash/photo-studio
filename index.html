@@ -385,37 +385,36 @@
 
         <div class="form-wrapper">
           <p class="form-title">Sign up for a free account</p>
+
           <form class="js-speaker-form form">
             <div class="input-row">
-              <!-- <label for="user-name">First name</label> -->
-              <input
-                type="text"
-                name="user-name"
-                id="user-name"
-                placeholder="First name"
-              />
-              <!-- <label for="last-name">Last name</label> -->
-              <input
-                type="text"
-                name="last-name"
-                id="last-name"
-                placeholder="Last name"
-              />
+
+              <div class="form-field">
+                <input type="text" name="user-name" id="user-name" placeholder=" "/>
+                <label for="user-name" class="form-label">First name</label>
+              </div>
+
+              <div class="form-field">
+                <input type="text" name="last-name" id="last-name" placeholder=" " />
+                <label for="last-name" class="form-label">Last name</label>
+              </div>
+
             </div>
 
-            <!-- <label for="phone">Phone</label> -->
-            <input name="phone" type="tel" id="phone" placeholder="Phone" />
+            <div class="form-field">
+              <input name="phone" type="tel" id="phone" placeholder=" "/>
+              <label for="phone" class="form-label">Phone</label>
+            </div>
 
-            <!-- <label for="email">Email</label> -->
-            <input type="email" name="email" id="email" placeholder="Email" />
+            <div class="form-field">
+              <input type="email" name="email" id="email"  placeholder=" "/>
+              <label for="email" class="form-label">Email</label>
+            </div>
 
-            <!-- <label for="password">Create password</label> -->
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Create password"
-            />
+            <div class="form-field">
+              <input type="password" name="password" id="password" placeholder=" " />
+              <label for="password" class="form-label">Create password</label>
+            </div>
 
             <button type="submit" class="button primary form-button">
               Register

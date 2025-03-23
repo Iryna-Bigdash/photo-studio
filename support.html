@@ -90,11 +90,26 @@
           <h2 class="section-title centered-title">
             The largest community of photo enthusiasts
           </h2>
-          <form class="flex-form">
-            <input type="text" placeholder="First name" />
-            <input type="text" placeholder="Last name" />
-            <input type="text" placeholder="Email address" />
-            <input type="text" placeholder="Create password" />
+          <form class="flex-form js-speaker-form">
+
+            <div class="form-field">
+            <input type="text" name="user-name" placeholder=" " id="name" />
+            <label for="name" class="form-label">Name</label>
+          </div>
+
+          <div class="form-field">
+            <input type="text"  name="user-surname" placeholder=" " id="surname" />
+            <label for="surname" class="form-label">Last name</label>
+            </div>
+            <div class="form-field">
+            <input type="email" name="user-email" placeholder=" " id="user-email"/>
+            <label  class="form-label" for="user-email">Email</label>
+            </div>
+
+            <div class="form-field">
+            <input type="password" name="user-password" placeholder=" " id="user-password"  autocomplete="current-password"/>
+            <label for="user-password" class="form-label" autocomplete="current-password">Password</label>
+          </div>
             <button
                 type="submit"
                 class="button primary support-register form-button"
@@ -154,35 +169,33 @@
             <p class="form-title">Sign up for a free account</p>
             <form class="js-speaker-form form">
               <div class="input-row">
-                <!-- <label for="user-name">First name</label> -->
-                <input
-                  type="text"
-                  name="user-name"
-                  id="user-name"
-                  placeholder="First name"
-                />
-                <!-- <label for="last-name">Last name</label> -->
-                <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  placeholder="Last name"
-                />
+
+                <div class="form-field">
+                  <input type="text" name="user-name" id="user-name" placeholder=" "/>
+                  <label for="user-name" class="form-label">First name</label>
+                </div>
+  
+                <div class="form-field">
+                  <input type="text" name="last-name" id="last-name" placeholder=" " />
+                  <label for="last-name" class="form-label">Last name</label>
+                </div>
+  
               </div>
-
-              <!-- <label for="phone">Phone</label> -->
-              <input name="phone" type="tel" id="phone" placeholder="Phone" />
-
-              <!-- <label for="email">Email</label> -->
-              <input type="email" name="email" id="email" placeholder="Email" />
-
-              <!-- <label for="password">Create password</label> -->
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Create password"
-              />
+  
+              <div class="form-field">
+                <input name="phone" type="tel" id="phone" placeholder=" "/>
+                <label for="phone" class="form-label">Phone</label>
+              </div>
+  
+              <div class="form-field">
+                <input type="email" name="email" id="email"  placeholder=" "/>
+                <label for="email" class="form-label">Email</label>
+              </div>
+  
+              <div class="form-field">
+                <input type="password" name="password" id="password" placeholder=" " />
+                <label for="password" class="form-label">Create password</label>
+              </div>
 
               <button
                 type="submit"
@@ -209,5 +222,21 @@
         <p>&#169; Photo, Inc. 2025. We love our users!</p>
       </div>
     </footer>
+
+    <script>
+      (() => {
+  document.querySelectorAll('.js-speaker-form').forEach(form => {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      new FormData(e.currentTarget).forEach((value, name) =>
+        console.log(`${name}: ${value}`)
+      );
+    });
+  });
+})();
+
+    </script>
+    <script src="./scripts/fixed-header.js"></script>
   </body>
 </html>
