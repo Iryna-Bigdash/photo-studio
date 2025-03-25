@@ -1,0 +1,159 @@
+.page-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: getColor(primary-white-color);
+    z-index: 999;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    gap: 12px;
+    margin-right: 70px;
+    color: getColor(title-text-color);
+
+    font-family: Comfortaa, cursive;
+    font-size: 28px;
+    line-height: 1.14;
+
+    &:hover, &:focus{
+        color: getColor(accent-color);
+    }
+}
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav li {
+    position: relative;
+    display: inline-block;
+
+    &:not(:last-child){
+        margin-right: 40px; 
+    }
+
+    &::after{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: getColor(title-text-color);
+    border-radius: 4px;
+    transform: scaleX(0);
+
+    transition: transform 300ms $transition-func;
+    }
+
+    &:hover::after,
+    &:focus::after{
+        transform: scaleX(1);
+    }
+}
+
+.site-nav a {
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    color: getColor(accent-color);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.14;
+
+    transition: color 300ms $transition-func;
+
+    &:hover,
+    &:focus{
+        color: getColor(title-text-color);
+    }
+}
+
+.link.current {
+    color: getColor(title-text-color);
+}
+
+.centered-title{
+    text-align: center;
+}
+
+.support-submenu {
+    position: absolute;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: getColor(accent-color);
+
+    top: 100%;
+    left: 0;
+    min-width: 240px;
+
+    display: none;
+
+    transition: background-color 300ms $transition-func;
+}
+
+.support-submenu{
+    .site-nav li:hover &,
+    .site-nav li:focus &{
+        display: block;
+    }
+
+    .support-link {
+        color: getColor(primary-white-color);
+        padding: 14px;
+    }
+      
+
+}
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+    gap: 12px;
+}
+
+.auth-nav li a{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.auth-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-enter {
+    fill: getColor(primary-white-color);
+
+    transition: fill 300ms $transition-func;
+}
+
+.icon-register {
+    fill: getColor(accent-color);
+
+    transition: fill 300ms $transition-func;
+}
+
+.auth-nav li:hover .icon-enter,
+.auth-nav li:focus .icon-enter {
+    fill: getColor(accent-color);
+
+}
+
+.auth-nav li:hover .icon-register,
+.auth-nav li:focus .icon-register {
+    fill: getColor(primary-white-color);
+}
+
+
+

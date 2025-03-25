@@ -11,13 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
+    <link rel="stylesheet" href="dist/css/main.min.css" />
+    </head>
 
   <body>
     <header class="page-header">
@@ -90,7 +85,7 @@
           <h2 class="section-title centered-title">
             The largest community of photo enthusiasts
           </h2>
-          <form class="flex-form js-speaker-form">
+          <form class="flex-form js-speaker-form" autocomplete="off">
 
             <div class="form-field">
             <input type="text" name="user-name" placeholder=" " id="name" />
@@ -107,8 +102,8 @@
             </div>
 
             <div class="form-field">
-            <input type="password" name="user-password" placeholder=" " id="user-password"  autocomplete="current-password"/>
-            <label for="user-password" class="form-label" autocomplete="current-password">Password</label>
+            <input type="password" name="user-password" placeholder=" " id="user-password" />
+            <label for="user-password" class="form-label">Password</label>
           </div>
             <button
                 type="submit"
@@ -167,7 +162,7 @@
           </h2>
           <div class="form-wrapper support">
             <p class="form-title">Sign up for a free account</p>
-            <form class="js-speaker-form form">
+            <form class="js-speaker-form form" autocomplete="off">
               <div class="input-row">
 
                 <div class="form-field">
@@ -223,20 +218,7 @@
       </div>
     </footer>
 
-    <script>
-      (() => {
-  document.querySelectorAll('.js-speaker-form').forEach(form => {
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-
-      new FormData(e.currentTarget).forEach((value, name) =>
-        console.log(`${name}: ${value}`)
-      );
-    });
-  });
-})();
-
-    </script>
+    <script src="./scripts/send-form.js"></script>
     <script src="./scripts/fixed-header.js"></script>
   </body>
 </html>

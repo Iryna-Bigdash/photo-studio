@@ -1,0 +1,47 @@
+.preferences-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.preferences-list li {
+    flex-basis: calc((100% - 160px)/3);
+    background-color: var(--secondary-bg-color);
+
+    border-radius: 26% 74% 77% 23% / 42% 28% 72% 58%;
+
+    &::before{
+        display: inline-block;
+    content: '';
+    width: 108px;
+    height: 108px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+
+    &:nth-child(1)::before{
+        background-image: url('/images/photost.svg');
+    }
+
+    &:nth-child(2)::before{
+        background-image: url('/images/masters.svg');
+    }
+
+    &:nth-child(3)::before{
+        background-image: url('/images/online-community.svg');
+    }
+}
+
+.preferences-thumb {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.preferences-description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    margin-bottom: 24px;
+}

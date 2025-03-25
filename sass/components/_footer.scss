@@ -1,0 +1,29 @@
+
+.upper-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 48px;
+    border-bottom: 1px solid;
+
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 80px;
+}
+
+.flex-list {
+    display: flex;
+    gap: 80px;
+}
+
+.flex-list li>a {
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+}

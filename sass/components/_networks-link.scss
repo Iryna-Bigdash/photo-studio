@@ -1,0 +1,57 @@
+.network-container {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    align-items: center;
+}
+
+.network-list {
+    display: flex;
+    gap: 21px;
+}
+
+.network-list li {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+    background-color: getColor(primary-white-color);
+    border: 1px solid getColor(accent-color);
+
+    transition: background-color 300ms $transition-func,
+        border 300ms $transition-func;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: getColor(accent-color);
+    }
+
+    &:hover .social-networks-icon,
+    &:focus .social-networks-icon,
+    &:active .social-networks-icon {
+        stroke: getColor(primary-white-color);
+        fill: getColor(primary-white-color);
+    }
+
+}
+
+.network-list li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.social-networks-icon {
+    width: 28px;
+    height: 28px;
+    stroke: getColor(accent-color);
+    fill: getColor(accent-color);
+
+    transition: fill 300ms $transition-func,
+        stroke 300ms $transition-func;
+}

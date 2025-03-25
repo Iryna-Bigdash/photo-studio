@@ -1,0 +1,82 @@
+
+.form-wrapper {
+    padding: 64px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    width: 622px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    max-width: 622px;
+}
+
+.form-field{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.form input,
+.flex-form input {
+    height: 40px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.form-label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+
+    transition: transform 0.3s $transition-func;
+}
+
+.flex-form input:focus + .form-label,
+.flex-form input:not(:placeholder-shown) + .form-label,
+.form input:focus + .form-label,
+.form input:not(:placeholder-shown) + .form-label
+{
+    color: getColor(accent-color);
+    transform: translateY(-50px);
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 51px;
+}
+
+.input-row {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.input-row input {
+    flex: 1;
+    min-width: calc(50% - 16px);
+}
+
+.form-button {
+    width: 130px;
+    align-self: flex-start;
+}
+
+.form-wrapper.support {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.flex-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.flex-form input {
+    min-width: 300px;
+}

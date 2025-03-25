@@ -1,0 +1,36 @@
+.client-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.client-list li {
+    flex-basis: calc((100% - 192px)/4);
+    border-radius: 4px;
+}
+
+.client-list li:hover .client-icon,
+.client-list li:focus .client-icon {
+    border: 2px solid getColor(accent-color);
+}
+
+
+.client-list li>a {
+    display: block;
+    width: 100%;
+}
+
+.client-icon {
+    display: block;
+    width: 100%;
+    height: 76px;
+    border: 2px solid getColor(secondary-bg-color);
+    border-radius: 4px;
+
+    transition: border 300ms $transition-func;
+
+}

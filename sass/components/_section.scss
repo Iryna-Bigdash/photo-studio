@@ -1,0 +1,35 @@
+.section {
+    padding: 120px 0;
+}
+
+.centered {
+    text-align: center;
+}
+
+.section-bg {
+    background-color: getColor(secondary-bg-color);
+}
+
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.section-title {
+    color: getColor(title-text-color);
+
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.5;
+
+    margin-bottom: 60px;
+}
+
+.section-description {
+    font-size: 36px;
+    line-height: 1.39;
+}
+
+.section-description.sub-title {
+    margin-bottom: 80px;
+}

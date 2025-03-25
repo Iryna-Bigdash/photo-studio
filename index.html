@@ -11,12 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="dist/css/main.min.css" />
   </head>
 
   <body>
@@ -124,7 +119,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section section-bg">
         <div class="container">
           <h2 class="section-title">
             Span photos and shake like <br />
@@ -386,7 +381,7 @@
         <div class="form-wrapper">
           <p class="form-title">Sign up for a free account</p>
 
-          <form class="js-speaker-form form">
+          <form class="js-speaker-form form" autocomplete="off">
             <div class="input-row">
 
               <div class="form-field">
@@ -429,20 +424,7 @@
         </button>
       </div>
     </div>
-    <script>
-      (() => {
-        document
-          .querySelector('.js-speaker-form')
-          .addEventListener('submit', e => {
-            e.preventDefault();
-
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`),
-            );
-          });
-      })();
-    </script>
-
+<script src="./scripts/send-form.js"></script>
     <script src="./scripts/fixed-header.js"></script>
     <script src="./scripts/modal.js"></script>
   </body>
