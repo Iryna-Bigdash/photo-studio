@@ -1,13 +1,11 @@
 .network-container {
-    display: flex;
-    gap: 20px;
+    @include flexed(20px, nowrap);
     margin-left: auto;
     align-items: center;
 }
 
 .network-list {
-    display: flex;
-    gap: 21px;
+    @include flexed(21px, nowrap);
 }
 
 .network-list li {

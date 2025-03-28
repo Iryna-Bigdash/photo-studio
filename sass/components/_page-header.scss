@@ -13,8 +13,7 @@
 }
 
 .logo {
-    display: flex;
-    gap: 12px;
+    @include flexed(12px, nowrap);
     margin-right: 70px;
     color: getColor(title-text-color);
 
@@ -28,7 +27,7 @@
 }
 
 .site-nav {
-    display: flex;
+    @include flexed(10px, nowrap);
 }
 
 .site-nav li {
@@ -115,15 +114,14 @@
 }
 
 .auth-nav {
-    display: flex;
+    @include flexed(12px, nowrap);
     margin-left: auto;
-    gap: 12px;
+
 }
 
 .auth-nav li a{
-    display: flex;
+    @include flexed(4px, nowrap);
     align-items: center;
-    gap: 4px;
 }
 
 .auth-icon {

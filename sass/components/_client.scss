@@ -1,8 +1,6 @@
 .client-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 64px;
-
+    @include flexed(64px, wrap);
+    
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;

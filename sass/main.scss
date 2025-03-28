@@ -4,6 +4,7 @@
 @import "./vars";
 @import "./utilits/placeholders";
 @import "./utilits/visually-hidden";
+@import "./utilits/mixins";
 @import "./components/container";
 @import "./components/section";
 @import "./components/button";
@@ -17,7 +18,12 @@
 @import "./components/footer";
 @import "./components/networks-link";
 @import "./modal/modal";
-@import "./form/form-block"
+@import "./form/form-block";
+@import "./components/community/hero";
+@import "./components/community/card-set";
+@import "./components/community/company-list";
+@import "./components/support/support";
+@import "./components/poster/poster";
 
 
 

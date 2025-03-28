@@ -1,0 +1,38 @@
+.section.support{
+    text-align: center;
+    padding: 160px 0;
+background: black;
+    background-image:
+        url('/images/camera.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    .hero-title{
+        color: white;
+    }
+}
+
+.support-preference{
+    @include flexed(84px, nowrap);
+    align-items: center;
+}
+
+.support-register {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.support-register:hover .icon-sent,
+.support-register:focus .icon-sent {
+    fill: getColor(accent-color);
+}
+
+.icon-sent {
+    fill: getColor(primary-white-color);
+    width: 16px;
+    height: 16px;
+
+    transition: fill 300ms $transition-func;
+}
