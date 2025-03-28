@@ -1,0 +1,16 @@
+%button {
+    color: getColor(title-text-color);
+    background: getColor(primary-white-color);
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.14;
+
+    display: inline-block;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    padding: 11px 34px;
+    min-width: 130px;
+    text-align: center;
+
+}
