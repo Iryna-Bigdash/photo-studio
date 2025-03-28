@@ -1,7 +1,6 @@
 .examples > .item {
     display: flex;
     align-items: center;
-
     padding: 80px 20px;
 
     &:nth-child(2n){
@@ -48,11 +47,6 @@
 
 .features-title,
 .examples-title {
-    color: getColor(title-text-color);
-
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.5;
-
+    @include font(24px, 700, 1.5, getColor(title-text-color)); 
     margin-bottom: 24px;
 }

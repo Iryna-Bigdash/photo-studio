@@ -16,18 +16,12 @@
 }
 
 .section-title {
-    color: getColor(title-text-color);
-
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 1.5;
-
+    @include font(48px, 400, 1.5, getColor(title-text-color));
     margin-bottom: 60px;
 }
 
 .section-description {
-    font-size: 36px;
-    line-height: 1.39;
+    @include font(36px, null, 1.39, null);
 }
 
 .section-description.sub-title {
@@ -35,8 +29,7 @@
 }
 
 .sub-title {
-    font-size: 36px;
-    line-height: 1.4;
+    @include font(36px, null, 1.39, null);
     max-width: 1392px;
     margin-bottom: 100px;
 }

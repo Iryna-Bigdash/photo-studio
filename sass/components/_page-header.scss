@@ -15,11 +15,10 @@
 .logo {
     @include flexed(12px, nowrap);
     margin-right: 70px;
-    color: getColor(title-text-color);
 
     font-family: Comfortaa, cursive;
-    font-size: 28px;
-    line-height: 1.14;
+    @include font(28px, null, 1.14, getColor(title-text-color)); 
+
 
     &:hover, &:focus{
         color: getColor(accent-color);
@@ -63,11 +62,7 @@
     padding-top: 21px;
     padding-bottom: 21px;
 
-    color: getColor(accent-color);
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 1.14;
-
+    @include font(15px, 500, 1.14, getColor(accent-color)); 
     transition: color 300ms $transition-func;
 
     &:hover,

@@ -1,10 +1,5 @@
 .features-title {
-    color: getColor(title-text-color);
-
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.5;
-
+    @include font(24px, 700, 1.5, getColor(title-text-color)); 
     margin-bottom: 24px;
 }
 

@@ -21,7 +21,7 @@
     padding: 40px;
     text-align: center;
 
-    background: var(--primary-white-color);
+    background: getColor(primary-white-color);
     transform: translate(-50%, -50%) scale(1);
 
 
@@ -41,22 +41,26 @@
     position: absolute;
     right: 40px;
     top: 40px;
-    color: getColor(secondary-bg-color);
+    color: getColor(title-text-color);
     background-color: getColor(primary-white-color);
-    border-radius: 2px;
+    border: 1px solid getColor(title-text-color);
+    border-radius: 4px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 36px; /* You can adjust this width and height to fit the button size */
+    width: 36px;
     height: 36px; 
-}
 
-.close-btn-svg {
-    width: 18px;
-    height: 18px;
-    fill: #000;
-    stroke: #000;
+    transform: border-color, color;
+
+    &:hover,
+    &:focus{
+        border-color: getColor(accent-color);
+        color: getColor(accent-color);
+
+        transition: transform 250ms $transition-func;
+}
 }
 
 .backdrop.is-hidden {

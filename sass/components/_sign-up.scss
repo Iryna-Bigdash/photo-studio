@@ -13,7 +13,6 @@
 }
 
 .signup-list {
-    display: flex;
-    gap: 45px;
+    @include flexed(45px, null);
     margin-left: auto;
 }

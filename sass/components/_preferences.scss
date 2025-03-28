@@ -1,7 +1,5 @@
 .preferences-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 80px;
+    @include flexed(80px, wrap);
 }
 
 .preferences-list li {

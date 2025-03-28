@@ -3,10 +3,7 @@
 }
 
 .hero-title {
-    color: getColor(title-text-color);
-    font-weight: 400;
-    font-size: 56px;
-    line-height: 1.43;
+    @include font(56px, 400, 1.43, getColor(title-text-color)); 
     margin-bottom: 40px;
 }
 
