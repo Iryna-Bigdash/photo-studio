@@ -11,8 +11,13 @@ refs.backdrop.addEventListener('click', logBackdropClick);
 
 function toggleModal (){
     refs.backdrop.classList.toggle('is-hidden'); 
+    document.body.classList.toggle('no-scroll');
 }
 
-function logBackdropClick(){
+function logBackdropClick(event) {
+    if (event.target !== event.currentTarget) return;
+
     console.log('click in backdrop');
+    toggleModal();
 }
+

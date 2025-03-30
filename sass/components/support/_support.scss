@@ -1,7 +1,6 @@
 .section.support{
-    text-align: center;
-    padding: 160px 0;
-background: black;
+    @extend %section-hero;
+    background: black;
     background-image:
         url('/images/camera.jpg');
     background-repeat: no-repeat;

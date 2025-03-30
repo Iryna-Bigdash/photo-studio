@@ -195,6 +195,11 @@ body {
   line-height: 1.67;
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -238,6 +243,15 @@ button {
   padding: 11px 34px;
   min-width: 130px;
   text-align: center;
+}
+
+.section.support, .community-hero, .section-hero {
+  text-align: center;
+  padding: 180px 0;
+  background-image: linear-gradient(to right, rgba(236, 233, 230, 0.4), rgba(255, 255, 255, 0.2)), url("/images/hero-main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .visually-hidden {
@@ -475,15 +489,6 @@ button {
   margin-bottom: 40px;
 }
 
-.section-hero {
-  text-align: center;
-  padding: 160px 0;
-  background-image: linear-gradient(to right, rgba(236, 233, 230, 0.4), rgba(255, 255, 255, 0.2)), url("/images/hero-main.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 .preferences-list {
   display: flex;
   gap: 80px;
@@ -646,6 +651,10 @@ button {
   display: flex;
   gap: 45px;
   margin-left: auto;
+}
+
+.footer {
+  padding: 20px 0;
 }
 
 .upper-footer {
@@ -950,13 +959,6 @@ button {
   min-width: 300px;
 }
 
-.community-hero {
-  background: linear-gradient(to right, rgba(236, 233, 230, 0.2), rgba(255, 255, 255, 0.5)), url("../images/hero-main.jpg");
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: caption;
-}
-
 .section-title.cards {
   margin-bottom: 30px;
   max-width: 750px;
@@ -1013,11 +1015,11 @@ button {
 }
 
 .community-set li:first-child:before {
-  background-image: url("../images/online-community.svg");
+  background-image: url("/images/online-community.svg");
 }
 
 .community-set li:nth-child(2):before {
-  background-image: url("../images/masters.svg");
+  background-image: url("/images/masters.svg");
 }
 
 .community-thumb {
@@ -1055,8 +1057,6 @@ button {
 }
 
 .section.support {
-  text-align: center;
-  padding: 160px 0;
   background: black;
   background-image: url("/images/camera.jpg");
   background-repeat: no-repeat;
