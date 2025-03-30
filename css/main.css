@@ -509,10 +509,10 @@ button {
   background-repeat: no-repeat;
 }
 .preferences-list li:nth-child(1)::before {
-  background-image: url("/../images/photost.svg");
+  background-image: url("../../images/photost.svg");
 }
 .preferences-list li:nth-child(2)::before {
-  background-image: url("/../images/masters.svg");
+  background-image: url("./images/masters.svg");
 }
 .preferences-list li:nth-child(3)::before {
   background-image: url("../images/online-community.svg");
@@ -1015,11 +1015,11 @@ button {
 }
 
 .community-set li:first-child:before {
-  background-image: url("../../../images/online-community.svg");
+  background-image: url("../images/online-community.svg");
 }
 
 .community-set li:nth-child(2):before {
-  background-image: url("../../../images/masters.svg");
+  background-image: url("/../../images/masters.svg");
 }
 
 .community-thumb {
