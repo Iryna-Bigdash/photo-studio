@@ -509,13 +509,13 @@ button {
   background-repeat: no-repeat;
 }
 .preferences-list li:nth-child(1)::before {
-  background-image: url("../../images/photost.svg");
+  background-image: url("/../images/photost.svg");
 }
 .preferences-list li:nth-child(2)::before {
-  background-image: url("../../images/masters.svg");
+  background-image: url("/../images/masters.svg");
 }
 .preferences-list li:nth-child(3)::before {
-  background-image: url("/images/online-community.svg");
+  background-image: url("../images/online-community.svg");
 }
 
 .preferences-thumb {
@@ -1058,7 +1058,7 @@ button {
 
 .section.support {
   background: black;
-  background-image: url("../../images/camera.jpg");
+  background-image: url("/../images/camera.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

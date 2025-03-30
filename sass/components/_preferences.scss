@@ -19,15 +19,15 @@
     }
 
     &:nth-child(1)::before{
-        background-image: url('../../images/photost.svg');
+        background-image: url('/../images/photost.svg');
     }
 
     &:nth-child(2)::before{
-        background-image: url('../../images/masters.svg');
+        background-image: url('/../images/masters.svg');
     }
 
     &:nth-child(3)::before{
-        background-image: url('/images/online-community.svg');
+        background-image: url('../images/online-community.svg');
     }
 }
 
