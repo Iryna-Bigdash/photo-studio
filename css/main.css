@@ -515,7 +515,7 @@ button {
   background-image: url("./images/masters.svg");
 }
 .preferences-list li:nth-child(3)::before {
-  background-image: url("../images/online-community.svg");
+  background-image: url("/images/online-community.svg");
 }
 
 .preferences-thumb {
