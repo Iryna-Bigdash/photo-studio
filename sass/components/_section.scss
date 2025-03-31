@@ -16,8 +16,16 @@
 }
 
 .section-title {
-    @include font(48px, 400, 1.5, getColor(title-text-color));
-    margin-bottom: 60px;
+    text-align: center;
+    @include font(36px, 400, 1.5, getColor(title-text-color));
+    margin-bottom: 40px;
+
+    @media screen and (min-width:768px) {
+        text-align: start;
+        font-size: 48px;
+        margin-bottom: 60px;
+    }
+
 }
 
 .section-description {

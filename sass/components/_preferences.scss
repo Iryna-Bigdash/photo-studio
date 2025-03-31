@@ -1,21 +1,40 @@
 .preferences-list {
-    @include flexed(80px, wrap);
+    text-align: center;
+
+    @media screen and (min-width:768px) {
+        @include flexed(80px, wrap);
+        text-align: start;
+    }
+   
 }
 
 .preferences-list li {
-    flex-basis: calc((100% - 160px)/3);
-    background-color: var(--secondary-bg-color);
+    background-color: getColor(secondary-bg-color);
+    border-radius: 31% 69% 0% 100% / 30% 98% 2% 70% ;
+    margin-bottom: 40px;
 
-    border-radius: 26% 74% 77% 23% / 42% 28% 72% 58%;
+
+    @media screen and (min-width:768px) {
+        @include flexed(80px, wrap);
+        flex-basis: calc((100% - 160px)/3);
+        border-radius: 26% 74% 77% 23% / 42% 28% 72% 58%;
+        margin-bottom: 0px;   
+    }
+    
 
     &::before{
-        display: inline-block;
+    display: inline-block;
     content: '';
-    width: 108px;
-    height: 108px;
+    width: 88px;
+    height: 88px;
 
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media screen and (min-width:768px) {
+        width: 108px;
+        height: 108px; 
+    }
     }
 
     &:nth-child(1)::before{

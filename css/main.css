@@ -267,11 +267,23 @@ button {
 }
 
 .container {
+  max-width: 480px;
   padding-left: 20px;
   padding-right: 20px;
-  width: 1540px;
   margin: 0 auto;
-  outline: 2px solid red;
+  outline: 2px solid palevioletred;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    outline: 2px solid orange;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .container {
+    max-width: 1540px;
+    outline: 2px solid red;
+  }
 }
 
 .section {
@@ -292,11 +304,19 @@ button {
 }
 
 .section-title {
-  font-size: 48px;
+  text-align: center;
+  font-size: 36px;
   font-weight: 400;
   line-height: 1.5;
   color: #000;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    text-align: start;
+    font-size: 48px;
+    margin-bottom: 60px;
+  }
 }
 
 .section-description {
@@ -495,23 +515,45 @@ button {
 }
 
 .preferences-list {
-  display: flex;
-  gap: 80px;
-  flex-wrap: wrap;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .preferences-list {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    text-align: start;
+  }
 }
 
 .preferences-list li {
-  flex-basis: calc((100% - 160px) / 3);
-  background-color: var(--secondary-bg-color);
-  border-radius: 26% 74% 77% 23%/42% 28% 72% 58%;
+  background-color: #F5F5F5;
+  border-radius: 31% 69% 0% 100%/30% 98% 2% 70%;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .preferences-list li {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 160px) / 3);
+    border-radius: 26% 74% 77% 23%/42% 28% 72% 58%;
+    margin-bottom: 0px;
+  }
 }
 .preferences-list li::before {
   display: inline-block;
   content: "";
-  width: 108px;
-  height: 108px;
+  width: 88px;
+  height: 88px;
   background-size: contain;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .preferences-list li::before {
+    width: 108px;
+    height: 108px;
+  }
 }
 .preferences-list li:nth-child(1)::before {
   background-image: url("../../images/photost.svg");

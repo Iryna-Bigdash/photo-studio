@@ -1,8 +1,26 @@
+$breakpoint: (
+mobile: 480px,
+tablet:768px,
+desktop:1540px, 
+);
+
 .container {
+    // phone from 0 to 768px
+    max-width: 480px;
     padding-left: 20px;
     padding-right: 20px;
-
-    width: 1540px;
     margin: 0 auto;
-    outline: 2px solid red;
+    outline: 2px solid palevioletred;
+   
+    // min-width: 768px & >
+    @media screen and (min-width: 768px) {
+        max-width: 768px; 
+        outline: 2px solid orange;
+    }
+
+    // min-width: 1540px & >
+    @media screen and (min-width: 1540px){
+        max-width: 1540px;
+        outline: 2px solid red;
+    }
 }
