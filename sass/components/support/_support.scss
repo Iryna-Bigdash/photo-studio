@@ -35,3 +35,14 @@
 
     transition: fill 300ms $transition-func;
 }
+
+.contact-list{
+.item{
+    margin-bottom: 14px;
+}
+}
+
+.contact-link{
+    margin-left: 20px;
+    color: getColor(accent-color);
+}

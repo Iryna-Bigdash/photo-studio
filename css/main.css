@@ -366,6 +366,11 @@ button {
   color: #18A0FB;
 }
 
+.logo-img {
+  width: 32px;
+  height: 32px;
+}
+
 .site-nav {
   display: flex;
   gap: 10px;
@@ -1090,6 +1095,15 @@ button {
   width: 16px;
   height: 16px;
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-list .item {
+  margin-bottom: 14px;
+}
+
+.contact-link {
+  margin-left: 20px;
+  color: #18A0FB;
 }
 
 /* poster page */

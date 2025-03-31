@@ -214,13 +214,46 @@
 
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal" data-modal>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
-          quos, quisquam illum facere blanditiis similique sit dolores voluptate
-          eligendi, debitis ut recusandae omnis natus numquam consectetur
-          commodi minus maxime dolorum.
-        </p>
-        <button type="button" data-close-modal>X</button>
+        <h2 class="section-title modal-title">Ready to take a free trial?</h2>
+        <div class="form-wrapper">
+          <p class="form-title">Sign up for a free account</p>
+
+          <form class="js-speaker-form form" autocomplete="off">
+            <div class="input-row">
+
+              <div class="form-field">
+                <input type="text" name="user-name" id="user-name" placeholder=" "/>
+                <label for="user-name" class="form-label">First name</label>
+              </div>
+
+              <div class="form-field">
+                <input type="text" name="last-name" id="last-name" placeholder=" " />
+                <label for="last-name" class="form-label">Last name</label>
+              </div>
+
+            </div>
+
+            <div class="form-field">
+              <input name="phone" type="tel" id="phone" placeholder=" "/>
+              <label for="phone" class="form-label">Phone</label>
+            </div>
+
+            <div class="form-field">
+              <input type="email" name="email" id="email"  placeholder=" "/>
+              <label for="email" class="form-label">Email</label>
+            </div>
+
+            <div class="form-field">
+              <input type="password" name="password" id="password" placeholder=" " />
+              <label for="password" class="form-label">Create password</label>
+            </div>
+
+            <button type="submit" class="primary form-button">
+              Register
+            </button>
+          </form>
+        </div>
+        <button type="button" data-close-modal class="modal-close-btn">X</button>
       </div>
     </div>
 
@@ -281,7 +314,7 @@
 
           <div class="network-container">
             <p>Follow us:</p>
-            <ul class="network-list">
+            <ul class="network-list" id="network-list">
               <li>
                 <a href="https://github.com/" aria-label="github link">
                   <svg class="social-networks-icon">
