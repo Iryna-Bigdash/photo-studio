@@ -13,6 +13,10 @@
     border-radius: 31% 69% 0% 100% / 30% 98% 2% 70% ;
     margin-bottom: 40px;
 
+    // &:last-child{
+    //     margin-bottom: 0px;
+    // }
+
 
     @media screen and (min-width:768px) {
         @include flexed(80px, wrap);
@@ -21,7 +25,6 @@
         margin-bottom: 0px;   
     }
     
-
     &::before{
     display: inline-block;
     content: '';
@@ -48,6 +51,10 @@
     &:nth-child(3)::before{
         background-image: url('../../images/online-community.svg');
     }
+}
+
+.preferences-list li:last-child {
+    margin-bottom: 0px;
 }
 
 .preferences-thumb {

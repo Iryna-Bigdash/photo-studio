@@ -1,19 +1,21 @@
-.features-title {
-    @include font(24px, 700, 1.5, getColor(title-text-color)); 
-    margin-bottom: 24px;
-}
-
 .features-description {
     margin-bottom: 24px;
 }
 
-.features {
-    @include flexed(60px, wrap);
+.features-list {
+ 
+    @media screen and (min-width:768px) {
+        @include flexed(60px, wrap);
     column-gap: 148px;
+    }
 }
 
-.features li {
-    flex-basis: calc((100% - 148px) / 2);
+.features-list li {
+    margin-bottom: 40px;
+    
+    @media screen and (min-width:768px) {
+        flex-basis: calc((100% - 148px) / 2);        
+    }
 }
 
 .features-link {

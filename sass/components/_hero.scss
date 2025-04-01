@@ -1,12 +1,20 @@
-.hero {
-    text-align: center;
-}
-
 .hero-title {
-    @include font(56px, 400, 1.43, getColor(title-text-color)); 
+    @include font(46px, 400, 1.43, getColor(primary-white-color));
+
+    @media screen and (min-width:768px) {
+        @include font(56px, 400, 1.43, getColor(title-text-color));
+    }
+
     margin-bottom: 40px;
 }
 
 .section-hero {
-   @extend %section-hero;
+    @include section-hero(url('../../images/camera_612x612.jpg'),
+        getColor(title-text-color),
+        center);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
+
