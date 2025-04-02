@@ -1,18 +1,21 @@
 .signup {
-    display: flex;
-    align-items: center;
+    align-items: center; 
 
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
 }
 
 .signup-content {
-    width: 944px;
-}
-
-.signup-content p {
-    font-size: 36px;
+    max-width: 944px;
 }
 
 .signup-list {
     @include flexed(45px, null);
-    margin-left: auto;
+    justify-content: center;
+    
+    @media screen and (min-width:768px) {
+        @include flexed(45px, null);
+        margin-left: auto;
+    }
 }

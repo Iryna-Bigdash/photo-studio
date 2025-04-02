@@ -15,11 +15,13 @@
   </head>
 
   <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
       <nav class="container main-nav">
         <a class="logo" href="./index.html"
           ><img src="./images/logo.svg" alt="Logo" />photo</a
         >
+
+       <div class="hamburger-menu" data-hamburger-menu>
         <ul class="site-nav">
           <li><a href="./index.html" class="link current">Features</a></li>
           <li><a href="./pricing.html">Pricing</a></li>
@@ -49,7 +51,6 @@
           </li>
           <li><a href="./poster.html">Blurb</a></li>
         </ul>
-
         <ul class="auth-nav">
           <li>
             <a class="primary">
@@ -68,8 +69,22 @@
             </a>
           </li>
         </ul>
+      </div>
+
+        <div class="mob-hamburger">
+          <button class="hamburger-btn" 
+          data-menu-btn
+          aria-expanded="false">
+            <svg class="hamburger-icon" aria-label="switcher for mobile menu">
+              <use href="./images/sprite.svg#icon-open-menu" 
+              class="icon-open-menu"/>
+              <use href="./images/sprite.svg#icon-close-menu" 
+              class="icon-close-menu"/>
+            </svg>
+          </button>
+        </div>
       </nav>
-    </header> -->
+    </header>
     <main>
       <section class="section-hero section">
         <div class="container">
@@ -171,7 +186,7 @@
         </div>
       </section>
 
-      <!-- <section class="section no-padding">
+      <section class="section no-padding">
         <div class="container">
           <h2 class="section-title visually-hidden">Examples of our work</h2>
           <ul class="examples">
@@ -217,12 +232,12 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="section">
+      <section class="section">
         <div class="container centered">
-          <h2 class="section-title centered">You are in good company</h2>
-          <p class="section-description sub-title">
+          <h2 class="section-title client-title">You are in good company</h2>
+          <p class="sub-title">
             From small businesses to renowned brands, we’ve worked with a wide
             variety of clients, delivering exceptional results every time
           </p>
@@ -292,13 +307,13 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="section section-bg">
+      <section class="section section-bg">
         <div class="container signup">
           <div class="signup-content">
             <h2 class="section-title visually-hidden">Signup</h2>
-            <p>
+            <p class="sub-title">
               We offer a wide range of services and opportunities for
               photographers of all skill levels.
             </p>
@@ -308,10 +323,10 @@
             <a href="" class="secondary">Contact us</a>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="upper-footer">
           <ul class="flex-list">
@@ -368,7 +383,7 @@
           <p>&#169; Photo, Inc. 2025. We love our users</p>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal" data-modal>
@@ -425,5 +440,6 @@
 <script src="./scripts/send-form.js"></script>
     <script src="./scripts/fixed-header.js"></script>
     <script src="./scripts/modal.js"></script>
+    <script src="./scripts/mobile-menu.js"></script>
   </body>
 </html>

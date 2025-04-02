@@ -34,15 +34,21 @@
 }
 
 .section-description {
-    @include font(36px, null, 1.39, null);
-}
+    @include font(24px, null, 1.39, null);
 
-.section-description.sub-title {
-    margin-bottom: 80px;
+    @media screen and (min-width:768px) {
+        @include font(36px, null, 1.39, null);
+    }
 }
 
 .sub-title {
-    @include font(36px, null, 1.39, null);
+    @include font(24px, null, 1.39, null);
+    margin-bottom: 30px;
+
+    @media screen and (min-width:768px) {
+        @include font(36px, null, 1.39, null);
+        margin-bottom: 100px;
+    }
+
     max-width: 1392px;
-    margin-bottom: 100px;
 }

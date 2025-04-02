@@ -1,14 +1,28 @@
+.client-title{
+    text-align: center;
+}
+
 .client-list {
-    @include flexed(64px, wrap);
-    
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    @include flexed(20px, wrap);
+    justify-content: space-between;
+
+
+    @media screen and (min-width:768px) {
+        @include flexed(64px, wrap);
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .client-list li {
-    flex-basis: calc((100% - 192px)/4);
+    flex-basis: calc((100% - 40px)/2);
     border-radius: 4px;
+    
+    @media screen and (min-width:768px) {
+        flex-basis: calc((100% - 192px)/4);
+    }
+
 }
 
 .client-list li:hover .client-icon,

@@ -5,21 +5,40 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 48px;
+    padding-bottom: 20px;
     border-bottom: 1px solid;
+
+    @media screen and (min-width:768px){
+        padding-bottom: 48px;
+    }
 
 }
 
 .footer-bottom {
-    @include flexed(40px, nowrap);
+    @include flexed(20px, nowrap);
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 20px;
+
+    @media screen and (min-width:768px){
+        @include flexed(40px, nowrap);
+        padding-top: 80px;
+    }
+
+    >p{
+        font-size: 15px;
+
+        @media screen and (min-width:768px){
+            font-size: 18px;
+        }
+     }
 }
 
 .flex-list {
-    @include flexed(80px, wrap);
-
+    @media screen and (min-width:768px){
+        @include flexed(80px, wrap);
+    }
+ 
     li > a{
         @include font(15px, 700, 1.6, getColor(title-text-color)); 
     }

@@ -12,7 +12,7 @@
 }
 
 @mixin section-hero($bgr-image, $bgr-color, $text-align) {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), $bgr-image;
+    background-image: $bgr-image;
     background-color: $bgr-color;
     text-align: $text-align;
 }

@@ -3,7 +3,7 @@
 }
 
 .features-list {
- 
+
     @media screen and (min-width:768px) {
         @include flexed(60px, wrap);
     column-gap: 148px;
@@ -11,11 +11,24 @@
 }
 
 .features-list li {
-    margin-bottom: 40px;
+    padding: 20px;
+
+    :not(:last-child){
+        margin-bottom: 40px;
+    }
+   
+    &:nth-child(odd) { 
+        background-color: getColor(secondary-bg-color); 
+    }
     
     @media screen and (min-width:768px) {
         flex-basis: calc((100% - 148px) / 2);        
     }
+}
+
+.features-title {
+    @include font(24px, 700, 1.5, getColor(title-text-color)); 
+    margin-bottom: 24px;
 }
 
 .features-link {

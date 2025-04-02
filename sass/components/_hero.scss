@@ -2,19 +2,24 @@
     @include font(46px, 400, 1.43, getColor(primary-white-color));
 
     @media screen and (min-width:768px) {
-        @include font(56px, 400, 1.43, getColor(title-text-color));
+        @include font(56px, 400, 1.43, getColor(primary-white-color));
     }
 
     margin-bottom: 40px;
 }
 
 .section-hero {
-    @include section-hero(url('../../images/camera_612x612.jpg'),
+    @include section-hero(url('../../images/hero_small.png'),
         getColor(title-text-color),
         center);
 
+        @media screen and (min-width: 768px){
+            @include section-hero(url('../../images/hero-main.jpg'), null, null );
+            min-height: 500px; 
+        }
+
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 

@@ -5,7 +5,11 @@
 }
 
 .network-list {
-    @include flexed(21px, nowrap);
+    @include flexed(18px, nowrap);
+
+    @media screen and (min-width:768px) {
+        @include flexed(21px, nowrap);       
+    }
 }
 
 .network-list li {

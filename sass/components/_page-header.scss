@@ -1,5 +1,6 @@
 .page-header {
     position: fixed;
+    padding: 10px 0;
     width: 100%;
     top: 0;
     left: 0;
@@ -14,10 +15,15 @@
 
 .logo {
     @include flexed(12px, nowrap);
-    margin-right: 70px;
+    // margin-right: 70px;
+    @include font(22px, null, 1.14, getColor(title-text-color)); 
 
     font-family: Comfortaa, cursive;
-    @include font(28px, null, 1.14, getColor(title-text-color)); 
+
+    @media screen and (min-width:768px) {
+        @include font(28px, null, 1.14, getColor(title-text-color)); 
+        margin-right: 70px;
+    }
 
 
     &:hover, &:focus{
@@ -31,11 +37,17 @@
 }
 
 .site-nav {
-    @include flexed(10px, nowrap);
+
+    @media screen and (min-width:1540px) {
+        @include flexed(10px, nowrap);
+        margin-left: auto;
+    }
 }
 
 .site-nav li {
-    position: relative;
+
+    @media screen and (min-width:1540px) {
+        position: relative;
     display: inline-block;
 
     &:not(:last-child){
@@ -60,6 +72,8 @@
     &:focus::after{
         transform: scaleX(1);
     }
+    }
+    
 }
 
 .site-nav a {
@@ -67,7 +81,12 @@
     padding-top: 21px;
     padding-bottom: 21px;
 
-    @include font(15px, 500, 1.14, getColor(accent-color)); 
+    @include font(18px, 500, 1.14, getColor(accent-color)); 
+
+    @media screen and (min-width:1540px) {
+        @include font(15px, null, null, null);   
+    }
+
     transition: color 300ms $transition-func;
 
     &:hover,
@@ -114,14 +133,29 @@
 }
 
 .auth-nav {
-    @include flexed(12px, nowrap);
-    margin-left: auto;
+display: inline-block;
+margin-top: 150px;
 
+    @media screen and (min-width:1540px){
+        @include flexed(12px, nowrap);
+        margin-left: auto;
+        margin-top: 0px;
+    }
 }
 
 .auth-nav li a{
-    @include flexed(4px, nowrap);
+    @include flexed(10px, nowrap);
     align-items: center;
+
+    min-width: 159px;
+    margin-bottom: 20px;
+
+
+
+    @media screen and (min-width:1540px){
+        @include flexed(4px, nowrap);
+        margin-bottom: 0px;  
+    }
 }
 
 .auth-icon {
