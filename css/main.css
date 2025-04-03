@@ -543,21 +543,18 @@ button {
   fill: #fff;
 }
 
-.mob-hamburger {
-  margin-left: auto;
-}
-@media screen and (min-width: 1540px) {
-  .mob-hamburger {
-    display: none;
-  }
-}
-
 .hamburger-btn {
+  margin-left: auto;
   border: none;
   text-align: center;
   background-color: transparent;
   outline: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 4px;
+}
+@media screen and (min-width: 1540px) {
+  .hamburger-btn {
+    display: none;
+  }
 }
 
 .hamburger-icon {
@@ -587,6 +584,14 @@ button {
   background-color: antiquewhite;
   padding: 20px;
   text-align: center;
+}
+@media screen and (min-width: 1540px) {
+  .hamburger-menu {
+    position: static;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
 }
 .hamburger-menu.is-open {
   display: block;

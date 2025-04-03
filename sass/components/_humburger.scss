@@ -1,17 +1,16 @@
-.mob-hamburger{
-    margin-left: auto;
 
-    @media screen  and (min-width:1540px){
-        display: none;
-    }
-}
 
 .hamburger-btn {
+    margin-left: auto;
     border: none;
     text-align: center;
     background-color: transparent;
     outline: 1px solid getColor(primary-text-color);
     border-radius: 4px;
+
+    @media screen  and (min-width:1540px){
+        display: none;
+    }
 }
 
 .hamburger-icon{
@@ -42,6 +41,14 @@ display: block;
     background-color: antiquewhite;
     padding: 20px;
     text-align: center;
+
+    @media screen  and (min-width:1540px){
+        position: static;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+
+    }
 
     &.is-open{
         display: block;
