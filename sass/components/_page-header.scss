@@ -16,7 +16,7 @@
 .logo {
     @include flexed(12px, nowrap);
     // margin-right: 70px;
-    @include font(22px, null, 1.14, getColor(title-text-color)); 
+    @include font(28px, null, 1.14, getColor(title-text-color)); 
 
     font-family: Comfortaa, cursive;
 

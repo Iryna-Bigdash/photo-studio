@@ -19,10 +19,14 @@
    
     &:nth-child(odd) { 
         background-color: getColor(secondary-bg-color); 
+
+        @media screen and (min-width:768px){
+            background-color: transparent; 
+        }
     }
     
     @media screen and (min-width:768px) {
-        flex-basis: calc((100% - 148px) / 2);        
+        flex-basis: calc((100% - 148px) / 2);      
     }
 }
 

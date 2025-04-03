@@ -1,6 +1,7 @@
 .footer{
     padding: 20px 0;
 }
+
 .upper-footer {
     display: flex;
     align-items: center;
@@ -8,7 +9,7 @@
     padding-bottom: 20px;
     border-bottom: 1px solid;
 
-    @media screen and (min-width:768px){
+    @media screen and (min-width:1560px){
         padding-bottom: 48px;
     }
 
@@ -21,8 +22,12 @@
     padding-top: 20px;
 
     @media screen and (min-width:768px){
+        @include flexed(20px, nowrap);
+    }
+
+    @media screen and (min-width:1560px){
         @include flexed(40px, nowrap);
-        padding-top: 80px;
+        padding-top: 60px;
     }
 
     >p{
@@ -35,7 +40,8 @@
 }
 
 .flex-list {
-    @media screen and (min-width:768px){
+
+    @media screen and (min-width:1560px){
         @include flexed(80px, wrap);
     }
  
@@ -44,36 +50,86 @@
     }
 }
 
-
 .footer-upper {
     display: flex;
-    align-items: top;
-    padding-bottom: 60px;
+    justify-content: space-between;
+
+    @media screen and (min-width:768px){
+        padding-bottom: 40px; 
+    }
+
+    @media screen and (min-width:1560px){
+        padding-bottom: 60px; 
+    }
 
     border-bottom: 1px solid;
 }
 
+.footer-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.footer-menu.is-open {
+    max-height: 200px;
+}
+
 .footer-list {
-    display: flex;
-    column-gap: 80px;
-    margin-right: 140px;
-    margin-left: auto;
+    @media screen and (min-width:768px){
+        display: flex;
+        column-gap: 80px;
+    }
+
+    @media screen and (min-width:1540px) {
+        margin-right: 140px;
+        margin-left: auto;
+    }
 
     .item {
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     margin-left: auto;
+
+    @media screen and (min-width:768px){
+        margin-bottom: 0px;
     }
+    }
+      
+.is-open {
+        display: block;
+        max-height: 500px;
+      }
 
 }
 
 
 .footer-list .item h3 {
-    margin-bottom: 16px;
+    cursor: pointer;
+
+    @include font(17px, null, 1.6, rgba(0, 0, 0, 0.80));
+    @media screen and (min-width:768px){
+        margin-bottom: 16px;
+    }
+
 }
 
 .footer-list .item a {
     @include font(15px, null, 1.6, rgba(0, 0, 0, 0.80));
+    transition: color 300ms $transition-func;
+
+    &:hover{
+        color: getColor(accent-color);
+    }
+}
+
+.footer-signup{
+    display: none;
+
+    @media screen and (min-width:1540px) {
+        display: block;
+    }
 }
 
 .footer-signup .item a {
@@ -95,13 +151,21 @@
 }
 
 .bottom-footer {
+    padding-top: 32px; 
+    text-align: center;
+    @media screen and (min-width:768px) {
     display: flex;
     align-items: center;
-    padding-top: 32px;
+    }
 }
 
 .copyright {
+    margin-bottom: 20px;
     @include font(15px, null, 1.6, null);
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 0;
+    }
 }
 
 .company-card {
