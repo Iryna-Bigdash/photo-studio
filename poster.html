@@ -17,15 +17,17 @@
   <body>
     <header class="page-header">
       <nav class="container main-nav">
-        <a class="logo" href="./index.html"
+        <a class="logo" href="./poster.html"
           ><img src="./images/logo.svg" alt="Logo" />photo</a
         >
+
+       <div class="hamburger-menu" data-hamburger-menu id="hamburger-menu-container">
         <ul class="site-nav">
-          <li><a href="./index.html" class="link">Features</a></li>
-          <li><a href="./pricing.html" class="link">Pricing</a></li>
-          <li><a href="./сommunity.html" class="link">Community</a></li>
+          <li><a href="./index.html">Features</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./сommunity.html">Community</a></li>
           <li>
-            <a href="./support.html" class="link">Support</a>
+            <a href="./support.html">Support</a>
 
             <ul class="support-submenu">
               <li class="support-item">
@@ -49,10 +51,9 @@
           </li>
           <li><a href="./poster.html" class="link current">Blurb</a></li>
         </ul>
-
         <ul class="auth-nav">
           <li>
-            <a type="button" class="primary">
+            <a class="primary">
               <svg class="auth-icon icon-enter">
                 <use href="./images/icons.svg#icon-enter" />
               </svg>
@@ -68,6 +69,21 @@
             </a>
           </li>
         </ul>
+      </div>
+
+          <button class="hamburger-btn" 
+          data-menu-btn
+          aria-expanded="false"
+          artia-controls="menu-container"
+          >
+            <svg class="hamburger-icon" aria-label="switcher for mobile menu">
+              <use href="./images/sprite.svg#icon-open-menu" 
+              class="icon-open-menu"/>
+              <use href="./images/sprite.svg#icon-close-menu" 
+              class="icon-close-menu"/>
+            </svg>
+          </button>
+
       </nav>
     </header>
     <main>
@@ -261,7 +277,7 @@
       <div class="container">
         <div class="footer-upper">
           <div>
-            <a href="#" class="logo">
+            <a href="./poster.html" class="logo">
               <img src="./images/logo.svg" alt="" />
               photo</a
             >
@@ -355,5 +371,6 @@
     </footer>
     <script src="./scripts/fixed-header.js"></script>
     <script src="./scripts/modal.js"></script>
+    <script src="./scripts/mobile-menu.js"></script>
   </body>
 </html>
