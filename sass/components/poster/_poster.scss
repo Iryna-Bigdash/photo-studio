@@ -21,6 +21,12 @@
     color: rgba(0, 0, 0, 0.60);
 }
 
+.flex-container{
+    @media screen and (min-width:1540px) {
+        @include flexed(100px, nowrap);        
+    }
+}
+
 .poster-thumb {
     position: relative;
 }
@@ -37,9 +43,13 @@
 }
 
 .flex-thumb {
-    @include flexed(100px, nowrap);
     align-items: center;
-    margin-top: 100px;
+    margin-top: 40px;
+
+    @media screen and (min-width:1540px){
+        margin-top: 100px; 
+        @include flexed(100px, nowrap);
+    }
 }
 
 .preference-poster.list {
@@ -66,10 +76,15 @@ li{
 }
 
 .thumb-overlay {
+    margin-top: 40px;
     display: flex;
     width: 100%;
     position: relative;
     overflow: hidden;
+
+    @media screen and (min-width:1540px){
+        margin-top: 0px;
+    }
 }
 
 .overlay-text {
@@ -93,4 +108,10 @@ li{
 
 .thumb-overlay:hover .overlay-text {
     transform: translateY(0);
+}
+
+.overlay-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

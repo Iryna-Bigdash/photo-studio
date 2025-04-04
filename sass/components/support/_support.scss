@@ -31,7 +31,9 @@
 
 .contact-list{
 .item{
-    margin-bottom: 14px;
+    &:not(:last-child){
+        margin-bottom: 14px;
+    }
 }
 }
 
@@ -44,3 +46,17 @@
     @include flexed(84px, nowrap);
     align-items: center;
 }
+
+.support-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-list{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid getColor(secondary-bg-color);
+    border-bottom: 1px solid getColor(secondary-bg-color);    
+}
+
+

@@ -163,7 +163,6 @@
 }
 
 .bottom-footer {
-    padding-top: 32px;
     text-align: center;
 
     @media screen and (min-width:768px) {
@@ -173,7 +172,8 @@
 }
 
 .copyright {
-    margin-bottom: 20px;
+    padding: 14px 0;
+    
     @include font(15px, null, 1.6, null);
 
     @media screen and (min-width:768px) {

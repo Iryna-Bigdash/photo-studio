@@ -513,6 +513,7 @@ button {
   top: 100%;
   left: 0;
   min-width: 240px;
+  text-align: start;
   display: none;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -587,7 +588,6 @@ button {
   border: none;
   text-align: center;
   background-color: transparent;
-  outline: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 4px;
 }
 @media screen and (min-width: 1540px) {
@@ -663,7 +663,6 @@ button {
 @media screen and (min-width: 768px) {
   .section-hero {
     background-image: url("../../images/hero-main.jpg");
-    min-height: 500px;
   }
 }
 
@@ -1082,7 +1081,6 @@ button {
 }
 
 .bottom-footer {
-  padding-top: 32px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -1093,7 +1091,7 @@ button {
 }
 
 .copyright {
-  margin-bottom: 20px;
+  padding: 14px 0;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -1514,7 +1512,7 @@ button {
   }
 }
 
-.contact-list .item {
+.contact-list .item:not(:last-child) {
   margin-bottom: 14px;
 }
 
@@ -1528,6 +1526,18 @@ button {
   gap: 84px;
   flex-wrap: nowrap;
   align-items: center;
+}
+
+.support-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-list {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #F5F5F5;
+  border-bottom: 1px solid #F5F5F5;
 }
 
 /* poster page */
@@ -1552,6 +1562,14 @@ button {
   color: rgba(0, 0, 0, 0.6);
 }
 
+@media screen and (min-width: 1540px) {
+  .flex-container {
+    display: flex;
+    gap: 100px;
+    flex-wrap: nowrap;
+  }
+}
+
 .poster-thumb {
   position: relative;
 }
@@ -1568,11 +1586,16 @@ button {
 }
 
 .flex-thumb {
-  display: flex;
-  gap: 100px;
-  flex-wrap: nowrap;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 40px;
+}
+@media screen and (min-width: 1540px) {
+  .flex-thumb {
+    margin-top: 100px;
+    display: flex;
+    gap: 100px;
+    flex-wrap: nowrap;
+  }
 }
 
 .preference-poster.list {
@@ -1605,10 +1628,16 @@ button {
 }
 
 .thumb-overlay {
+  margin-top: 40px;
   display: flex;
   width: 100%;
   position: relative;
   overflow: hidden;
+}
+@media screen and (min-width: 1540px) {
+  .thumb-overlay {
+    margin-top: 0px;
+  }
 }
 
 .overlay-text {
@@ -1630,4 +1659,10 @@ button {
 
 .thumb-overlay:hover .overlay-text {
   transform: translateY(0);
+}
+
+.overlay-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

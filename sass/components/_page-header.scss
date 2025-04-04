@@ -112,9 +112,8 @@
     top: 100%;
     left: 0;
     min-width: 240px;
-
+    text-align: start;
     display: none;
-
     transition: background-color 300ms $transition-func;
 }
 
