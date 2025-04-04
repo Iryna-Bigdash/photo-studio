@@ -6,8 +6,6 @@ $colors: (
     'secondary-bg-color': #F5F5F5,
 );
 
-$test: red;
-
 @function getColor($key) {
     @return map-get($colors, $key);
 }

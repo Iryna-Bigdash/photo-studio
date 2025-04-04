@@ -32,3 +32,30 @@
     }
 }
 
+.button-icon {
+    @extend %button;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width:1540px) {
+    margin-left: 0;
+    margin-right: 0;
+    }
+
+   svg{
+    width: 20px;
+    height: 20px;
+    fill: getColor(primary-white-color);
+    transition: fill 300ms $transition-func;
+   };
+
+   &:hover{
+    svg{
+        fill: getColor(accent-color);
+    }
+   }
+}
+

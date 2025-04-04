@@ -21,13 +21,6 @@
     color: rgba(0, 0, 0, 0.60);
 }
 
-.flex-container {
-    @include flexed(54px, nowrap);
-    justify-content: space-between;
-    align-items: center;
-}
-
-
 .poster-thumb {
     position: relative;
 }
@@ -50,9 +43,22 @@
 }
 
 .preference-poster.list {
-    @include flexed(60px, wrap);
+    @include flexed(30px, wrap);
     flex-direction: column;
     text-align: left;
+
+li{
+    border-radius: 99% 1% 100% 0% / 100% 0% 100% 0% ;
+    background-color: getColor(secondary-bg-color);
+
+    @media screen and (min-width:1540px){
+        border-radius: none;
+        background-color: transparent;
+    }
+}
+    @media screen and (min-width:1540px){
+        @include flexed(60px, wrap); 
+    }
 }
 
 .preference-poster li h3 {

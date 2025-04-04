@@ -24,3 +24,11 @@ desktop:1540px,
         outline: 2px solid red;
     }
 }
+
+.container.flex {
+    @media screen and (min-width:1540px){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;   
+    }
+}

@@ -12,28 +12,21 @@
     }
 }
 
-.support-preference{
-    @include flexed(84px, nowrap);
-    align-items: center;
-}
-
 .support-register {
-    display: inline-flex;
     align-items: center;
-    gap: 4px;
-}
 
-.support-register:hover .icon-sent,
-.support-register:focus .icon-sent {
-    fill: getColor(accent-color);
-}
+    @media screen and (min-width:1540px) {
+        display: inline-flex;
+        gap: 24px;
+    }
 
-.icon-sent {
-    fill: getColor(primary-white-color);
-    width: 16px;
-    height: 16px;
+    img{
+        margin-bottom: 40px;
 
-    transition: fill 300ms $transition-func;
+        @media screen and (min-width:1540px){
+            margin-bottom: 0px;
+        }
+    }
 }
 
 .contact-list{
@@ -45,4 +38,9 @@
 .contact-link{
     margin-left: 20px;
     color: getColor(accent-color);
+}
+
+.support-preference{
+    @include flexed(84px, nowrap);
+    align-items: center;
 }

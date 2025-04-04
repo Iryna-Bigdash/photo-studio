@@ -1,4 +1,4 @@
-.footer{
+.footer {
     padding: 20px 0;
 }
 
@@ -9,7 +9,7 @@
     padding-bottom: 20px;
     border-bottom: 1px solid;
 
-    @media screen and (min-width:1560px){
+    @media screen and (min-width:1560px) {
         padding-bottom: 48px;
     }
 
@@ -21,32 +21,31 @@
     align-items: center;
     padding-top: 20px;
 
-    @media screen and (min-width:768px){
+    @media screen and (min-width:768px) {
         @include flexed(20px, nowrap);
     }
 
-    @media screen and (min-width:1560px){
+    @media screen and (min-width:1560px) {
         @include flexed(40px, nowrap);
         padding-top: 60px;
     }
 
-    >p{
+    >p {
         font-size: 15px;
 
-        @media screen and (min-width:768px){
+        @media screen and (min-width:768px) {
             font-size: 18px;
         }
-     }
+    }
 }
 
 .flex-list {
-
-    @media screen and (min-width:1560px){
+    @media screen and (min-width:1560px) {
         @include flexed(80px, wrap);
     }
- 
-    li > a{
-        @include font(15px, 700, 1.6, getColor(title-text-color)); 
+
+    li>a {
+        @include font(15px, 700, 1.6, getColor(title-text-color));
     }
 }
 
@@ -54,12 +53,12 @@
     display: flex;
     justify-content: space-between;
 
-    @media screen and (min-width:768px){
-        padding-bottom: 40px; 
+    @media screen and (min-width:768px) {
+        padding-bottom: 40px;
     }
 
-    @media screen and (min-width:1560px){
-        padding-bottom: 60px; 
+    @media screen and (min-width:1560px) {
+        padding-bottom: 60px;
     }
 
     border-bottom: 1px solid;
@@ -76,7 +75,7 @@
 }
 
 .footer-list {
-    @media screen and (min-width:768px){
+    @media screen and (min-width:768px) {
         display: flex;
         column-gap: 80px;
     }
@@ -87,75 +86,89 @@
     }
 
     .item {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
 
-    @media screen and (min-width:768px){
-        margin-bottom: 0px;
+        @media screen and (min-width:768px) {
+            margin-bottom: 0px;
+        }
     }
-    }
-      
-.is-open {
+
+    .is-open {
         display: block;
         max-height: 500px;
-      }
+    }
 
 }
 
 
-.footer-list .item h3 {
+.footer-list .item {
     cursor: pointer;
 
-    @include font(17px, null, 1.6, rgba(0, 0, 0, 0.80));
-    @media screen and (min-width:768px){
-        margin-bottom: 16px;
+    h3 {
+        @include font(17px, null, 1.6, rgba(0, 0, 0, 0.80));
+        transition: color 300ms $transition-func;
+
+        @media screen and (min-width:768px) {
+            margin-bottom: 16px;
+        }
+
+        &:hover {
+            color: getColor(accent-color);
+        }
     }
 
+    a {
+        @include font(15px, null, 1.6, rgba(0, 0, 0, 0.80));
+        transition: color 300ms $transition-func;
+    
+        &:hover {
+            color: getColor(accent-color);
+        }
+
+}
 }
 
-.footer-list .item a {
-    @include font(15px, null, 1.6, rgba(0, 0, 0, 0.80));
-    transition: color 300ms $transition-func;
 
-    &:hover{
-        color: getColor(accent-color);
-    }
-}
-
-.footer-signup{
+.footer-signup {
     display: none;
 
     @media screen and (min-width:1540px) {
         display: block;
     }
-}
 
-.footer-signup .item a {
-    @include flexed(4px, nowrap);
-}
+    .item {
+        a {
+            @include flexed(4px, nowrap);
+        }
 
-.footer-signup .item:hover .icon-register,
-.footer-signup .item:focus .icon-register {
-    fill: getColor(primary-white-color);
-}
+        &:first-child{
+            margin-bottom: 16px;
+        }
 
-.footer-signup .item:hover .icon-enter,
-.footer-signup .item:focus .icon-enter {
-    fill: getColor(accent-color);
-}
+        &:hover,
+        &:focus{
+            .icon-register,
+            .icon-register,
+            .icon-enter,
+            .icon-enter{
+                fill: getColor(primary-white-color);
+            }
+        }
+        
+    }
 
-.footer-signup .item:first-child {
-    margin-bottom: 16px;
 }
 
 .bottom-footer {
-    padding-top: 32px; 
+    padding-top: 32px;
     text-align: center;
+
     @media screen and (min-width:768px) {
-    display: flex;
-    align-items: center;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -166,20 +179,4 @@
     @media screen and (min-width:768px) {
         margin-bottom: 0;
     }
-}
-
-.company-card {
-    border: 1px solid rgba(0, 0, 0, 0.50);
-    background: getColor(primary-white-color);
-    max-width: 686px;
-}
-
-
-.container.flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-link  {
-    @include font(15px, 700, 1.6, getColor(title-text-color));
 }

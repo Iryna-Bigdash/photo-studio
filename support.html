@@ -100,7 +100,7 @@
           <h2 class="section-title centered-title">
             The largest community of photo enthusiasts
           </h2>
-          <form class="flex-form js-speaker-form" autocomplete="off">
+          <form class="flex-form js-speaker-form" autocomplete="on">
 
             <div class="form-field">
             <input type="text" name="user-name" placeholder=" " id="name" />
@@ -122,7 +122,7 @@
           </div>
             <button
                 type="submit"
-                class="primary support-register form-button"
+                class="primary form-button"
               >
                 Register
               </button>
@@ -137,13 +137,12 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore
           </p>
-          <div class="support-preference">
+          <div class="support-register">
             <img src="./images/portret-photo.jpg" width="830" height="740" alt=""/>
           <ul class="preference-poster list">
             <li>
               <h3>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur.Sed ut perspiciatis
+               Sed ut perspiciatis
               </h3>
               <p>
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
@@ -171,15 +170,16 @@
       </section>
 
       <section class="section">
-        <div class="container flex-container">
-          <h2 class="hero-title">
-            The largest community<br />of photo enthusiasts
+        <div class="container flex">
+          <h2 class="section-title">
+            The largest community
+            <br />
+            of photo enthusiasts
           </h2>
           <div class="form-wrapper support">
-            <p class="form-title">Sign up for a free account</p>
-            <form class="js-speaker-form form" autocomplete="off">
+            <p class="form-title">We are happy to contact</p>
+            <form class="js-contact-form form" autocomplete="on">
               <div class="input-row">
-
                 <div class="form-field">
                   <input type="text" name="user-name" id="user-name" placeholder=" "/>
                   <label for="user-name" class="form-label">First name</label>
@@ -203,18 +203,26 @@
               </div>
   
               <div class="form-field">
-                <input type="password" name="password" id="password" placeholder=" " />
-                <label for="password" class="form-label">Create password</label>
+                <textarea 
+                  name="message" 
+                  id="text-aria" 
+                  placeholder="Write your massage" 
+                  maxlength="350"
+                  rows="10"
+                ></textarea>
               </div>
 
               <button
                 type="submit"
-                class="primary support-register form-button"
+                class="primary form-button button-icon"
               >
                 <svg class="icon-sent">
                   <use href="./images/icons.svg#icon-compass" />
                </svg>
+               <span>
                 Send
+               </span>
+          
               </button>
             </form>
           </div>
@@ -227,9 +235,32 @@
           ><img src="./images/logo.svg" alt="Logo" class="logo-img"/>photo</a
         >
         <ul class="footer-list">
-          <li><a href="" class="footer-link">Mobile app</a></li>
-          <li><a href="" class="footer-link">Community</a></li>
-          <li><a href="" class="footer-link">Company</a></li>
+          <li class="item">
+            <h3>Mobile app</h3>
+            <ul class="footer-menu">
+              <li><a href="">Features</a></li>
+              <li><a href="">Live share</a></li>
+              <li><a href="">Video record</a></li>
+            </ul>
+          </li>
+
+          <li class="item">
+            <h3>Community</h3>
+            <ul class="footer-menu">
+              <li><a href="">Featured artists</a></li>
+              <li><a href="">The Portal</a></li>
+              <li><a href="">Live events</a></li>
+            </ul>
+          </li>
+
+          <li class="item">
+            <h3>Company</h3>
+            <ul class="footer-menu">
+              <li><a href="">About us</a></li>
+              <li><a href="">Contact us</a></li>
+              <li><a href="">History</a></li>
+            </ul>
+          </li>
         </ul>
         <div>
 
@@ -248,7 +279,9 @@
     </footer>
 
     <script src="./scripts/send-form.js"></script>
+    <script src="./scripts/contact-form.js"></script>
     <script src="./scripts/fixed-header.js"></script>
     <script src="./scripts/mobile-menu.js"></script>
+    <script src="./scripts/footer-munu.js"></script>
   </body>
 </html>

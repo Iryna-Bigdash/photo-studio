@@ -46,6 +46,12 @@
     margin-right: 148px;
 }
 
+.company-card {
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    background: getColor(primary-white-color);
+    max-width: 686px;
+}
+
 .flex-company {
     @include flexed(84px, nowrap);
     justify-content: space-between;

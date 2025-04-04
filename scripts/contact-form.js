@@ -1,6 +1,6 @@
 (() => {
     document
-      .querySelector('.js-speaker-form')
+      .querySelector('.js-contact-form')
       .addEventListener('submit', e => {
         e.preventDefault();
 
