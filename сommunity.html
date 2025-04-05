@@ -12,11 +12,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="dist/css/main.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  
   </head>
   <body>
     <header class="page-header">
       <nav class="container main-nav">
-        <a class="logo" href="./сommunity.html"
+        <a class="logo" href="./community.html"
           ><img src="./images/logo.svg" alt="Logo" />photo</a
         >
 
@@ -24,7 +29,7 @@
         <ul class="site-nav">
           <li><a href="./index.html">Features</a></li>
           <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./сommunity.html" class="link current">Community</a></li>
+          <li><a href="./community.html" class="link current">Community</a></li>
           <li>
             <a href="./support.html">Support</a>
 
@@ -73,7 +78,7 @@
           <button class="hamburger-btn" 
           data-menu-btn
           aria-expanded="false"
-          artia-controls="menu-container"
+          aria-controls="menu-container"
           >
             <svg class="hamburger-icon" aria-label="switcher for mobile menu">
               <use href="./images/sprite.svg#icon-open-menu" 
@@ -96,9 +101,39 @@
         </div>
       </section>
 
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Snap photos and share like never before</h2>
+          <ul class="community-set">
+            <li>
+              <div class="community-content">
+                <h3>Sed ut perspiciatis</h3>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione voluptatem sequi nesciunt. Neque porro quisquam est.
+                </p>
+              </div>
+              <a href="" class="primary">Learn more</a>
+            </li>
+            <li>
+              <div class="community-content">
+                <h3>Sed ut perspiciatis</h3>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione voluptatem sequi nesciunt. Neque porro quisquam est.
+                </p>
+              </div>
+              <a href="" class="primary">Learn more</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section class="section no-padding">
         <div class="container">
-          <h2 class="section-title cards">
+          <h2 class="section-title">
             Snap photos and share like never before
           </h2>
           <p class="cards sub-title">
@@ -207,7 +242,7 @@
         <div class="container flex-company">
           <div class="company-right">
             <h2 class="section-title">You’re in good company</h2>
-            <p class="section-description sub-title">
+            <p class="sub-title">
               Lorem ipsum dolor sit amet, consectetur <br />
               adipiscing elit, sed do eiusmod tempor incididunt ut labore
             </p>
@@ -260,7 +295,7 @@
 
           <article class="company-card">
             <div class="card-thumb">
-              <img src="./images/good-company.jpg" alt="" class="card-img" />
+              <img src="./images/good-company.jpg" alt="" class="card-img"/>
             </div>
             <div class="card-content">
               <h3>Sed ut perspiciatis unde omnis</h3>
@@ -275,48 +310,138 @@
         </div>
       </section>
 
-      <section class="section section-bg">
-        <div class="container signup">
-          <div class="signup-content right-margin">
-            <h2 class="section-title visually-hidden">Signup</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore
-            </p>
+      <section class="section no-padding">
+        <div class="container">
+          <h2 class="section-title">Your reviews</h2>
+      
+          <div class="swiper reviews-swiper">
+            <ul class="swiper-wrapper reviews-set">
+              <li class="swiper-slide">
+                <img
+                src="https://i.pravatar.cc/100?img=1"
+                alt="User"
+                class="reviews-icon"
+              />
+                <div class="reviews-content">
+                  <h3>Name Surname</h3>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                    aut fugit.
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/example-1.webp" alt="" class="reviews-icon" />
+                <div class="reviews-content">
+                  <h3>Name Surname</h3>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                    aut fugit.
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img
+                src="https://i.pravatar.cc/100?img=2"
+                alt="User"
+                class="reviews-icon"
+              />
+                   <div class="reviews-content">
+                  <h3>Name Surname</h3>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                    aut fugit.
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/example-1.webp" alt="" class="reviews-icon" />
+                <div class="reviews-content">
+                  <h3>Name Surname</h3>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                    aut fugit.
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/example-1.webp" alt="" class="reviews-icon" />
+                <div class="reviews-content">
+                  <h3>Name Surname</h3>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                    aut fugit.
+                  </p>
+                </div>
+              </li>
+            </ul>
+      
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
           </div>
-          <a href="" class="primary">Join Today</a>
+        </div>
+      </section>
+      
+      <section class="section section-bg">
+        <div class="container flex">
+          <h2 class="section-title">
+            The largest community
+            <br />
+            of photo enthusiasts
+          </h2>
+          <div class="form-wrapper support">
+            <p class="form-title">We are happy to contact</p>
+            <form class="js-contact-form form" autocomplete="on">
+              <div class="input-row">
+                <div class="form-field">
+                  <input type="text" name="user-name" id="user-name" placeholder=" "/>
+                  <label for="user-name" class="form-label">First name</label>
+                </div>
+  
+                <div class="form-field">
+                  <input type="text" name="last-name" id="last-name" placeholder=" " />
+                  <label for="last-name" class="form-label">Last name</label>
+                </div>
+  
+              </div>
+  
+              <div class="form-field">
+                <input name="phone" type="tel" id="phone" placeholder=" "/>
+                <label for="phone" class="form-label">Phone</label>
+              </div>
+  
+              <div class="form-field">
+                <input type="email" name="email" id="email"  placeholder=" "/>
+                <label for="email" class="form-label">Email</label>
+              </div>
+  
+              <div class="form-field">
+                <textarea 
+                  name="message" 
+                  id="text-aria" 
+                  placeholder="Write your massage" 
+                  maxlength="350"
+                  rows="10"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="primary form-button button-icon"
+              >
+                <svg class="icon-sent">
+                  <use href="./images/icons.svg#icon-compass" />
+               </svg>
+               <span>
+                Send
+               </span>
+          
+              </button>
+            </form>
+          </div>
         </div>
       </section>
 
-      <section class="section no-padding">
-        <div class="container">
-          <h2 class="section-title">Snap photos and share like never before</h2>
-          <ul class="community-set">
-            <li>
-              <div class="community-content">
-                <h3>Sed ut perspiciatis</h3>
-                <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit aut fugit, sed quia consequuntur magni dolores eos qui
-                  ratione voluptatem sequi nesciunt. Neque porro quisquam est.
-                </p>
-              </div>
-              <a href="" class="primary">Learn more</a>
-            </li>
-            <li>
-              <div class="community-content">
-                <h3>Sed ut perspiciatis</h3>
-                <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit aut fugit, sed quia consequuntur magni dolores eos qui
-                  ratione voluptatem sequi nesciunt. Neque porro quisquam est.
-                </p>
-              </div>
-              <a href="" class="primary">Learn more</a>
-            </li>
-          </ul>
-        </div>
-      </section>
 
       <!-- <section class="section no-padding">
         <div class="container">
@@ -327,34 +452,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
             minima quod atque repellat laboriosam cupiditate corporis harum!
           </p>
-          <ul class="work-list">
-            <li class="item">
-              <img
-                src="./images/rectangle.jpg"
-                alt=""
-                width="686"
-                height="400"
-              />
-              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus autem aliquam ex tenetur asperiores quam odit.
-              </p>
-            </li>
-            <li class="item">
-              <img
-                src="./images/rectangle.jpg"
-                alt=""
-                width="686"
-                height="400"
-              />
-              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus autem aliquam ex tenetur asperiores quam odit.
-              </p>
-            </li>
-          </ul>
+       
         </div>
       </section> -->
     </main>
@@ -463,5 +561,7 @@
     <script src="./scripts/fixed-header.js"></script>
     <script src="./scripts/mobile-menu.js"></script>
     <script src="./scripts/footer-munu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/reviews-swiper.js"></script>
   </body>
 </html>
