@@ -141,7 +141,7 @@
 
     .item {
         a {
-            @include flexed(4px, nowrap);
+            @include flexed(10px, nowrap);
         }
 
         &:first-child{
@@ -151,10 +151,16 @@
         &:hover,
         &:focus{
             .icon-register,
-            .icon-register,
+            .icon-register{
+                fill: getColor(primary-white-color);
+            }
+        }
+
+        &:hover,
+        &:focus{
             .icon-enter,
             .icon-enter{
-                fill: getColor(primary-white-color);
+                fill: getColor(accent-color);
             }
         }
         

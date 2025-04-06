@@ -16,22 +16,23 @@
 .logo {
     @include flexed(12px, nowrap);
     // margin-right: 70px;
-    @include font(28px, null, 1.14, getColor(title-text-color)); 
+    @include font(28px, null, 1.14, getColor(title-text-color));
 
     font-family: Comfortaa, cursive;
 
     @media screen and (min-width:768px) {
-        @include font(28px, null, 1.14, getColor(title-text-color)); 
+        @include font(28px, null, 1.14, getColor(title-text-color));
         margin-right: 70px;
     }
 
 
-    &:hover, &:focus{
+    &:hover,
+    &:focus {
         color: getColor(accent-color);
     }
 }
 
-.logo-img{
+.logo-img {
     width: 32px;
     height: 32px;
 }
@@ -45,35 +46,34 @@
 }
 
 .site-nav li {
-
     @media screen and (min-width:1540px) {
         position: relative;
-    display: inline-block;
+        display: inline-block;
 
-    &:not(:last-child){
-        margin-right: 40px; 
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+
+        &::after {
+            content: ' ';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: getColor(title-text-color);
+            border-radius: 4px;
+            transform: scaleX(0);
+
+            transition: transform 300ms $transition-func;
+        }
+
+        &:hover::after,
+        &:focus::after {
+            transform: scaleX(1);
+        }
     }
 
-    &::after{
-    content: ' ';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: getColor(title-text-color);
-    border-radius: 4px;
-    transform: scaleX(0);
-
-    transition: transform 300ms $transition-func;
-    }
-
-    &:hover::after,
-    &:focus::after{
-        transform: scaleX(1);
-    }
-    }
-    
 }
 
 .site-nav a {
@@ -81,16 +81,16 @@
     padding-top: 21px;
     padding-bottom: 21px;
 
-    @include font(18px, 500, 1.14, getColor(accent-color)); 
+    @include font(18px, 500, 1.14, getColor(accent-color));
 
     @media screen and (min-width:1540px) {
-        @include font(15px, null, null, null);   
+        @include font(15px, null, null, null);
     }
 
     transition: color 300ms $transition-func;
 
     &:hover,
-    &:focus{
+    &:focus {
         color: getColor(title-text-color);
     }
 }
@@ -99,11 +99,14 @@
     color: getColor(title-text-color);
 }
 
-.centered-title{
+.centered-title {
     text-align: center;
 }
 
 .support-submenu {
+    display: none;
+
+    @media screen and (min-width:map-get($breakpoint, desktop)){
     position: absolute;
     padding: 10px;
     border-radius: 4px;
@@ -115,11 +118,9 @@
     text-align: start;
     display: none;
     transition: background-color 300ms $transition-func;
-}
 
-.support-submenu{
     .site-nav li:hover &,
-    .site-nav li:focus &{
+    .site-nav li:focus & {
         display: block;
     }
 
@@ -127,33 +128,29 @@
         color: getColor(primary-white-color);
         padding: 14px;
     }
-      
-
+    } 
 }
 
 .auth-nav {
-display: inline-block;
-margin-top: 150px;
+    display: inline-block;
+    margin-top: 150px;
 
-    @media screen and (min-width:1540px){
+    @media screen and (min-width:1540px) {
         @include flexed(12px, nowrap);
         margin-left: auto;
         margin-top: 0px;
     }
-}
 
-.auth-nav li a{
-    @include flexed(10px, nowrap);
-    align-items: center;
-
-    min-width: 159px;
-    margin-bottom: 20px;
-
-
-
-    @media screen and (min-width:1540px){
-        @include flexed(4px, nowrap);
-        margin-bottom: 0px;  
+    li a {
+        @include flexed(10px, nowrap);
+        align-items: center;
+        justify-content: center;
+        min-width: 159px;
+        margin-bottom: 20px;
+    
+        @media screen and (min-width:1540px) {
+            margin-bottom: 0px;
+        }
     }
 }
 
@@ -185,6 +182,3 @@ margin-top: 150px;
 .auth-nav li:focus .icon-register {
     fill: getColor(primary-white-color);
 }
-
-
-

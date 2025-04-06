@@ -73,13 +73,13 @@ max-width: 450px;
     @media screen and (min-width:1540px){
         @include flexed(10px, null);
     }
-}
 
-.input-row input {
-    @media screen and (min-width:1540px){
-        flex: 1;
-        width: calc(492px /2 )- 5px;
-    }
+    input {
+        @media screen and (min-width:1540px){
+            flex: 1;
+            width: calc(492px /2 )- 5px;
+        }  
+}
 }
 
 .form-wrapper.support {
