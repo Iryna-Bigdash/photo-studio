@@ -1,16 +1,13 @@
-.section.support{
-    // @extend %section-hero;
-    background: black;
-    background-image:
-        url('../../images/camera.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+.section-hero.support{
+        @include section-hero(url('../../images/camera.jpg'),
+            getColor(title-text-color),
+            center);   
+}
 
     .hero-title{
         color: white;
     }
-}
+
 
 .support-register {
     align-items: center;

@@ -4,9 +4,15 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: getColor(primary-white-color);
+    right: 0;
+    background-color: transparent;
     z-index: 999;
-}
+    transition: background-color 0.3s ease;
+  }
+  
+  .page-header.white-bg {
+    background-color: getColor(primary-white-color);
+  }
 
 .main-nav {
     display: flex;

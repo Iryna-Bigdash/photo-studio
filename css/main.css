@@ -615,8 +615,14 @@ button {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #fff;
+  right: 0;
+  background-color: transparent;
   z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+.page-header.white-bg {
+  background-color: #fff;
 }
 
 .main-nav {
@@ -856,6 +862,7 @@ button {
   background-image: url("../../images/hero_small.png");
   background-color: #000;
   text-align: center;
+  padding-bottom: 120px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -863,6 +870,7 @@ button {
 @media screen and (min-width: 768px) {
   .section-hero {
     background-image: url("../../images/hero-main.jpg");
+    padding-bottom: 180px;
   }
 }
 
@@ -1379,12 +1387,9 @@ button {
 }
 
 .community-hero {
-  background-image: url("../../images/camera_612x612.jpg");
+  background-image: url("../../images/camera.jpg");
   background-color: #000;
   text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .card-set {
@@ -1579,14 +1584,13 @@ button {
   color: #444;
 }
 
-.section.support {
-  background: black;
+.section-hero.support {
   background-image: url("../../images/camera.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-color: #000;
+  text-align: center;
 }
-.section.support .hero-title {
+
+.hero-title {
   color: white;
 }
 

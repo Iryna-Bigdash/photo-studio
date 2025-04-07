@@ -12,11 +12,13 @@
     @include section-hero(url('../../images/hero_small.png'),
         getColor(title-text-color),
         center);
+        padding-bottom: 120px;
 
         @media screen and (min-width: 768px){
             @include section-hero(url('../../images/hero-main.jpg'), null, null );
+            padding-bottom: 180px;
         }
-
+        
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,10 +1,5 @@
 .community-hero {
-        @include section-hero(url('../../images/camera_612x612.jpg'),
+        @include section-hero(url('../../images/camera.jpg'),
             getColor(title-text-color),
-            center);
-    
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-    
+            center);    
 }

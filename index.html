@@ -20,73 +20,81 @@
           ><img src="./images/logo.svg" alt="Logo" />photo</a
         >
 
-       <div class="hamburger-menu" data-hamburger-menu id="hamburger-menu-container">
-        <ul class="site-nav">
-          <li><a href="./index.html" class="link current">Features</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./сommunity.html">Community</a></li>
-          <li>
-            <a href="./support.html">Support</a>
+        <div
+          class="hamburger-menu"
+          data-hamburger-menu
+          id="hamburger-menu-container"
+        >
+          <ul class="site-nav">
+            <li><a href="./index.html" class="link current">Features</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
+            <li><a href="./сommunity.html">Community</a></li>
+            <li>
+              <a href="./support.html">Support</a>
 
-            <ul class="support-submenu">
-              <li class="support-item">
-                <a href="#network-list" class="support-link"
-                  >contact by networks</a
-                >
-              </li>
+              <ul class="support-submenu">
+                <li class="support-item">
+                  <a href="#network-list" class="support-link"
+                    >contact by networks</a
+                  >
+                </li>
 
-              <li class="support-item">
-                <a href="tel:+1234567890" class="support-link"
-                  >contact by phone</a
-                >
-              </li>
+                <li class="support-item">
+                  <a href="tel:+1234567890" class="support-link"
+                    >contact by phone</a
+                  >
+                </li>
 
-              <li class="support-item">
-                <a href="mailto:imbigdash@email.com" class="support-link"
-                  >contact by email</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li><a href="./poster.html">Blurb</a></li>
-        </ul>
-        <ul class="auth-nav">
-          <li>
-            <a class="primary">
-              <svg class="auth-icon icon-enter">
-                <use href="./images/icons.svg#icon-enter" />
-              </svg>
-              <span>Login</span>
-            </a>
-          </li>
-          <li>
-            <a class="secondary">
-              <svg class="auth-icon icon-register">
-                <use href="./images/icons.svg#icon-user-plus" />
-              </svg>
-              Register
-            </a>
-          </li>
-        </ul>
-      </div>
+                <li class="support-item">
+                  <a href="mailto:imbigdash@email.com" class="support-link"
+                    >contact by email</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="./poster.html">Blurb</a></li>
+          </ul>
+          <ul class="auth-nav">
+            <li>
+              <a class="primary">
+                <svg class="auth-icon icon-enter">
+                  <use href="./images/icons.svg#icon-enter" />
+                </svg>
+                <span>Login</span>
+              </a>
+            </li>
+            <li>
+              <a class="secondary">
+                <svg class="auth-icon icon-register">
+                  <use href="./images/icons.svg#icon-user-plus" />
+                </svg>
+                Register
+              </a>
+            </li>
+          </ul>
+        </div>
 
-          <button class="hamburger-btn" 
+        <button
+          class="hamburger-btn"
           data-menu-btn
           aria-expanded="false"
           artia-controls="menu-container"
-          >
-            <svg class="hamburger-icon" aria-label="switcher for mobile menu">
-              <use href="./images/sprite.svg#icon-open-menu" 
-              class="icon-open-menu"/>
-              <use href="./images/sprite.svg#icon-close-menu" 
-              class="icon-close-menu"/>
-            </svg>
-          </button>
-
+        >
+          <svg class="hamburger-icon" aria-label="switcher for mobile menu">
+            <use
+              href="./images/sprite.svg#icon-open-menu"
+              class="icon-open-menu"
+            />
+            <use
+              href="./images/sprite.svg#icon-close-menu"
+              class="icon-close-menu"
+            />
+          </svg>
+        </button>
       </nav>
     </header>
     <main>
-      <section class="section-hero section">
+      <section class="section-hero">
         <div class="container">
           <h1 class="hero-title">The largest community of photo enthusiast</h1>
           <button class="primary" data-open-modal>Join Today</button>
@@ -232,6 +240,53 @@
             </li>
           </ul>
         </div>
+      </section>
+
+      <section class="price">
+        <div class="container">
+        <p>Spend your time with the best masters</p>
+        <h2>Services and prices</h2>
+
+        <ul>
+          <li>
+          <p>Some service</p>
+          <p>from 200£</p>
+        </li>
+        <li>
+          <p>Some service</p>
+          <p>from 300£</p>         
+        </li>
+        <li>
+          <p>Some service</p>
+          <p>from 400£</p>
+        </li>
+        <li>
+          <p>Some service</p>
+          <p>from 500£</p>
+        </li>
+
+        </ul>
+        <ul>
+          <li>
+            <p>Some service</p>
+            <p>from 200£</p>
+          </li>
+          <li>
+            <p>Some service</p>
+            <p>from 200£</p>
+          </li>
+          <li>
+            <p>Some service</p>
+            <p>from 200£</p>
+          </li>
+          <li>
+            <p>Some service</p>
+            <p>from 200£</p>
+          </li>
+        </ul>
+
+        <a href="tel:+111111111" class="primary">Booking</a>
+      </div>
       </section>
 
       <section class="section">
@@ -388,7 +443,7 @@
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal" data-modal>
         <h2 class="section-title modal-title">Ready to take a free trial?</h2>
-        <p class="sub-title sub-title">
+        <p class="sub-title">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore
         </p>
@@ -398,46 +453,57 @@
 
           <form class="js-speaker-form form" autocomplete="off">
             <div class="input-row">
-
               <div class="form-field">
-                <input type="text" name="user-name" id="user-name" placeholder=" "/>
+                <input
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  placeholder=" "
+                />
                 <label for="user-name" class="form-label">First name</label>
               </div>
 
               <div class="form-field">
-                <input type="text" name="last-name" id="last-name" placeholder=" " />
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder=" "
+                />
                 <label for="last-name" class="form-label">Last name</label>
               </div>
-
             </div>
 
             <div class="form-field">
-              <input name="phone" type="tel" id="phone" placeholder=" "/>
+              <input name="phone" type="tel" id="phone" placeholder=" " />
               <label for="phone" class="form-label">Phone</label>
             </div>
 
             <div class="form-field">
-              <input type="email" name="email" id="email"  placeholder=" "/>
+              <input type="email" name="email" id="email" placeholder=" " />
               <label for="email" class="form-label">Email</label>
             </div>
 
             <div class="form-field">
-              <input type="password" name="password" id="password" placeholder=" " />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder=" "
+              />
               <label for="password" class="form-label">Create password</label>
             </div>
 
-            <button type="submit" class="primary form-button">
-              Register
-            </button>
+            <button type="submit" class="primary form-button">Register</button>
           </form>
         </div>
 
         <button type="button" data-close-modal class="modal-close-btn">
-         <span>X</span>
+          <span>X</span>
         </button>
       </div>
     </div>
-<script src="./scripts/send-form.js"></script>
+    <script src="./scripts/send-form.js"></script>
     <script src="./scripts/fixed-header.js"></script>
     <script src="./scripts/modal.js"></script>
     <script src="./scripts/mobile-menu.js"></script>
