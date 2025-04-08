@@ -20,7 +20,6 @@ function adjustHeroPadding() {
   
     const heroBottom = hero.getBoundingClientRect().bottom;
   
-    // Якщо нижній край герою менше або дорівнює висоті хедера → додаємо клас
     if (heroBottom <= header.offsetHeight) {
       header.classList.add('white-bg');
     } else {
@@ -30,8 +29,9 @@ function adjustHeroPadding() {
   
   window.addEventListener('DOMContentLoaded', () => {
     adjustHeroPadding();
-    handleScroll(); // одразу перевірити
+    handleScroll();
   });
+  
   window.addEventListener('resize', adjustHeroPadding);
   window.addEventListener('scroll', handleScroll);
   

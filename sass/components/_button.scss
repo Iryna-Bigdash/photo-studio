@@ -1,10 +1,7 @@
-
-
 .primary {
     @extend %button;
     color: getColor(primary-white-color);
     background-color: getColor(accent-color);
-
     transition: background-color 300ms $transition-func, color 300ms $transition-func;
 
     &:hover,

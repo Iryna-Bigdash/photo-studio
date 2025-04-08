@@ -1,0 +1,93 @@
+.price {
+    color: getColor(primary-white-color);
+
+    .bg-image {
+        padding-right: 20px;
+        padding-left: 20px;
+        background-image: linear-gradient(0deg,
+                rgba(13, 13, 12, 0.5) 0%,
+                rgba(13, 13, 12, 0.5) 100%),
+            url('../../images/examples-3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .pre-title {
+        text-align: start;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .price-title {
+        color: getColor(primary-white-color);
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+
+    .flex-list {
+        justify-content: center;
+    }
+
+
+    .price-wrapper {
+        padding: 40px;
+        margin-bottom: 60px;
+        outline: 2px solid getColor(primary-white-color);
+        border-radius: 4px;
+        background: linear-gradient(0deg,
+                rgba(6, 7, 7, 0.5) 0%,
+                rgba(13, 13, 12, 0.5) 100%);
+
+        @media screen and (min-width: map-get($breakpoint, desktop)) {
+            min-width: 650px;
+        }
+
+        .price-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            .dots {
+                display: none;
+
+                @media screen and (min-width: 422px) {
+                    display: block;
+                    width: 30%;
+                    font-size: 18px;
+                    font-weight: bold;
+                    position: relative;
+                    height: 1px;
+                    background-image: repeating-linear-gradient(to right,
+                            transparent,
+                            transparent 10px,
+                            #fff 10px,
+                            #fff 12px);
+                    background-position: right;
+                    background-repeat: no-repeat;
+
+                }
+
+                @media screen and (min-width:map-get($breakpoint, tablet)) {
+                    width: 60%;
+                }
+
+                @media screen and (min-width:map-get($breakpoint, desktop)) {
+                    width: 32%;
+                }
+            }
+
+
+        }
+    }
+
+    .booking-btn {
+        text-align: center;
+        margin-top: 40px;
+    }
+}
