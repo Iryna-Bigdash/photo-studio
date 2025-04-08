@@ -21,7 +21,6 @@
 
 .logo {
     @include flexed(12px, nowrap);
-    // margin-right: 70px;
     @include font(28px, null, 1.14, getColor(title-text-color));
 
     font-family: Comfortaa, cursive;
@@ -44,7 +43,6 @@
 }
 
 .site-nav {
-
     @media screen and (min-width:1540px) {
         @include flexed(10px, nowrap);
         margin-left: auto;
@@ -87,7 +85,7 @@
     padding-top: 21px;
     padding-bottom: 21px;
 
-    @include font(18px, 500, 1.14, getColor(accent-color));
+    @include font(22px, 500, 1.14, getColor(accent-color));
 
     @media screen and (min-width:1540px) {
         @include font(15px, null, null, null);

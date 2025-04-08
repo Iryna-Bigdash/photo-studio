@@ -2,8 +2,14 @@ $colors: (
     'primary-text-color': rgba(0, 0, 0, 0.8),
     'title-text-color': #000,
     'accent-color': #18A0FB,
+    'dark-bgr': rgba(13, 13, 12, 0.9),
     'primary-white-color': #fff,
     'secondary-bg-color': #F5F5F5,
+    'gradient': linear-gradient(
+        45deg,
+        hsl(315, 100%, 72%), 
+        hsl(227, 100%, 50%)
+      ),
 );
 
 @function getColor($key) {

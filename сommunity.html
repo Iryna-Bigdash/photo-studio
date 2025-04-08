@@ -13,10 +13,9 @@
     />
     <link rel="stylesheet" href="dist/css/main.min.css" />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
-  
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="page-header">
@@ -25,69 +24,74 @@
           ><img src="./images/logo.svg" alt="Logo" />photo</a
         >
 
-       <div class="hamburger-menu" data-hamburger-menu id="hamburger-menu-container">
-        <ul class="site-nav">
-          <li><a href="./index.html">Features</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./community.html" class="link current">Community</a></li>
-          <li>
-            <a href="./support.html">Support</a>
+        <div
+          class="hamburger-menu"
+          data-hamburger-menu
+          id="hamburger-menu-container"
+        >
+          <ul class="site-nav">
+            <li><a href="./index.html">Features</a></li>
+            <li><a href="./index.html#price">Pricing</a></li>
+            <li>
+              <a href="./community.html" class="link current">Community</a>
+            </li>
+            <li>
+              <a href="./support.html">Support</a>
 
-            <ul class="support-submenu">
-              <li class="support-item">
-                <a href="#network-list" class="support-link"
-                  >contact by networks</a
-                >
-              </li>
+              <ul class="support-submenu">
+                <li class="support-item">
+                  <a href="#network-list" class="support-link"
+                    >contact by networks</a
+                  >
+                </li>
 
-              <li class="support-item">
-                <a href="tel:+1234567890" class="support-link"
-                  >contact by phone</a
-                >
-              </li>
+                <li class="support-item">
+                  <a href="tel:+1234567890" class="support-link"
+                    >contact by phone</a
+                  >
+                </li>
 
-              <li class="support-item">
-                <a href="mailto:imbigdash@email.com" class="support-link"
-                  >contact by email</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li><a href="./poster.html">Blurb</a></li>
-        </ul>
-        <ul class="auth-nav">
-          <li>
-            <a class="primary">
-              <svg class="auth-icon icon-enter">
-                <use href="./images/icons.svg#icon-enter" />
-              </svg>
-              Login
-            </a>
-          </li>
-          <li>
-            <a class="secondary">
-              <svg class="auth-icon icon-register">
-                <use href="./images/icons.svg#icon-user-plus" />
-              </svg>
-              Register
-            </a>
-          </li>
-        </ul>
-      </div>
+                <li class="support-item">
+                  <a href="mailto:imbigdash@email.com" class="support-link"
+                    >contact by email</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="./poster.html">Blurb</a></li>
+          </ul>
+          <ul class="auth-nav">
+            <li>
+              <a class="primary">
+                <svg class="auth-icon icon-enter">
+                  <use href="./images/icons.svg#icon-enter" />
+                </svg>
+                Login
+              </a>
+            </li>
+            <li>
+              <a class="secondary">
+                <svg class="auth-icon icon-register">
+                  <use href="./images/icons.svg#icon-user-plus" />
+                </svg>
+                Register
+              </a>
+            </li>
+          </ul>
+        </div>
 
-          <button class="hamburger-btn" 
-          data-menu-btn
-          aria-expanded="false"
-          aria-controls="menu-container"
-          >
-            <svg class="hamburger-icon" aria-label="switcher for mobile menu">
-              <use href="./images/sprite.svg#icon-open-menu" 
-              class="icon-open-menu"/>
-              <use href="./images/sprite.svg#icon-close-menu" 
-              class="icon-close-menu"/>
-            </svg>
-          </button>
-
+        <button class="hamburger-btn" data-menu-btn aria-expanded="false">
+          <svg class="hamburger-icon" aria-label="switcher for mobile menu">
+            <use
+              href="./images/sprite.svg#icon-open-menu"
+              class="icon-open-menu"
+            />
+            <use
+              href="./images/sprite.svg#icon-close-menu"
+              class="icon-close-menu"
+            />
+          </svg>
+        </button>
       </nav>
     </header>
 
@@ -130,11 +134,9 @@
         </div>
       </section>
 
-      <section class="section no-padding">
+      <section class="section no-padding" id="gellary">
         <div class="container">
-          <h2 class="section-title">
-            Snap photos and share like never before
-          </h2>
+          <h2 class="section-title">Snap photos and share like never before</h2>
           <p class="cards sub-title">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore
@@ -294,7 +296,7 @@
 
           <article class="company-card">
             <div class="card-thumb">
-              <img src="./images/good-company.jpg" alt="" class="card-img"/>
+              <img src="./images/good-company.jpg" alt="" class="card-img" />
             </div>
             <div class="card-content">
               <h3>Sed ut perspiciatis unde omnis</h3>
@@ -312,75 +314,87 @@
       <section class="section no-padding">
         <div class="container">
           <h2 class="section-title">Your reviews</h2>
-      
+
           <div class="swiper reviews-swiper">
             <ul class="swiper-wrapper reviews-set">
               <li class="swiper-slide">
                 <img
-                src="https://i.pravatar.cc/100?img=1"
-                alt="User"
-                class="reviews-icon"
-              />
+                  src="https://i.pravatar.cc/100?img=1"
+                  alt="User"
+                  class="reviews-icon"
+                />
                 <div class="reviews-content">
                   <h3>Name Surname</h3>
                   <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                    aut fugit.
-                  </p>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <img src="./images/example-1.webp" alt="" class="reviews-icon" />
-                <div class="reviews-content">
-                  <h3>Name Surname</h3>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                    aut fugit.
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit.
                   </p>
                 </div>
               </li>
               <li class="swiper-slide">
                 <img
-                src="https://i.pravatar.cc/100?img=2"
-                alt="User"
-                class="reviews-icon"
-              />
-                   <div class="reviews-content">
+                  src="./images/example-1.webp"
+                  alt=""
+                  class="reviews-icon"
+                />
+                <div class="reviews-content">
                   <h3>Name Surname</h3>
                   <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                    aut fugit.
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit.
                   </p>
                 </div>
               </li>
               <li class="swiper-slide">
-                <img src="./images/example-1.webp" alt="" class="reviews-icon" />
+                <img
+                  src="https://i.pravatar.cc/100?img=2"
+                  alt="User"
+                  class="reviews-icon"
+                />
                 <div class="reviews-content">
                   <h3>Name Surname</h3>
                   <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                    aut fugit.
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit.
                   </p>
                 </div>
               </li>
               <li class="swiper-slide">
-                <img src="./images/example-1.webp" alt="" class="reviews-icon" />
+                <img
+                  src="./images/example-1.webp"
+                  alt=""
+                  class="reviews-icon"
+                />
                 <div class="reviews-content">
                   <h3>Name Surname</h3>
                   <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                    aut fugit.
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit.
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="./images/example-1.webp"
+                  alt=""
+                  class="reviews-icon"
+                />
+                <div class="reviews-content">
+                  <h3>Name Surname</h3>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit.
                   </p>
                 </div>
               </li>
             </ul>
-      
+
             <!-- Pagination -->
             <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
-      
+
       <section class="section section-bg">
         <div class="container flex">
           <h2 class="section-title">
@@ -393,54 +407,56 @@
             <form class="js-contact-form form" autocomplete="on">
               <div class="input-row">
                 <div class="form-field">
-                  <input type="text" name="user-name" id="user-name" placeholder=" "/>
+                  <input
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder=" "
+                  />
                   <label for="user-name" class="form-label">First name</label>
                 </div>
-  
+
                 <div class="form-field">
-                  <input type="text" name="last-name" id="last-name" placeholder=" " />
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    placeholder=" "
+                  />
                   <label for="last-name" class="form-label">Last name</label>
                 </div>
-  
               </div>
-  
+
               <div class="form-field">
-                <input name="phone" type="tel" id="phone" placeholder=" "/>
+                <input name="phone" type="tel" id="phone" placeholder=" " />
                 <label for="phone" class="form-label">Phone</label>
               </div>
-  
+
               <div class="form-field">
-                <input type="email" name="email" id="email"  placeholder=" "/>
+                <input type="email" name="email" id="email" placeholder=" " />
                 <label for="email" class="form-label">Email</label>
               </div>
-  
+
               <div class="form-field">
-                <textarea 
-                  name="message" 
-                  id="text-aria" 
-                  placeholder="Write your massage" 
+                <textarea
+                  name="message"
+                  id="text-aria"
+                  placeholder="Write your massage"
                   maxlength="350"
                   rows="10"
                 ></textarea>
               </div>
 
-              <button
-                type="submit"
-                class="primary form-button button-icon"
-              >
+              <button type="submit" class="primary form-button button-icon">
                 <svg class="icon-sent">
                   <use href="./images/icons.svg#icon-compass" />
-               </svg>
-               <span>
-                Send
-               </span>
-          
+                </svg>
+                <span> Send </span>
               </button>
             </form>
           </div>
         </div>
       </section>
-
 
       <!-- <section class="section no-padding">
         <div class="container">

@@ -3,7 +3,6 @@
 }
 
 .features-list {
-
     @media screen and (min-width:768px) {
         @include flexed(60px, wrap);
     column-gap: 148px;

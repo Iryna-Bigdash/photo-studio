@@ -187,8 +187,8 @@ summary {
 }
 
 body {
-  color: getColor("primary-text-color");
-  background: getColor("primary-white-color");
+  color: rgba(0, 0, 0, 0.8);
+  background: #fff;
   font-family: Montserrat, sans-serif;
   letter-spacing: -0.01em;
   font-size: 18px;
@@ -694,7 +694,7 @@ button {
   display: block;
   padding-top: 21px;
   padding-bottom: 21px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 1.14;
   color: #18A0FB;
@@ -1247,6 +1247,52 @@ button {
   margin-bottom: 24px;
 }
 
+.portfolio {
+  color: #fff;
+}
+.portfolio .container {
+  background-image: linear-gradient(0deg, rgba(13, 13, 12, 0.8) 0%, rgba(13, 13, 12, 0.8) 100%), url("../../images/examples-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.portfolio .container .flex-container {
+  align-items: center;
+}
+.portfolio .container h2 {
+  color: #fff;
+}
+.portfolio .portfolio-list li:not(:last-child) {
+  margin-bottom: 60px;
+}
+.portfolio .portfolio-list li h3 {
+  color: #fff;
+}
+.portfolio .swiper {
+  width: 100%;
+  height: 280px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio .swiper {
+    height: 500px;
+  }
+}
+.portfolio .swiper-slide img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.portfolio .portfolio-list {
+  margin-top: 20px;
+}
+@media screen and (min-width: 450px) {
+  .portfolio .portfolio-list {
+    padding: 20px;
+    border: 1px solid #fff;
+  }
+}
+
 .features-description {
   margin-bottom: 24px;
 }
@@ -1433,7 +1479,7 @@ button {
 }
 .price .booking-btn {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .signup {
@@ -1644,6 +1690,7 @@ button {
   gap: 12px;
 }
 .reviews-set .swiper-slide .reviews-icon {
+  display: block;
   width: 60px;
   height: 60px;
   border-radius: 50%;

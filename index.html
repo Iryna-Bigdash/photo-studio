@@ -12,6 +12,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="dist/css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="page-header">
@@ -27,7 +31,7 @@
         >
           <ul class="site-nav">
             <li><a href="./index.html" class="link current">Features</a></li>
-            <li><a href="./pricing.html">Pricing</a></li>
+            <li><a href="#price">Pricing</a></li>
             <li><a href="./сommunity.html">Community</a></li>
             <li>
               <a href="./support.html">Support</a>
@@ -78,7 +82,7 @@
           class="hamburger-btn"
           data-menu-btn
           aria-expanded="false"
-          artia-controls="menu-container"
+          aria-controls="menu-container"
         >
           <svg class="hamburger-icon" aria-label="switcher for mobile menu">
             <use
@@ -142,7 +146,83 @@
         </div>
       </section>
 
-      <section class="section features">
+      <section class="section portfolio">
+        <div class="container">
+          <h2 class="section-title">
+            See our best works, arranged in a portfolio!
+          </h2>
+          <div class="flex-container">
+            <div class="swiper">
+              <ul class="swiper-wrapper portfolio-set">
+                <li class="swiper-slide">
+                  <a href="./сommunity.html#gellary">
+                    <img src="./images/baby.jpg" alt="Photo 1" />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="./сommunity.html#gellary">
+                    <img src="./images/examples-3.jpg" alt="Photo 2" />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="./сommunity.html#gellary">
+                    <img src="./images/portret-photo.jpg" alt="Photo 3" />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="./сommunity.html#gellary">
+                    <img src="./images/good-company.jpg" alt="Photo 3" />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="./сommunity.html#gellary">
+                    <img src="./images/comertial.jpg" alt="Photo 3" />
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <ul class="portfolio-list">
+              <li>
+                <h3 class="features-title">
+                  Take your photos to the next level
+                </h3>
+                <p class="features-description">
+                  With just a click, snap stunning photos, apply creative
+                  filters, and share your shots instantly. Connect with a global
+                  community and showcase your unique perspective!
+                </p>
+                <a href="" class="features-link secondary">Learn more</a>
+              </li>
+              <li>
+                <h3 class="features-title">
+                  Take your photos to the next level
+                </h3>
+                <p class="features-description">
+                  With just a click, snap stunning photos, apply creative
+                  filters, and share your shots instantly. Connect with a global
+                  community and showcase your unique perspective!
+                </p>
+                <a href="" class="features-link secondary">Learn more</a>
+              </li>
+              <li>
+                <h3 class="features-title">
+                  Unleash your creativity with every shot
+                </h3>
+                <p class="features-description">
+                  Capture every moment in high-quality, edit it with powerful
+                  tools, and share it like a pro. Whether it’s a quick snap or a
+                  work of art, your photos deserve to be seen.
+                </p>
+                <a href="" class="features-link secondary">Learn more</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section features no-padding">
         <div class="container">
           <h2 class="section-title">
             Span photos and shake like <br />
@@ -194,7 +274,7 @@
         </div>
       </section>
 
-      <section class="section no-padding">
+      <section class="section">
         <div class="container">
           <h2 class="section-title visually-hidden">Examples of our work</h2>
           <ul class="examples">
@@ -242,7 +322,7 @@
         </div>
       </section>
 
-      <section class="price">
+      <section class="price" id="price">
         <div class="container bg-image section">
           <p class="pre-title">---- spend your time with the best masters</p>
           <h2 class="section-title price-title">Services and prices</h2>
@@ -519,5 +599,7 @@
     <script src="./scripts/fixed-header.js"></script>
     <script src="./scripts/modal.js"></script>
     <script src="./scripts/mobile-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./scripts/vertical-swiper.js"></script>
   </body>
 </html>
