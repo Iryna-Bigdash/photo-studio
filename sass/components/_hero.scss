@@ -9,13 +9,13 @@
 }
 
 .section-hero {
-    @include section-hero(url('../../images/hero_small.png'),
+    @include section-hero(url('../../images/examples-3.jpg'),
         getColor(title-text-color),
         center);
         padding-bottom: 120px;
 
         @media screen and (min-width: 768px){
-            @include section-hero(url('../../images/hero-main.jpg'), null, null );
+            @include section-hero(url('../../images/examples-3.jpg'), null, null );
             padding-bottom: 180px;
         }
         

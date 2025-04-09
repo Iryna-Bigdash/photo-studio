@@ -26,6 +26,7 @@
     margin-bottom: 30px;
 
     @media screen and (min-width:map-get($breakpoint, tablet)) {
+        font-weight: 600;
         font-size: 48px;
         margin-bottom: 40px;
         line-height: 1.5;

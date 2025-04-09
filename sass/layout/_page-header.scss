@@ -1,6 +1,8 @@
 .page-header {
     position: fixed;
-    padding: 10px 0;
+    padding: 20px 0;
+    border-bottom: 2px solid getColor(primary-white-color);
+    color: getColor(primary-white-color);
     width: 100%;
     top: 0;
     left: 0;
@@ -8,10 +10,15 @@
     background-color: transparent;
     z-index: 999;
     transition: background-color 0.3s ease;
+
+    @media screen and (min-width:map-get($breakpoint, desktop)) {
+        padding: 10px 0;
+    }
   }
   
   .page-header.white-bg {
     background-color: getColor(primary-white-color);
+    color: getColor(title-text-color);
   }
 
 .main-nav {
@@ -21,7 +28,7 @@
 
 .logo {
     @include flexed(12px, nowrap);
-    @include font(28px, null, 1.14, getColor(title-text-color));
+    @include font(28px, null, 1.14, null);
 
     font-family: Comfortaa, cursive;
 

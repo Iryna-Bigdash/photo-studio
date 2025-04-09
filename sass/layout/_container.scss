@@ -10,18 +10,18 @@ desktop:1540px,
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
-    outline: 2px solid palevioletred;
+    // outline: 2px solid palevioletred;
    
     // min-width: 768px & >
     @media screen and (min-width: 768px) {
         max-width: 768px; 
-        outline: 2px solid orange;
+        // outline: 2px solid orange;
     }
 
     // min-width: 1540px & >
     @media screen and (min-width: 1540px){
         max-width: 1540px;
-        outline: 2px solid red;
+        // outline: 2px solid red;
     }
 }
 

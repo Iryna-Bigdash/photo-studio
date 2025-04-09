@@ -16,9 +16,9 @@
 
 .modal {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
-    min-width: 450px;
+    min-width: 350px;
     min-height: 609px;
     padding: 40px;
     text-align: center;
@@ -35,6 +35,16 @@
     overflow-y: auto; 
     overflow-x: hidden;
 
+
+    @media screen and (min-width: 401px) and (max-width: 449.9px) {
+        min-width: 400px;
+        min-height: 609px;
+        }
+
+        @media screen and (min-width: 450px) {
+        min-width: 450px;
+            }
+
     @media screen and (min-width: 768px) {
         min-width: 700px;
         min-height: 581px;
@@ -46,16 +56,36 @@
         min-height: 581px;
     }
 
-
     transition: transform 250ms $transition-func;
 
+    .modal-title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    
+        @media screen and (min-width: 768px) {
+            margin-top: 10px;
+        }
+
+        @media screen and (min-width: map-get($breakpoint, desktop)) {
+            margin-top: 0px;
+        }
+    }
+
+    .sub-title{
+        display: none;
+
+        @media screen and (min-width:map-get($breakpoint, desktop)) {
+            display: block;
+            margin-bottom: 24px;
+        }
+
+
+    }
+
 }
 
-.modal-title {
-    margin-top: 20px;
-    margin-bottom: 32px;
-    text-align: center;
-}
+
 
 .modal-close-btn {
     position: absolute;

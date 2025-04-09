@@ -266,18 +266,15 @@ button {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-  outline: 2px solid palevioletred;
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    outline: 2px solid orange;
   }
 }
 @media screen and (min-width: 1540px) {
   .container {
     max-width: 1540px;
-    outline: 2px solid red;
   }
 }
 
@@ -321,6 +318,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .section-title {
+    font-weight: 600;
     font-size: 48px;
     margin-bottom: 40px;
     line-height: 1.5;
@@ -611,7 +609,9 @@ button {
 
 .page-header {
   position: fixed;
-  padding: 10px 0;
+  padding: 20px 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
   width: 100%;
   top: 0;
   left: 0;
@@ -620,9 +620,15 @@ button {
   z-index: 999;
   transition: background-color 0.3s ease;
 }
+@media screen and (min-width: 1540px) {
+  .page-header {
+    padding: 10px 0;
+  }
+}
 
 .page-header.white-bg {
   background-color: #fff;
+  color: #000;
 }
 
 .main-nav {
@@ -636,7 +642,6 @@ button {
   flex-wrap: nowrap;
   font-size: 28px;
   line-height: 1.14;
-  color: #000;
   font-family: Comfortaa, cursive;
 }
 @media screen and (min-width: 768px) {
@@ -859,7 +864,7 @@ button {
 }
 
 .section-hero {
-  background-image: linear-gradient(0deg, rgba(13, 13, 12, 0.5) 0%, rgba(13, 13, 12, 0.5) 100%), url("../../images/hero_small.png");
+  background-image: linear-gradient(0deg, rgba(13, 13, 12, 0.5) 0%, rgba(13, 13, 12, 0.5) 100%), url("../../images/examples-3.jpg");
   background-color: #000;
   text-align: center;
   padding-bottom: 120px;
@@ -869,7 +874,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .section-hero {
-    background-image: linear-gradient(0deg, rgba(13, 13, 12, 0.5) 0%, rgba(13, 13, 12, 0.5) 100%), url("../../images/hero-main.jpg");
+    background-image: linear-gradient(0deg, rgba(13, 13, 12, 0.5) 0%, rgba(13, 13, 12, 0.5) 100%), url("../../images/examples-3.jpg");
     padding-bottom: 180px;
   }
 }
@@ -877,6 +882,7 @@ button {
 .form-wrapper {
   padding: 34px;
   max-width: 450px;
+  background-color: #F5F5F5;
   border: 1px solid rgba(0, 0, 0, 0.5);
   margin-left: auto;
   margin-right: auto;
@@ -1081,9 +1087,9 @@ button {
 
 .modal {
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
-  min-width: 450px;
+  min-width: 350px;
   min-height: 609px;
   padding: 40px;
   text-align: center;
@@ -1095,6 +1101,17 @@ button {
   overflow-y: auto;
   overflow-x: hidden;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 401px) and (max-width: 449.9px) {
+  .modal {
+    min-width: 400px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 450px) {
+  .modal {
+    min-width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .modal {
@@ -1109,11 +1126,29 @@ button {
     min-height: 581px;
   }
 }
-
-.modal-title {
+.modal .modal-title {
   margin-top: 20px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .modal .modal-title {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .modal .modal-title {
+    margin-top: 0px;
+  }
+}
+.modal .sub-title {
+  display: none;
+}
+@media screen and (min-width: 1540px) {
+  .modal .sub-title {
+    display: block;
+    margin-bottom: 24px;
+  }
 }
 
 .modal-close-btn {
@@ -1252,18 +1287,21 @@ button {
 
 .portfolio {
   color: #fff;
-}
-.portfolio .container {
-  background-image: linear-gradient(0deg, rgba(13, 13, 12, 0.8) 0%, rgba(13, 13, 12, 0.8) 100%), url("../../images/examples-2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: #180f07;
 }
 .portfolio .container .flex-container {
   align-items: center;
+  gap: 4px;
 }
 .portfolio .container h2 {
   color: #fff;
+}
+.portfolio .container .features-link {
+  margin-top: 20px;
+}
+.portfolio .portfolio-list {
+  padding-right: 14px;
+  padding-left: 14px;
 }
 .portfolio .portfolio-list li:not(:last-child) {
   margin-bottom: 30px;
@@ -1537,6 +1575,31 @@ button {
     display: flex;
     gap: 45px;
     margin-left: auto;
+  }
+}
+
+.section.contact-form {
+  background-color: #180f07;
+}
+@media screen and (min-width: 1540px) {
+  .section.contact-form .bg-image {
+    display: flex;
+    align-items: center;
+    width: 59%;
+    min-height: 784.48px;
+    padding-left: 64px;
+    background-image: linear-gradient(90deg, rgba(13, 13, 12, 0.8) 0%, rgba(13, 13, 12, 0.05) 100%), url("../../images/example-1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.section.contact-form .bg-image .section-title {
+  color: #fff;
+}
+@media screen and (min-width: 1540px) {
+  .section.contact-form .bg-image .form-wrapper.support {
+    margin-left: 0;
   }
 }
 

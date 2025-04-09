@@ -1,25 +1,25 @@
 .portfolio {
   color: getColor(primary-white-color);
+  background-color: #180f07;
 
-  .container{
-    background-image: linear-gradient(0deg,
-                  rgba(13, 13, 12, 0.8) 0%,
-                  rgba(13, 13, 12, 0.8) 100%),
-              url('../../images/examples-2.jpg');
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center;
-  
+  .container{  
     .flex-container{
       align-items: center;
+      gap: 4px;
     }
 
     h2{
       color: getColor(primary-white-color);
     }
+
+    .features-link {
+      margin-top: 20px;
+    }
   }
 
   .portfolio-list{
+    padding-right: 14px;
+    padding-left: 14px;
     li:not(:last-child){
       margin-bottom: 30px;
     }

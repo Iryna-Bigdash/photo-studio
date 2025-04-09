@@ -2,6 +2,7 @@
 .form-wrapper {
 padding: 34px;
 max-width: 450px;
+background-color: getColor(secondary-bg-color);
 
 @media screen and (min-width:1540px)
  {
