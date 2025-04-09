@@ -21,7 +21,7 @@
 
   .portfolio-list{
     li:not(:last-child){
-      margin-bottom: 60px;
+      margin-bottom: 30px;
     }
   
     li h3{
@@ -42,15 +42,15 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+
+    @media screen and (min-width: 450px){
+      padding: 20px;
+    }
+    
   }
   
   .portfolio-list{
     margin-top: 20px;
-
-    @media screen and (min-width: 450px){
-      padding: 20px;
-      border: 1px solid getColor(primary-white-color);
-    }
   }
 
 }

@@ -2,23 +2,36 @@
     text-align: center;
 
     @media screen and (min-width:768px) {
-        @include flexed(80px, wrap);
+        @include flexed(40px, wrap);
         text-align: start;
     }
    
+    @media screen and (min-width:map-get($breakpoint, desktop)) {
+        @include flexed(80px, wrap);
+        text-align: start;
+    }
 }
 
 .preferences-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
     background-color: getColor(secondary-bg-color);
     border-radius: 31% 69% 0% 100% / 30% 98% 2% 70% ;
     margin-bottom: 40px;
 
-
     @media screen and (min-width:768px) {
-        @include flexed(80px, wrap);
+        @include flexed(10px, wrap);
+        flex-basis: calc((100% - 80px)/3);
+        margin-bottom: 0px;  
+    }
+
+    @media screen and (min-width:map-get($breakpoint, desktop)) {
+        @include flexed(40px, wrap);
         flex-basis: calc((100% - 160px)/3);
         border-radius: 26% 74% 77% 23% / 42% 28% 72% 58%;
-        margin-bottom: 0px;   
+        margin-bottom: 0px;
     }
     
     &::before{
@@ -62,6 +75,5 @@
     display: flex;
     flex-direction: column;
     row-gap: 24px;
-
-    margin-bottom: 24px;
+    margin-bottom: auto;
 }

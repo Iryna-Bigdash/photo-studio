@@ -1,39 +1,51 @@
-.features-description {
-    margin-bottom: 24px;
-}
+.features{
+    padding-bottom: 0px;
 
-.features-list {
-    @media screen and (min-width:768px) {
-        @include flexed(60px, wrap);
-    column-gap: 148px;
+    .features-description {
+        margin-bottom: 24px;
     }
-}
-
-.features-list li {
-    padding: 20px;
-
-    :not(:last-child){
-        margin-bottom: 40px;
-    }
-   
-    &:nth-child(odd) { 
-        background-color: getColor(secondary-bg-color); 
-
-        @media screen and (min-width:768px){
-            background-color: transparent; 
+    
+    .features-list {
+        @media screen and (min-width:768px) {
+            @include flexed(60px, wrap);
+            column-gap: 30px
+        }
+    
+        @media screen and (min-width:map-get($breakpoint, desktop)) {
+            @include flexed(60px, wrap);
+            column-gap: 148px;
         }
     }
     
-    @media screen and (min-width:768px) {
-        flex-basis: calc((100% - 148px) / 2);      
+    .features-list li {
+        @media screen and (min-width:768px) {
+            flex-basis: calc((100% - 30px) / 2);
+        }
+        
+        @media screen and (min-width:map-get($breakpoint, desktop)) {
+            flex-basis: calc((100% - 148px) / 2);      
+        }
+    
+        :not(:last-child){
+            margin-bottom: 40px;
+        }
+       
+        &:nth-child(odd) { 
+            background-color: getColor(secondary-bg-color); 
+    
+            @media screen and (min-width:768px){
+                background-color: transparent; 
+            }
+        }
+    }
+    
+    .features-title {
+        @include font(24px, 700, 1.5, getColor(title-text-color)); 
+        margin-bottom: 24px;
+    }
+    
+    .features-link {
+        color: getColor(accent-color);
     }
 }
 
-.features-title {
-    @include font(24px, 700, 1.5, getColor(title-text-color)); 
-    margin-bottom: 24px;
-}
-
-.features-link {
-    color: getColor(accent-color);
-}
