@@ -1,6 +1,4 @@
 .features{
-    padding-bottom: 0px;
-
     .features-description {
         margin-bottom: 24px;
     }
@@ -18,6 +16,7 @@
     }
     
     .features-list li {
+        padding: 20px;
         @media screen and (min-width:768px) {
             flex-basis: calc((100% - 30px) / 2);
         }

@@ -1,5 +1,7 @@
 .footer {
     padding: 20px 0;
+//    background:  linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
+background: linear-gradient(180deg, #180f07 0%, #0e0703 100%);
 }
 
 .upper-footer {
@@ -7,7 +9,7 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 20px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid getColor(primary-white-color);
 
     @media screen and (min-width:1560px) {
         padding-bottom: 48px;
@@ -45,7 +47,7 @@
     }
 
     li>a {
-        @include font(15px, 700, 1.6, getColor(title-text-color));
+        @include font(15px, 700, 1.6, getColor(primary-white-color));
     }
 }
 
@@ -179,8 +181,8 @@
 
 .copyright {
     padding: 14px 0;
-    
-    @include font(15px, null, 1.6, null);
+
+    @include font(15px, null, 1.6, getColor(primary-white-color));
 
     @media screen and (min-width:768px) {
         margin-bottom: 0;

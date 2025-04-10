@@ -17,7 +17,13 @@
 <body>
   <header class="page-header">
     <nav class="container main-nav">
-      <a class="logo" href="./index.html"><img src="./images/logo.svg" alt="Logo" />photo</a>
+      <a class="logo" href="./index.html">
+        <svg class="logo-icon" width="32" height="32">
+          <use href="./images/sprite.svg#icon-logo"></use>
+        </svg>
+        photo
+      </a>
+      
 
       <div class="hamburger-menu" data-hamburger-menu id="hamburger-menu-container">
         <ul class="site-nav">
@@ -126,7 +132,7 @@
           See our best works, arranged in a portfolio!
         </h2>
         <div class="flex-container">
-          <div class="swiper">
+          <div class="swiper portfolio-swiper">
             <ul class="swiper-wrapper portfolio-set">
               <li class="swiper-slide">
                 <a href="./сommunity.html#gellary">
@@ -154,7 +160,7 @@
                 </a>
               </li>
             </ul>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination portfolio-pagination"></div>
           </div>
 
           <ul class="portfolio-list">
@@ -196,7 +202,7 @@
       </div>
     </section>
 
-    <section class="section features">
+    <section class="section features section-bg">
       <div class="container">
         <h2 class="section-title">
           Span photos and shake like <br />
@@ -422,6 +428,90 @@
       </div>
     </section>
 
+    <section class="section section-bg-dark">
+      <div class="container">
+        <h2 class="section-title white">Your reviews</h2>
+
+        <div class="swiper reviews-swiper">
+          <ul class="swiper-wrapper reviews-set">
+            <li class="swiper-slide">
+              <img
+                src="https://i.pravatar.cc/100?img=1"
+                alt="User"
+                class="reviews-icon"
+              />
+              <div class="reviews-content">
+                <h3>Name Surname</h3>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit.
+                </p>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <img
+                src="./images/example-1.webp"
+                alt=""
+                class="reviews-icon"
+              />
+              <div class="reviews-content">
+                <h3>Name Surname</h3>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit.
+                </p>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <img
+                src="https://i.pravatar.cc/100?img=2"
+                alt="User"
+                class="reviews-icon"
+              />
+              <div class="reviews-content">
+                <h3>Name Surname</h3>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit.
+                </p>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <img
+                src="./images/example-1.webp"
+                alt=""
+                class="reviews-icon"
+              />
+              <div class="reviews-content">
+                <h3>Name Surname</h3>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit.
+                </p>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <img
+                src="./images/example-1.webp"
+                alt=""
+                class="reviews-icon"
+              />
+              <div class="reviews-content">
+                <h3>Name Surname</h3>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination reviews-pagination"></div>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-bg">
       <div class="container signup">
         <div class="signup-content">
@@ -493,7 +583,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer section-bg-dark">
     <div class="container">
       <div class="upper-footer">
         <ul class="flex-list">
@@ -501,9 +591,12 @@
           <li><a href="">Community</a></li>
           <li><a href="">Company</a></li>
         </ul>
-
-        <a href="" class="logo"><img src="./images/logo.svg" alt="" />photo</a>
-
+        <a class="logo" href="./index.html">
+          <svg class="logo-icon" width="32" height="32">
+            <use href="./images/sprite.svg#icon-logo"></use>
+          </svg>
+          photo
+        </a>
         <ul class="flex-list">
           <li><a href="">Help desk</a></li>
           <li><a href="">Blog</a></li>
@@ -545,7 +638,7 @@
           </li>
         </ul>
 
-        <p>&#169; Photo, Inc. 2025. We love our users</p>
+        <p class="copyright">&#169; Photo, Inc. 2025. We love our users</p>
       </div>
     </div>
   </footer>

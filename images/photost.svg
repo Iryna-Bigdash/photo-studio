@@ -2,8 +2,9 @@
 <svg width="800px" height="800px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:hsl(315, 100%, 72%);stop-opacity:1" />
-      <stop offset="100%" style="stop-color:hsl(227, 100%, 50%);stop-opacity:1" />
+      <stop offset="0%" style="stop-color:hsl(15, 60%, 7%);stop-opacity:1" />
+      <stop offset="50%" style="stop-color:hsl(227, 100%, 50%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(15, 50%, 15%);stop-opacity:1" />
     </linearGradient>
     <style>.a{fill:none;stroke:url(#gradient1);stroke-linecap:round;stroke-linejoin:round;}</style>
   </defs>

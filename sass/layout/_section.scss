@@ -14,6 +14,10 @@
     background-color: getColor(secondary-bg-color);
 }
 
+.section-bg-dark{
+    background-color: #180f07;
+}
+
 .section.no-padding {
     padding-top: 0;
     padding-bottom: 0;
@@ -37,6 +41,10 @@
         margin-bottom: 60px;
     }
 
+}
+
+.white{
+    color: getColor(primary-white-color);
 }
 
 .section-description {
