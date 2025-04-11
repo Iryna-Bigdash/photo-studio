@@ -1,0 +1,75 @@
+.statistics-and-video .container {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-video{
+  position: absolute;
+  object-fit: contain;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .background-video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .background-video{
+    width: auto;
+    height: 100%;
+  }
+}
+
+.content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%; /* або конкретна висота */
+  text-align: center;
+  color: white;
+  padding: 4rem 1rem;
+}
+
+.statistics h2, .behind-the-scenes h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.statistics-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.stat-item {
+  text-align: center;
+  max-width: 200px;
+}
+
+.stat-item h3 {
+  font-size: 28px;
+  color: #18a0fb;
+}
+
+.stat-item p {
+  font-size: 16px;
+  color: #fff; /* Текст білий для контрасту на фоні відео */
+}
+
+.behind-the-scenes p {
+  font-size: 16px;
+  color: #fff;
+}
+
+  

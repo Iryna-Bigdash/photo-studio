@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -304,7 +305,7 @@ button {
 }
 
 .section-bg-dark {
-  background-color: #180f07;
+  background: linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
 }
 
 .section.no-padding {
@@ -1300,7 +1301,6 @@ button {
 
 .portfolio {
   color: #fff;
-  background: #180f07;
 }
 .portfolio .container .flex-container {
   align-items: center;
@@ -1565,6 +1565,120 @@ button {
   margin-top: 20px;
 }
 
+.statistics-and-video .container {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .background-video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .background-video {
+    width: auto;
+    height: 100%;
+  }
+}
+.content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%; /* або конкретна висота */
+  text-align: center;
+  color: white;
+  padding: 4rem 1rem;
+}
+
+.statistics h2, .behind-the-scenes h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.statistics-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.stat-item {
+  text-align: center;
+  max-width: 200px;
+}
+
+.stat-item h3 {
+  font-size: 28px;
+  color: #18a0fb;
+}
+
+.stat-item p {
+  font-size: 16px;
+  color: #fff; /* Текст білий для контрасту на фоні відео */
+}
+
+.behind-the-scenes p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.reviews-set {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1540px) {
+  .reviews-set {
+    margin-bottom: 80px;
+  }
+}
+.reviews-set .swiper-slide {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.reviews-set .swiper-slide .reviews-icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.reviews-set .swiper-slide .reviews-content h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.reviews-set .swiper-slide .reviews-content p {
+  font-size: 14px;
+  color: #444;
+}
+
 .signup {
   align-items: center;
 }
@@ -1773,47 +1887,6 @@ button {
   .company-list li {
     flex-basis: calc((100% - 168px) / 3);
   }
-}
-
-.reviews-set {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 1540px) {
-  .reviews-set {
-    margin-bottom: 80px;
-  }
-}
-.reviews-set .swiper-slide {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
-  padding: 20px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-}
-.reviews-set .swiper-slide .reviews-icon {
-  display: block;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.reviews-set .swiper-slide .reviews-content h3 {
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 600;
-}
-.reviews-set .swiper-slide .reviews-content p {
-  font-size: 14px;
-  color: #444;
 }
 
 .section-hero.support {

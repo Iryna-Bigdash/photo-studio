@@ -1,188 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Features</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="dist/css/main.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
+  <body>
+    <header class="page-header">
+      <nav class="container main-nav">
+        <a class="logo" href="./index.html">
+          <svg class="logo-icon" width="32" height="32">
+            <use href="./images/sprite.svg#icon-logo"></use>
+          </svg>
+          photo
+        </a>
 
-<body>
-  <header class="page-header">
-    <nav class="container main-nav">
-      <a class="logo" href="./index.html">
-        <svg class="logo-icon" width="32" height="32">
-          <use href="./images/sprite.svg#icon-logo"></use>
-        </svg>
-        photo
-      </a>
-      
-
-      <div class="hamburger-menu" data-hamburger-menu id="hamburger-menu-container">
-        <ul class="site-nav">
-          <li><a href="./index.html" class="link current">Features</a></li>
-          <li><a href="#price">Pricing</a></li>
-          <li><a href="./сommunity.html">Community</a></li>
-          <li>
-            <a href="./support.html">Support</a>
-
-            <ul class="support-submenu">
-              <li class="support-item">
-                <a href="#network-list" class="support-link">contact by networks</a>
-              </li>
-
-              <li class="support-item">
-                <a href="tel:+1234567890" class="support-link">contact by phone</a>
-              </li>
-
-              <li class="support-item">
-                <a href="mailto:imbigdash@email.com" class="support-link">contact by email</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="./poster.html">Blurb</a></li>
-        </ul>
-        <ul class="auth-nav">
-          <li>
-            <a class="primary">
-              <svg class="auth-icon icon-enter">
-                <use href="./images/icons.svg#icon-enter" />
-              </svg>
-              <span>Login</span>
-            </a>
-          </li>
-          <li>
-            <a class="secondary">
-              <svg class="auth-icon icon-register">
-                <use href="./images/icons.svg#icon-user-plus" />
-              </svg>
-              Register
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <button class="hamburger-btn" data-menu-btn aria-expanded="false" aria-controls="menu-container">
-        <svg class="hamburger-icon" aria-label="switcher for mobile menu">
-          <use href="./images/sprite.svg#icon-open-menu" class="icon-open-menu" />
-          <use href="./images/sprite.svg#icon-close-menu" class="icon-close-menu" />
-        </svg>
-      </button>
-    </nav>
-  </header>
-  <main>
-    <section class="section-hero">
-      <div class="container">
-        <h1 class="hero-title">The largest community of photo enthusiast</h1>
-        <button class="primary" data-open-modal>Join Today</button>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">
-          Discover <br />
-          our unique features
-        </h2>
-        <ul class="preferences-list">
-          <li>
-            <div class="preferences-description">
-              <h3>Professional Studios</h3>
-              <p>
-                Modern spaces equipped with various interiors for any type of
-                photoshoot.
-              </p>
-            </div>
-            <a href="#" class="secondary">Learn more</a>
-          </li>
-          <li>
-            <div class="preferences-description">
-              <h3>Workshops & Masterclasses</h3>
-              <p>
-                Learning programs from top photographers to enhance your
-                skills.
-              </p>
-            </div>
-            <a href="#" class="secondary">Learn more</a>
-          </li>
-          <li>
-            <div class="preferences-description">
-              <h3>Online Community</h3>
-              <p>
-                A platform for sharing experiences, tips, and collaborating on
-                projects.
-              </p>
-            </div>
-            <a href="#" class="secondary pref-btn">Learn more</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="portfolio">
-      <div class="container section">
-        <h2 class="section-title">
-          See our best works, arranged in a portfolio!
-        </h2>
-        <div class="flex-container">
-          <div class="swiper portfolio-swiper">
-            <ul class="swiper-wrapper portfolio-set">
-              <li class="swiper-slide">
-                <a href="./сommunity.html#gellary">
-                  <img src="./images/baby.jpg" alt="Photo 1" />
-                </a>
-              </li>
-              <li class="swiper-slide">
-                <a href="./сommunity.html#gellary">
-                  <img src="./images/examples-3.jpg" alt="Photo 2" />
-                </a>
-              </li>
-              <li class="swiper-slide">
-                <a href="./сommunity.html#gellary">
-                  <img src="./images/portret-photo.jpg" alt="Photo 3" />
-                </a>
-              </li>
-              <li class="swiper-slide">
-                <a href="./сommunity.html#gellary">
-                  <img src="./images/good-company.jpg" alt="Photo 3" />
-                </a>
-              </li>
-              <li class="swiper-slide">
-                <a href="./сommunity.html#gellary">
-                  <img src="./images/comertial.jpg" alt="Photo 3" />
-                </a>
-              </li>
-            </ul>
-            <div class="swiper-pagination portfolio-pagination"></div>
-          </div>
-
-          <ul class="portfolio-list">
+        <div
+          class="hamburger-menu"
+          data-hamburger-menu
+          id="hamburger-menu-container"
+        >
+          <ul class="site-nav">
+            <li><a href="./index.html" class="link current">Features</a></li>
+            <li><a href="#price">Pricing</a></li>
+            <li><a href="./сommunity.html">Community</a></li>
             <li>
-              <h3 class="features-title">
-                Take your photos to the next level
-              </h3>
-              <p class="features-description">
-                With just a click, snap stunning photos, apply creative
-                filters, and share your shots instantly. Connect with a global
-                community and showcase your unique perspective!
-              </p>
-              <a href="" class="features-link secondary">Learn more</a>
+              <a href="./support.html">Support</a>
+
+              <ul class="support-submenu">
+                <li class="support-item">
+                  <a href="#network-list" class="support-link"
+                    >contact by networks</a
+                  >
+                </li>
+
+                <li class="support-item">
+                  <a href="tel:+1234567890" class="support-link"
+                    >contact by phone</a
+                  >
+                </li>
+
+                <li class="support-item">
+                  <a href="mailto:imbigdash@email.com" class="support-link"
+                    >contact by email</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="./poster.html">Blurb</a></li>
+          </ul>
+          <ul class="auth-nav">
+            <li>
+              <a class="primary">
+                <svg class="auth-icon icon-enter">
+                  <use href="./images/icons.svg#icon-enter" />
+                </svg>
+                <span>Login</span>
+              </a>
             </li>
             <li>
-              <h3 class="features-title">
-                Take your photos to the next level
-              </h3>
+              <a class="secondary">
+                <svg class="auth-icon icon-register">
+                  <use href="./images/icons.svg#icon-user-plus" />
+                </svg>
+                Register
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          class="hamburger-btn"
+          data-menu-btn
+          aria-expanded="false"
+          aria-controls="menu-container"
+        >
+          <svg class="hamburger-icon" aria-label="switcher for mobile menu">
+            <use
+              href="./images/sprite.svg#icon-open-menu"
+              class="icon-open-menu"
+            />
+            <use
+              href="./images/sprite.svg#icon-close-menu"
+              class="icon-close-menu"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="container">
+          <h1 class="hero-title">The largest community of photo enthusiast</h1>
+          <button class="primary" data-open-modal>Join Today</button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">
+            Discover <br />
+            our unique features
+          </h2>
+          <ul class="preferences-list">
+            <li>
+              <div class="preferences-description">
+                <h3>Professional Studios</h3>
+                <p>
+                  Modern spaces equipped with various interiors for any type of
+                  photoshoot.
+                </p>
+              </div>
+              <a href="#" class="secondary">Learn more</a>
+            </li>
+            <li>
+              <div class="preferences-description">
+                <h3>Workshops & Masterclasses</h3>
+                <p>
+                  Learning programs from top photographers to enhance your
+                  skills.
+                </p>
+              </div>
+              <a href="#" class="secondary">Learn more</a>
+            </li>
+            <li>
+              <div class="preferences-description">
+                <h3>Online Community</h3>
+                <p>
+                  A platform for sharing experiences, tips, and collaborating on
+                  projects.
+                </p>
+              </div>
+              <a href="#" class="secondary pref-btn">Learn more</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="portfolio section-bg-dark">
+        <div class="container section">
+          <h2 class="section-title">
+            See our best works, arranged in a portfolio!
+          </h2>
+          <div class="flex-container">
+            <div class="swiper portfolio-swiper">
+              <ul class="swiper-wrapper portfolio-set">
+                <li class="swiper-slide">
+                  <a href="./сommunity.html#gellary">
+                    <img src="./images/baby.jpg" alt="Photo 1" />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="./сommunity.html#gellary">
+                    <img src="./images/examples-3.jpg" alt="Photo 2" />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="./сommunity.html#gellary">
+                    <img src="./images/portret-photo.jpg" alt="Photo 3" />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="./сommunity.html#gellary">
+                    <img src="./images/good-company.jpg" alt="Photo 3" />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="./сommunity.html#gellary">
+                    <img src="./images/comertial.jpg" alt="Photo 3" />
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-pagination portfolio-pagination"></div>
+            </div>
+
+            <ul class="portfolio-list">
+              <li>
+                <h3 class="features-title">
+                  Take your photos to the next level
+                </h3>
+                <p class="features-description">
+                  With just a click, snap stunning photos, apply creative
+                  filters, and share your shots instantly. Connect with a global
+                  community and showcase your unique perspective!
+                </p>
+                <a href="" class="features-link secondary">Learn more</a>
+              </li>
+              <li>
+                <h3 class="features-title">
+                  Take your photos to the next level
+                </h3>
+                <p class="features-description">
+                  With just a click, snap stunning photos, apply creative
+                  filters, and share your shots instantly. Connect with a global
+                  community and showcase your unique perspective!
+                </p>
+                <a href="" class="features-link secondary">Learn more</a>
+              </li>
+              <li>
+                <h3 class="features-title">
+                  Unleash your creativity with every shot
+                </h3>
+                <p class="features-description">
+                  Capture every moment in high-quality, edit it with powerful
+                  tools, and share it like a pro. Whether it’s a quick snap or a
+                  work of art, your photos deserve to be seen.
+                </p>
+                <a href="" class="features-link secondary">Learn more</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section features section-bg">
+        <div class="container">
+          <h2 class="section-title">
+            Span photos and shake like <br />
+            never before
+          </h2>
+
+          <ul class="features-list">
+            <li>
+              <h3 class="features-title">Take your photos to the next level</h3>
               <p class="features-description">
-                With just a click, snap stunning photos, apply creative
-                filters, and share your shots instantly. Connect with a global
-                community and showcase your unique perspective!
+                With just a click, snap stunning photos, apply creative filters,
+                and share your shots instantly. Connect with a global community
+                and showcase your unique perspective!
               </p>
               <a href="" class="features-link secondary">Learn more</a>
             </li>
@@ -197,360 +254,516 @@
               </p>
               <a href="" class="features-link secondary">Learn more</a>
             </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section features section-bg">
-      <div class="container">
-        <h2 class="section-title">
-          Span photos and shake like <br />
-          never before
-        </h2>
-
-        <ul class="features-list">
-          <li>
-            <h3 class="features-title">Take your photos to the next level</h3>
-            <p class="features-description">
-              With just a click, snap stunning photos, apply creative filters,
-              and share your shots instantly. Connect with a global community
-              and showcase your unique perspective!
-            </p>
-            <a href="" class="features-link secondary">Learn more</a>
-          </li>
-          <li>
-            <h3 class="features-title">
-              Unleash your creativity with every shot
-            </h3>
-            <p class="features-description">
-              Capture every moment in high-quality, edit it with powerful
-              tools, and share it like a pro. Whether it’s a quick snap or a
-              work of art, your photos deserve to be seen.
-            </p>
-            <a href="" class="features-link secondary">Learn more</a>
-          </li>
-          <li>
-            <h3 class="features-title">Snap, Edit, and Share in Seconds</h3>
-            <p class="features-description">
-              ake the perfect photo with ease, enhance it with our creative
-              tools, and instantly share it with your friends, family, or a
-              wider audience. It’s never been easier to express yourself
-              through photography.
-            </p>
-            <a href="" class="features-link secondary">Learn more</a>
-          </li>
-          <li>
-            <h3 class="features-title">Capture and Share Like a Pro</h3>
-            <p class="features-description">
-              Snap stunning photos, use powerful editing features, and share
-              your creations in an instant. Whether you’re a beginner or a
-              pro, our platform helps bring your vision to life and connect
-              with the world.
-            </p>
-            <a href="" class="features-link secondary">Learn more</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title visually-hidden">Examples of our work</h2>
-        <ul class="examples">
-          <li class="item">
-            <div class="examples-caption">
-              <img src="./images/examples-2.jpg" alt="Photo example" width="750" />
-
-              <p class="examples-caption-text">Studio Photoshoot</p>
-            </div>
-            <div class="content poster-meta">
-              <h3 class="examples-title">Our work speaks for itself</h3>
-              <p>
-                Explore a selection of our best photoshoots, showcasing the
-                creativity and skill of our talented photographers. From
-                portraits to landscapes, every shot tells a unique story. Get
-                inspired and see the difference for yourself!
+            <li>
+              <h3 class="features-title">Snap, Edit, and Share in Seconds</h3>
+              <p class="features-description">
+                ake the perfect photo with ease, enhance it with our creative
+                tools, and instantly share it with your friends, family, or a
+                wider audience. It’s never been easier to express yourself
+                through photography.
               </p>
-            </div>
-          </li>
-          <li class="item">
-            <div class="examples-caption">
-              <img src="./images/camera-hero.jpg" alt="Photo example" width="750" />
-
-              <p class="examples-caption-text">Outdoor Photoshoot</p>
-            </div>
-            <div class="content poster-meta">
-              <h3 class="examples-title">See our work in action</h3>
-              <p>
-                We take pride in delivering beautiful, high-quality photos
-                tailored to your needs. Browse through our collection of real
-                client photoshoots to see the variety of styles and themes we
-                cover. Let us help you create unforgettable memories!
+              <a href="" class="features-link secondary">Learn more</a>
+            </li>
+            <li>
+              <h3 class="features-title">Capture and Share Like a Pro</h3>
+              <p class="features-description">
+                Snap stunning photos, use powerful editing features, and share
+                your creations in an instant. Whether you’re a beginner or a
+                pro, our platform helps bring your vision to life and connect
+                with the world.
               </p>
+              <a href="" class="features-link secondary">Learn more</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="statistics-and-video section-bg-dark">
+        <div
+          class="container"
+          style="position: relative; outline: 1px solid red"
+        >
+          <video
+            muted
+            playsinline
+            autoplay
+            loop
+            preload="auto"
+            class="video-background"
+            style="width: 100%; height: auto; display: block"
+          >
+            <source
+              src="https://res.cloudinary.com/dkw7ke78q/video/upload/v1744379697/rrjvpj8bd3di1c0b4n48.mov"
+              type="video/mp4"
+            />
+            Ваш браузер не підтримує відео.
+          </video>
+
+          <div class="content">
+            <div class="statistics">
+              <h2>Статистика / Клієнти</h2>
+              <div class="statistics-items">
+                <div class="stat-item">
+                  <h3>1,000+ зйомок</h3>
+                  <p>Великий досвід у проведенні професійних зйомок</p>
+                </div>
+                <div class="stat-item">
+                  <h3>500+ щасливих клієнтів</h3>
+                  <p>
+                    Задоволені клієнти, які довіряють нам свої найкращі моменти
+                  </p>
+                </div>
+                <div class="stat-item">
+                  <h3>7+ років досвіду</h3>
+                  <p>Більше 7 років на ринку фотографії та відео</p>
+                </div>
+              </div>
             </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="price" id="price">
-      <div class="container bg-image section">
-        <p class="pre-title">---- spend your time with the best masters</p>
-        <h2 class="section-title price-title">Services and prices</h2>
-
-        <div class="flex-list">
-          <ul class="price-wrapper">
-            <li class="flex-list price-item">
-              <p class="service-name">Some service</p>
-              <span class="dots"></span>
-              <p class="service-price">from 200£</p>
-            </li>
-            <li class="flex-list price-item">
-              <p class="service-name">Some service</p>
-              <div class="dots"></div>
-              <p class="service-price">from 300£</p>
-            </li>
-            <li class="flex-list price-item">
-              <p class="service-name">Some service</p>
-              <div class="dots"></div>
-              <p class="service-price">from 400£</p>
-            </li>
-            <li class="flex-list price-item">
-              <p class="service-name">Some service</p>
-              <div class="dots"></div>
-              <p class="service-price">from 500£</p>
-            </li>
-          </ul>
-
-          <ul class="price-wrapper">
-            <li class="flex-list price-item">
-              <p class="service-name">Some service</p>
-              <div class="dots"></div>
-              <p class="service-price">from 200£</p>
-            </li>
-            <li class="flex-list price-item">
-              <p class="service-name">Some service</p>
-              <div class="dots"></div>
-              <p class="service-price">from 300£</p>
-            </li>
-            <li class="flex-list price-item">
-              <p class="service-name">Some service</p>
-              <div class="dots"></div>
-              <p class="service-price">from 400£</p>
-            </li>
-            <li class="flex-list price-item">
-              <p class="service-name">Some service</p>
-              <div class="dots"></div>
-              <p class="service-price">from 500£</p>
-            </li>
-          </ul>
+          </div>
         </div>
+      </section>
 
-        <div class="booking-btn">
-          <a href="tel:+111111111" class="primary booking-btn">Booking</a>
-        </div>
-      </div>
-    </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title visually-hidden">Examples of our work</h2>
+          <ul class="examples">
+            <li class="item">
+              <div class="examples-caption">
+                <img
+                  src="./images/examples-2.jpg"
+                  alt="Photo example"
+                  width="750"
+                />
 
-    <section class="section">
-      <div class="container centered">
-        <h2 class="section-title client-title">You are in good company</h2>
-        <p class="sub-title">
-          From small businesses to renowned brands, we’ve worked with a wide
-          variety of clients, delivering exceptional results every time
-        </p>
-        <ul class="client-list">
-          <li>
-            <a href="" class="client-link">
-              <svg class="client-icon">
-                <use href="./images/icons.svg#icon-client-1"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li>
-            <a href="" class="client-link">
-              <svg class="client-icon">
-                <use href="./images/icons.svg#icon-client-2"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li>
-            <a href="" class="client-link">
-              <svg class="client-icon">
-                <use href="./images/icons.svg#icon-client-3"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li>
-            <a href="" class="client-link">
-              <svg class="client-icon">
-                <use href="./images/icons.svg#icon-client-4"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li>
-            <a href="" class="client-link">
-              <svg class="client-icon">
-                <use href="./images/icons.svg#icon-client-5"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li>
-            <a href="" class="client-link">
-              <svg class="client-icon">
-                <use href="./images/icons.svg#icon-client-6"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li>
-            <a href="" class="client-link">
-              <svg class="client-icon">
-                <use href="./images/icons.svg#icon-client-1"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li>
-            <a href="" class="client-link">
-              <svg class="client-icon">
-                <use href="./images/icons.svg#icon-client-2"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section section-bg-dark">
-      <div class="container">
-        <h2 class="section-title white">Your reviews</h2>
-
-        <div class="swiper reviews-swiper">
-          <ul class="swiper-wrapper reviews-set">
-            <li class="swiper-slide">
-              <img
-                src="https://i.pravatar.cc/100?img=1"
-                alt="User"
-                class="reviews-icon"
-              />
-              <div class="reviews-content">
-                <h3>Name Surname</h3>
+                <p class="examples-caption-text">Studio Photoshoot</p>
+              </div>
+              <div class="content poster-meta">
+                <h3 class="examples-title">Our work speaks for itself</h3>
                 <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit aut fugit.
+                  Explore a selection of our best photoshoots, showcasing the
+                  creativity and skill of our talented photographers. From
+                  portraits to landscapes, every shot tells a unique story. Get
+                  inspired and see the difference for yourself!
                 </p>
               </div>
             </li>
-            <li class="swiper-slide">
-              <img
-                src="./images/example-1.webp"
-                alt=""
-                class="reviews-icon"
-              />
-              <div class="reviews-content">
-                <h3>Name Surname</h3>
-                <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit aut fugit.
-                </p>
+            <li class="item">
+              <div class="examples-caption">
+                <img
+                  src="./images/camera-hero.jpg"
+                  alt="Photo example"
+                  width="750"
+                />
+
+                <p class="examples-caption-text">Outdoor Photoshoot</p>
               </div>
-            </li>
-            <li class="swiper-slide">
-              <img
-                src="https://i.pravatar.cc/100?img=2"
-                alt="User"
-                class="reviews-icon"
-              />
-              <div class="reviews-content">
-                <h3>Name Surname</h3>
+              <div class="content poster-meta">
+                <h3 class="examples-title">See our work in action</h3>
                 <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit aut fugit.
-                </p>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <img
-                src="./images/example-1.webp"
-                alt=""
-                class="reviews-icon"
-              />
-              <div class="reviews-content">
-                <h3>Name Surname</h3>
-                <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit aut fugit.
-                </p>
-              </div>
-            </li>
-            <li class="swiper-slide">
-              <img
-                src="./images/example-1.webp"
-                alt=""
-                class="reviews-icon"
-              />
-              <div class="reviews-content">
-                <h3>Name Surname</h3>
-                <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit aut fugit.
+                  We take pride in delivering beautiful, high-quality photos
+                  tailored to your needs. Browse through our collection of real
+                  client photoshoots to see the variety of styles and themes we
+                  cover. Let us help you create unforgettable memories!
                 </p>
               </div>
             </li>
           </ul>
-
-          <!-- Pagination -->
-          <div class="swiper-pagination reviews-pagination"></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section section-bg">
-      <div class="container signup">
-        <div class="signup-content">
-          <h2 class="section-title visually-hidden">Signup</h2>
+      <section class="price" id="price">
+        <div class="container bg-image section">
+          <p class="pre-title">---- spend your time with the best masters</p>
+          <h2 class="section-title price-title">Services and prices</h2>
+
+          <div class="flex-list">
+            <ul class="price-wrapper">
+              <li class="flex-list price-item">
+                <p class="service-name">Some service</p>
+                <span class="dots"></span>
+                <p class="service-price">from 200£</p>
+              </li>
+              <li class="flex-list price-item">
+                <p class="service-name">Some service</p>
+                <div class="dots"></div>
+                <p class="service-price">from 300£</p>
+              </li>
+              <li class="flex-list price-item">
+                <p class="service-name">Some service</p>
+                <div class="dots"></div>
+                <p class="service-price">from 400£</p>
+              </li>
+              <li class="flex-list price-item">
+                <p class="service-name">Some service</p>
+                <div class="dots"></div>
+                <p class="service-price">from 500£</p>
+              </li>
+            </ul>
+
+            <ul class="price-wrapper">
+              <li class="flex-list price-item">
+                <p class="service-name">Some service</p>
+                <div class="dots"></div>
+                <p class="service-price">from 200£</p>
+              </li>
+              <li class="flex-list price-item">
+                <p class="service-name">Some service</p>
+                <div class="dots"></div>
+                <p class="service-price">from 300£</p>
+              </li>
+              <li class="flex-list price-item">
+                <p class="service-name">Some service</p>
+                <div class="dots"></div>
+                <p class="service-price">from 400£</p>
+              </li>
+              <li class="flex-list price-item">
+                <p class="service-name">Some service</p>
+                <div class="dots"></div>
+                <p class="service-price">from 500£</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="booking-btn">
+            <a href="tel:+111111111" class="primary booking-btn">Booking</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container centered">
+          <h2 class="section-title client-title">You are in good company</h2>
           <p class="sub-title">
-            We offer a wide range of services and opportunities for
-            photographers of all skill levels.
+            From small businesses to renowned brands, we’ve worked with a wide
+            variety of clients, delivering exceptional results every time
           </p>
+          <ul class="client-list">
+            <li>
+              <a href="" class="client-link">
+                <svg class="client-icon">
+                  <use href="./images/icons.svg#icon-client-1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="client-link">
+                <svg class="client-icon">
+                  <use href="./images/icons.svg#icon-client-2"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="client-link">
+                <svg class="client-icon">
+                  <use href="./images/icons.svg#icon-client-3"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="client-link">
+                <svg class="client-icon">
+                  <use href="./images/icons.svg#icon-client-4"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="client-link">
+                <svg class="client-icon">
+                  <use href="./images/icons.svg#icon-client-5"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="client-link">
+                <svg class="client-icon">
+                  <use href="./images/icons.svg#icon-client-6"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="client-link">
+                <svg class="client-icon">
+                  <use href="./images/icons.svg#icon-client-1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="client-link">
+                <svg class="client-icon">
+                  <use href="./images/icons.svg#icon-client-2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="signup-list">
-          <button type="button" class="primary">Join Today</button>
-          <a href="" class="secondary">Contact us</a>
+      </section>
+
+      <section class="section section-bg-dark">
+        <div class="container">
+          <h2 class="section-title white">Your reviews</h2>
+
+          <div class="swiper reviews-swiper">
+            <ul class="swiper-wrapper reviews-set">
+              <li class="swiper-slide">
+                <img
+                  src="https://i.pravatar.cc/100?img=1"
+                  alt="User"
+                  class="reviews-icon"
+                />
+                <div class="reviews-content">
+                  <h3>Name Surname</h3>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit.
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="./images/example-1.webp"
+                  alt=""
+                  class="reviews-icon"
+                />
+                <div class="reviews-content">
+                  <h3>Name Surname</h3>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit.
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="https://i.pravatar.cc/100?img=2"
+                  alt="User"
+                  class="reviews-icon"
+                />
+                <div class="reviews-content">
+                  <h3>Name Surname</h3>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit.
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="./images/example-1.webp"
+                  alt=""
+                  class="reviews-icon"
+                />
+                <div class="reviews-content">
+                  <h3>Name Surname</h3>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit.
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="./images/example-1.webp"
+                  alt=""
+                  class="reviews-icon"
+                />
+                <div class="reviews-content">
+                  <h3>Name Surname</h3>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination reviews-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container signup">
+          <div class="signup-content">
+            <h2 class="section-title visually-hidden">Signup</h2>
+            <p class="sub-title">
+              We offer a wide range of services and opportunities for
+              photographers of all skill levels.
+            </p>
+          </div>
+          <div class="signup-list">
+            <button type="button" class="primary">Join Today</button>
+            <a href="" class="secondary">Contact us</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-form section-bg">
+        <div class="container flex">
+          <div class="bg-image">
+            <h2 class="section-title">
+              The largest community
+              <br />
+              of photo enthusiasts
+            </h2>
+          </div>
+          <div class="form-wrapper support">
+            <p class="form-title">We are happy to contact</p>
+            <form class="js-contact-form form" autocomplete="on">
+              <div class="input-row">
+                <div class="form-field">
+                  <input
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder=" "
+                  />
+                  <label for="user-name" class="form-label">First name</label>
+                </div>
+
+                <div class="form-field">
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    placeholder=" "
+                  />
+                  <label for="last-name" class="form-label">Last name</label>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <input name="phone" type="tel" id="phone" placeholder=" " />
+                <label for="phone" class="form-label">Phone</label>
+              </div>
+
+              <div class="form-field">
+                <input type="email" name="email" id="email" placeholder=" " />
+                <label for="email" class="form-label">Email</label>
+              </div>
+
+              <div class="form-field">
+                <textarea
+                  name="message"
+                  id="text-aria"
+                  placeholder="Write your massage"
+                  maxlength="350"
+                  rows="10"
+                ></textarea>
+              </div>
+              <input type="hidden" name="time" id="message-time" />
+
+              <button type="submit" class="primary form-button button-icon">
+                <svg class="icon-sent">
+                  <use href="./images/icons.svg#icon-compass" />
+                </svg>
+                <span> Send </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-bg-dark">
+      <div class="container">
+        <div class="upper-footer">
+          <ul class="flex-list">
+            <li><a href="">Mobile app</a></li>
+            <li><a href="">Community</a></li>
+            <li><a href="">Company</a></li>
+          </ul>
+          <a class="logo" href="./index.html">
+            <svg class="logo-icon" width="32" height="32">
+              <use href="./images/sprite.svg#icon-logo"></use>
+            </svg>
+            photo
+          </a>
+          <ul class="flex-list">
+            <li><a href="">Help desk</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Resources</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <ul class="network-list" id="network-list">
+            <li>
+              <a href="https://github.com/" aria-label="github link">
+                <svg class="social-networks-icon">
+                  <use href="./images/icons.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/" aria-label="instagram link">
+                <svg class="social-networks-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.whatsapp.com/" aria-label="whats app link">
+                <svg class="social-networks-icon">
+                  <use href="./images/icons.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.telegram.com/" aria-label="telegram link">
+                <svg class="social-networks-icon">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <p class="copyright">&#169; Photo, Inc. 2025. We love our users</p>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <section class="section contact-form">
-      <div class="container flex">
-        <div class="bg-image">
-          <h2 class="section-title">
-            The largest community
-            <br />
-            of photo enthusiasts
-          </h2>
-        </div>
-        <div class="form-wrapper support">
-          <p class="form-title">We are happy to contact</p>
-          <form class="js-contact-form form" autocomplete="on">
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal" data-modal>
+        <h2 class="section-title modal-title">Ready to take a free trial?</h2>
+        <p class="sub-title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore
+        </p>
+
+        <div class="form-wrapper">
+          <p class="form-title">Sign up for a free account</p>
+
+          <form class="js-speaker-form form" autocomplete="off">
             <div class="input-row">
               <div class="form-field">
-                <input type="text" name="user-name" id="user-name" placeholder=" " />
+                <input
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  placeholder=" "
+                />
                 <label for="user-name" class="form-label">First name</label>
               </div>
 
               <div class="form-field">
-                <input type="text" name="last-name" id="last-name" placeholder=" " />
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder=" "
+                />
                 <label for="last-name" class="form-label">Last name</label>
               </div>
-
             </div>
 
             <div class="form-field">
@@ -564,142 +777,34 @@
             </div>
 
             <div class="form-field">
-              <textarea name="message" id="text-aria" placeholder="Write your massage" maxlength="350"
-                rows="10"></textarea>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder=" "
+              />
+              <label for="password" class="form-label">Create password</label>
             </div>
-            <input type="hidden" name="time" id="message-time" />
 
-            <button type="submit" class="primary form-button button-icon">
-              <svg class="icon-sent">
-                <use href="./images/icons.svg#icon-compass" />
-              </svg>
-              <span>
-                Send
-              </span>
-
-            </button>
+            <button type="submit" class="primary form-button">Register</button>
           </form>
         </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="footer section-bg-dark">
-    <div class="container">
-      <div class="upper-footer">
-        <ul class="flex-list">
-          <li><a href="">Mobile app</a></li>
-          <li><a href="">Community</a></li>
-          <li><a href="">Company</a></li>
-        </ul>
-        <a class="logo" href="./index.html">
-          <svg class="logo-icon" width="32" height="32">
-            <use href="./images/sprite.svg#icon-logo"></use>
-          </svg>
-          photo
-        </a>
-        <ul class="flex-list">
-          <li><a href="">Help desk</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Resources</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-bottom">
-        <ul class="network-list" id="network-list">
-          <li>
-            <a href="https://github.com/" aria-label="github link">
-              <svg class="social-networks-icon">
-                <use href="./images/icons.svg#icon-github"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.instagram.com/" aria-label="instagram link">
-              <svg class="social-networks-icon">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.whatsapp.com/" aria-label="whats app link">
-              <svg class="social-networks-icon">
-                <use href="./images/icons.svg#icon-whatsapp"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.telegram.com/" aria-label="telegram link">
-              <svg class="social-networks-icon">
-                <use href="./images/icons.svg#icon-telegram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-
-        <p class="copyright">&#169; Photo, Inc. 2025. We love our users</p>
+        <button type="button" data-close-modal class="modal-close-btn">
+          <span>X</span>
+        </button>
       </div>
     </div>
-  </footer>
-
-  <div class="backdrop is-hidden" data-backdrop>
-    <div class="modal" data-modal>
-      <h2 class="section-title modal-title">Ready to take a free trial?</h2>
-      <p class="sub-title">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore
-      </p>
-
-      <div class="form-wrapper">
-        <p class="form-title">Sign up for a free account</p>
-
-        <form class="js-speaker-form form" autocomplete="off">
-          <div class="input-row">
-            <div class="form-field">
-              <input type="text" name="user-name" id="user-name" placeholder=" " />
-              <label for="user-name" class="form-label">First name</label>
-            </div>
-
-            <div class="form-field">
-              <input type="text" name="last-name" id="last-name" placeholder=" " />
-              <label for="last-name" class="form-label">Last name</label>
-            </div>
-          </div>
-
-          <div class="form-field">
-            <input name="phone" type="tel" id="phone" placeholder=" " />
-            <label for="phone" class="form-label">Phone</label>
-          </div>
-
-          <div class="form-field">
-            <input type="email" name="email" id="email" placeholder=" " />
-            <label for="email" class="form-label">Email</label>
-          </div>
-
-          <div class="form-field">
-            <input type="password" name="password" id="password" placeholder=" " />
-            <label for="password" class="form-label">Create password</label>
-          </div>
-
-          <button type="submit" class="primary form-button">Register</button>
-        </form>
-      </div>
-
-      <button type="button" data-close-modal class="modal-close-btn">
-        <span>X</span>
-      </button>
-    </div>
-  </div>
-  <script src="./scripts/send-form.js"></script>
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script src="./scripts/contact-form.js"></script>
-  <script src="./scripts/fixed-header.js"></script>
-  <script src="./scripts/modal.js"></script>
-  <script src="./scripts/mobile-menu.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="./scripts/vertical-swiper.js"></script>
-</body>
-
+    <script src="./scripts/send-form.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script src="./scripts/contact-form.js"></script>
+    <script src="./scripts/fixed-header.js"></script>
+    <script src="./scripts/modal.js"></script>
+    <script src="./scripts/mobile-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./scripts/vertical-swiper.js"></script>
+  </body>
 </html>
