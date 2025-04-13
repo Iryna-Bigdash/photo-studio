@@ -138,7 +138,8 @@ text-align: center;
     }
 
     .sign{
-          color: red;
+          // color: red;
+          color: #D9A441;
           font-size: 16px;
 
           @media screen and (min-width:map-get($breakpoint, tablet)) {

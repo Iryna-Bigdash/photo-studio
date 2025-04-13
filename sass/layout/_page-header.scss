@@ -99,10 +99,6 @@
 
     @include font(22px, 500, 1.14, getColor(primary-white-color));
 
-    @media screen and (min-width:1540px) {
-        @include font(15px, null, null, null);
-    }
-
     transition: color 300ms $transition-func;
 
     &:hover,

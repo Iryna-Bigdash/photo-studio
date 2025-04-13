@@ -16,6 +16,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <style>
+      :root {
+        --swiper-theme-color: #064a67;
+      }
+    </style>
   </head>
 
   <body>
@@ -342,60 +347,57 @@
         </div>
       </section>
 
+      <section class="section">
+        <div class="container signup">
+          <div class="signup-content">
+            <h2 class="section-title visually-hidden">Signup</h2>
+            <p class="sub-title">
+              We offer a wide range of services and opportunities for
+              photographers of all skill levels.
+            </p>
+          </div>
+          <div class="signup-list">
+            <button type="button" class="primary">Join Today</button>
+            <a href="" class="secondary">Contact us</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section slider">
+        <div class="column">
+          <div class="container-slider">
+            <div class="slider">
+              <img src="./images/image-before.jpg" alt="Before" class="image before" />
+              <div class="resizer">
+                <img src="./images/image-after.jpg" alt="After" class="image after" />
+              </div>
+              <div class="handle"></div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <img src="https://res.acdsee.com/media/uploads/2024/08/20192549/ACDSee2025-PD-Images-NEW-Green.png.webp" alt="NEW" style="max-width: 50px; margin-bottom: 10px;">
+          <p class="pre-title">ACDSEE AI SUPER-RESOLUTION</p>
+          <h2 class="title">
+            Transform Pixels into <span class="highlight">Perfection</span>
+          </h2>
+          <div class="features">
+            <ul class="features-set">
+              <li>Maximize the pixels in your images with ACDSee AI Super-Resolution.</li>
+              <li>Intelligently upscales images while reducing noise and blurriness.</li>
+              <li>Prepare shots for printing, restore old photos, upscale low-res images in batches.</li>
+            </ul>
+          </div>
+          <div class="booking-btn ">
+            <a href="tel:+111111111" class="primary booking-btn">See more</a>
+          </div>
+        </div>
+      </section>
+
       <article class="section" id="blurb">
         <div class="container">
           <h2 class="section-title visually-hidden">Our networks</h2>
           <div class="flex-container">
-            <div class="poster-thumb">
-              <img
-                src="./images/baby.jpg"
-                alt="photo of baby"
-                class="poster-thumb-img"
-                width="100%"
-              />
-              <ul class="network-list poster-networks">
-                <li>
-                  <a href="https://github.com/" aria-label="github link">
-                    <svg class="social-networks-icon">
-                      <use href="./images/icons.svg#icon-github"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="https://www.instagram.com/"
-                    aria-label="instagram link"
-                  >
-                    <svg class="social-networks-icon">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="https://www.whatsapp.com/"
-                    aria-label="whats app link"
-                  >
-                    <svg class="social-networks-icon">
-                      <use href="./images/icons.svg#icon-whatsapp"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.telegram.com/"
-                    aria-label="telegram link"
-                  >
-                    <svg class="social-networks-icon">
-                      <use href="./images/icons.svg#icon-telegram"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
             <div class="poster-meta">
               <h2 class="poster-title">
                 Capturing Precious Moments of Your Baby's First Years
@@ -411,11 +413,63 @@
                 Only good things are said about us. But it's better to see and feel 1 time than read 10 times.
               </p>
             </div>
+            <div class="poster-thumb">
+              <div>
+                <img
+                  src="./images/baby.jpg"
+                  alt="photo of baby"
+                  class="poster-thumb-img"
+                  height="1200px"
+                />
+              </div>
+  
+                <ul class="network-list poster-networks">
+                  <li>
+                    <a href="https://github.com/" aria-label="github link">
+                      <svg class="social-networks-icon">
+                        <use href="./images/icons.svg#icon-github"></use>
+                      </svg>
+                    </a>
+                  </li>
+  
+                  <li>
+                    <a
+                      href="https://www.instagram.com/"
+                      aria-label="instagram link"
+                    >
+                      <svg class="social-networks-icon">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+  
+                  <li>
+                    <a
+                      href="https://www.whatsapp.com/"
+                      aria-label="whats app link"
+                    >
+                      <svg class="social-networks-icon">
+                        <use href="./images/icons.svg#icon-whatsapp"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.telegram.com/"
+                      aria-label="telegram link"
+                    >
+                      <svg class="social-networks-icon">
+                        <use href="./images/icons.svg#icon-telegram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
           </div>
         </div>
       </article>
 
-      <section class="price" id="price">
+      <section class="price section-bg-dark" id="price">
         <div class="container bg-image section">
           <p class="pre-title">---- spend your time with the best masters</p>
           <h2 class="section-title price-title">Services and prices</h2>
@@ -549,7 +603,7 @@
         </div>
       </section>
 
-      <section class="section section-bg-dark">
+      <section class="section reviews">
         <div class="container">
           <h2 class="section-title white">Your reviews</h2>
 
@@ -633,21 +687,6 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="container signup">
-          <div class="signup-content">
-            <h2 class="section-title visually-hidden">Signup</h2>
-            <p class="sub-title">
-              We offer a wide range of services and opportunities for
-              photographers of all skill levels.
-            </p>
-          </div>
-          <div class="signup-list">
-            <button type="button" class="primary">Join Today</button>
-            <a href="" class="secondary">Contact us</a>
-          </div>
-        </div>
-      </section>
 
       <section id="location" class="location-section section">
         <div class="container">
@@ -733,7 +772,7 @@
       </section>
     </main>
 
-    <footer class="footer section-bg-dark">
+    <footer class="footer">
       <div class="container">
         <div class="upper-footer">
           <ul class="flex-list">
@@ -866,6 +905,7 @@
     <script src="./scripts/modal.js"></script>
     <script src="./scripts/mobile-menu.js"></script>
     <script src="./scripts/counter.js"></script>
+    <script src="./scripts/poster.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./scripts/vertical-swiper.js"></script>
   </body>

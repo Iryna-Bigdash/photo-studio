@@ -1,14 +1,11 @@
 $colors: (
     'primary-text-color': rgba(0, 0, 0, 0.8),
     'title-text-color': #000,
-    'accent-color': #18A0FB,
+    'accent-color': #064a67,
     'dark-bgr': #180f07,
     'primary-white-color': #fff,
     'secondary-bg-color': #F5F5F5,
-    'gradient': linear-gradient(45deg,
-        hsl(315, 100%, 72%),
-        hsl(227, 100%, 50%)),
-    'dark-bg-gradient':linear-gradient (135deg,
+    'dark-bg-gradient':linear-gradient(135deg,
         #180f07 0%,
         #3a1f0f 50%,
         #1a0d08 100%)
@@ -17,3 +14,8 @@ $colors: (
 @function getColor($key) {
     @return map-get($colors, $key);
 }
+
+.swiper-pagination-bullet-active {
+    color: getColor(accent-color);
+}
+

@@ -186,6 +186,10 @@ summary {
   display: list-item;
 }
 
+.swiper-pagination-bullet-active {
+  color: #064a67;
+}
+
 body {
   color: rgba(0, 0, 0, 0.8);
   background: #fff;
@@ -304,7 +308,10 @@ button {
 }
 
 .section-bg-dark {
-  background: linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
+  background-image: url("https://res.acdsee.com/media/uploads/2024/08/28200117/ACDSee2025-PD-Images-WavyLinesRpt-Home-Dark.png.webp"), linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
+  background-repeat: repeat-x, no-repeat;
+  background-position: center left, center;
+  background-size: auto, cover;
 }
 
 .section.no-padding {
@@ -503,7 +510,7 @@ button {
   }
 }
 .footer-list .item h3:hover {
-  color: #18A0FB;
+  color: #064a67;
 }
 .footer-list .item a {
   font-size: 15px;
@@ -512,7 +519,7 @@ button {
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list .item a:hover {
-  color: #18A0FB;
+  color: #064a67;
 }
 
 .footer-signup {
@@ -539,7 +546,7 @@ button {
 .footer-signup .item:hover .icon-enter,
 .footer-signup .item:hover .icon-enter, .footer-signup .item:focus .icon-enter,
 .footer-signup .item:focus .icon-enter {
-  fill: #18A0FB;
+  fill: #064a67;
 }
 
 .bottom-footer {
@@ -661,8 +668,8 @@ button {
   }
 }
 .logo:hover, .logo:focus {
-  color: #18A0FB;
-  fill: #18A0FB;
+  color: #064a67;
+  fill: #064a67;
 }
 
 .logo-img {
@@ -694,7 +701,7 @@ button {
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: #18A0FB;
+    background-color: #064a67;
     border-radius: 4px;
     transform: scaleX(0);
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -714,17 +721,12 @@ button {
   color: #fff;
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1540px) {
-  .site-nav a {
-    font-size: 15px;
-  }
-}
 .site-nav a:hover, .site-nav a:focus {
-  color: #18A0FB;
+  color: #064a67;
 }
 
 .link.current {
-  color: #18A0FB;
+  color: #064a67;
 }
 
 .centered-title {
@@ -739,7 +741,7 @@ button {
     position: absolute;
     padding: 10px;
     border-radius: 4px;
-    background-color: #18A0FB;
+    background-color: #064a67;
     top: 100%;
     left: 0;
     min-width: 240px;
@@ -800,13 +802,13 @@ button {
 }
 
 .icon-register {
-  fill: #18A0FB;
+  fill: #064a67;
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav li:hover .icon-enter,
 .auth-nav li:focus .icon-enter {
-  fill: #18A0FB;
+  fill: #064a67;
 }
 
 .auth-nav li:hover .icon-register,
@@ -816,25 +818,25 @@ button {
 
 .primary {
   color: #fff;
-  background-color: #18A0FB;
+  background-color: #064a67;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .primary:hover, .primary:focus {
-  color: #18A0FB;
+  color: #064a67;
   background: #fff;
-  border: 1px solid #18A0FB;
+  border: 1px solid #064a67;
 }
 
 .secondary {
-  color: #18A0FB;
+  color: #064a67;
   background-color: #fff;
-  border-color: #18A0FB;
+  border-color: #064a67;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .secondary:hover, .secondary:focus {
   color: #fff;
-  background: #18A0FB;
-  border-color: #18A0FB;
+  background: #064a67;
+  border-color: #064a67;
 }
 
 .button-icon {
@@ -857,7 +859,7 @@ button {
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-icon:hover svg {
-  fill: #18A0FB;
+  fill: #064a67;
 }
 
 .hero-title {
@@ -947,7 +949,7 @@ button {
 }
 
 .flex-form input:not(:-moz-placeholder-shown) + .form-label, .form input:not(:-moz-placeholder-shown) + .form-label {
-  color: #18A0FB;
+  color: #064a67;
   transform: translateY(-50px);
 }
 
@@ -955,7 +957,7 @@ button {
 .flex-form input:not(:placeholder-shown) + .form-label,
 .form input:focus + .form-label,
 .form input:not(:placeholder-shown) + .form-label {
-  color: #18A0FB;
+  color: #064a67;
   transform: translateY(-50px);
 }
 
@@ -1048,11 +1050,11 @@ button {
   width: 44px;
   height: 44px;
   background-color: #fff;
-  border: 1px solid #18A0FB;
+  border: 1px solid #064a67;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), border 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .network-list li:hover, .network-list li:focus, .network-list li:active {
-  background-color: #18A0FB;
+  background-color: #064a67;
 }
 .network-list li:hover .social-networks-icon, .network-list li:focus .social-networks-icon, .network-list li:active .social-networks-icon {
   stroke: #fff;
@@ -1079,8 +1081,8 @@ button {
 .social-networks-icon {
   width: 28px;
   height: 28px;
-  stroke: #18A0FB;
-  fill: #18A0FB;
+  stroke: #064a67;
+  fill: #064a67;
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1), stroke 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1180,8 +1182,8 @@ button {
   transform: border-color, color;
 }
 .modal-close-btn:hover, .modal-close-btn:focus {
-  border-color: #18A0FB;
-  color: #18A0FB;
+  border-color: #064a67;
+  color: #064a67;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1227,7 +1229,7 @@ button {
 
 .client-list li:hover .client-icon,
 .client-list li:focus .client-icon {
-  border: 2px solid #18A0FB;
+  border: 2px solid #064a67;
 }
 
 .client-list li > a {
@@ -1300,6 +1302,10 @@ button {
 
 .portfolio {
   color: #fff;
+  background-image: url("https://res.acdsee.com/media/uploads/2024/08/28200117/ACDSee2025-PD-Images-WavyLinesRpt-Home-Dark.png.webp"), linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
+  background-repeat: repeat-x, no-repeat;
+  background-position: center left, center;
+  background-size: auto, cover;
 }
 .portfolio .container .flex-container {
   align-items: center;
@@ -1398,7 +1404,7 @@ button {
   margin-bottom: 24px;
 }
 .features .features-link {
-  color: #18A0FB;
+  color: #064a67;
 }
 
 .preferences-list {
@@ -1692,7 +1698,7 @@ button {
 }
 
 .number-wrapper .number {
-  color: #18A0FB;
+  color: #064a67;
   font-weight: 700;
   line-height: 1.3571428571;
   letter-spacing: 0.05em;
@@ -1708,7 +1714,7 @@ button {
   }
 }
 .number-wrapper .sign {
-  color: red;
+  color: #D9A441;
   font-size: 16px;
 }
 @media screen and (min-width: 768px) {
@@ -1730,6 +1736,13 @@ button {
   .text {
     font-size: 16px;
   }
+}
+
+.reviews {
+  background-image: url("https://res.acdsee.com/media/uploads/2024/08/28200117/ACDSee2025-PD-Images-WavyLinesRpt-Home-Dark.png.webp"), linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
+  background-repeat: repeat-x, no-repeat;
+  background-position: center left, center;
+  background-size: auto, cover;
 }
 
 .reviews-set {
@@ -2036,7 +2049,7 @@ button {
 
 .contact-link {
   margin-left: 20px;
-  color: #18A0FB;
+  color: #064a67;
 }
 
 .support-preference {
@@ -2180,7 +2193,230 @@ button {
 }
 
 .overlay-text {
-  display: flex;
+  display: flposter-networksex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.section.slider {
+  display: flex;
+  flex-wrap: wrap;
+  background: url("https://res.acdsee.com/media/uploads/2024/08/28200117/ACDSee2025-PD-Images-WavyLinesRpt-Home-Dark.png.webp") repeat-x center left;
+  background-color: linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
+  align-items: center;
+}
+
+.section.slider {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("https://res.acdsee.com/media/uploads/2024/08/28200117/ACDSee2025-PD-Images-WavyLinesRpt-Home-Dark.png.webp"), linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
+  background-repeat: repeat-x, no-repeat;
+  background-position: center left, center;
+  background-size: auto, cover;
+  align-items: center;
+}
+.section.slider .pre-title {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #D9A441;
+}
+
+.column {
+  flex: 1 1 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.before-after {
+  position: relative;
+  max-width: 800px;
+  height: auto;
+  overflow: hidden;
+}
+
+.before-after img {
+  width: 100%;
+  display: block;
+}
+
+.title {
+  font-size: 39px;
+  line-height: 1.2;
+  margin: 0 0 32px;
+  color: #fff;
+}
+
+.highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M6.1,133.6c0,0,173.4-20.6,328.3-14.5c154.8,6.1,162.2,8.7,162.2,8.7s-262.6-4.9-339.2,13.9 c0,0,113.8-6.1,162.9,6.9" fill="none" stroke="%23064a67" stroke-width="9"/></svg>') no-repeat center bottom;
+  background-size: contain;
+}
+
+.features-set {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+.features-set li {
+  color: #fff;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-orange {
+  background: #f69120;
+}
+
+.btn-orange:hover {
+  background: #cc7918;
+}
+
+.btn-green {
+  background: #5bc60d;
+}
+
+.btn-green:hover {
+  background: #257101;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 1 1 100%;
+  }
+}
+.before-after-slider {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.ba-container {
+  position: relative;
+  width: 100%;
+  cursor: ew-resize;
+}
+
+.ba-img {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.ba-img-before {
+  z-index: 1;
+}
+
+.ba-img-after {
+  z-index: 2;
+  -webkit-clip-path: inset(0 0 0 50%);
+          clip-path: inset(0 0 0 50%);
+  transition: -webkit-clip-path 0.1s;
+  transition: clip-path 0.1s;
+  transition: clip-path 0.1s, -webkit-clip-path 0.1s;
+}
+
+.ba-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #fff;
+  z-index: 3;
+  cursor: ew-resize;
+  transform: translateX(-50%);
+}
+
+.fusion-image-before-after-handle {
+  height: 38px;
+  width: 38px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #fff;
+  border-radius: 1000px;
+  box-shadow: 0 0 12px rgba(51, 51, 51, 0.5);
+  z-index: 40;
+  cursor: pointer;
+}
+
+.container-slider {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  padding: 40px 0;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: ew-resize;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.resizer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.resizer .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.handle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: #18a0fb;
+  z-index: 10;
+  transition: background 0.3s;
 }/*# sourceMappingURL=main.css.map */

@@ -1,3 +1,12 @@
+.reviews{
+  background-image: 
+  url('https://res.acdsee.com/media/uploads/2024/08/28200117/ACDSee2025-PD-Images-WavyLinesRpt-Home-Dark.png.webp'),
+  getColor(dark-bg-gradient);
+background-repeat: repeat-x, no-repeat;
+background-position: center left, center;
+background-size: auto, cover;
+}
+
 .reviews-set {
     list-style: none;
     padding: 0;
