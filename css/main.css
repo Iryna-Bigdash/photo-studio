@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -1794,27 +1793,23 @@ button {
 .ai-upscale .features-set li {
   color: #fff;
 }
-
-.container-slider {
+.ai-upscale .container-slider {
   width: 100%;
   max-width: 800px;
   margin: auto;
   padding: 40px 0;
 }
-
-.slider {
+.ai-upscale .slider {
   position: relative;
   width: 100%;
-  aspect-ratio: 16/9; /* або задай фіксовану висоту */
+  aspect-ratio: 16/9;
   overflow: hidden;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   cursor: ew-resize;
 }
-
-/* Базове зображення */
-.image {
+.ai-upscale .slider .image {
   position: absolute;
   top: 0;
   left: 0;
@@ -1823,9 +1818,14 @@ button {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-/* Верхній шар (після) */
-.resizer {
+.ai-upscale .slider .before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+}
+.ai-upscale .resizer {
   position: absolute;
   top: 0;
   left: 0;
@@ -1835,16 +1835,19 @@ button {
   z-index: 2;
   transition: width 0.3s ease;
 }
-
-.resizer .after {
+.ai-upscale .resizer .before {
+  width: 100%;
+  height: 500%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ai-upscale .resizer .after {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-/* Шторка */
-.handle {
+.ai-upscale .handle {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -1859,8 +1862,7 @@ button {
   align-items: center;
   justify-content: center;
 }
-
-.handle .hint {
+.ai-upscale .handle .hint {
   position: absolute;
   top: 50%;
   left: 50%;
