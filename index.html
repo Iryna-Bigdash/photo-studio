@@ -43,7 +43,7 @@
             <li><a href="#price">Pricing</a></li>
             <li><a href="./сommunity.html">Community</a></li>
             <li>
-              <a href="./support.html">Support</a>
+              <a href="#support">Support</a>
 
               <ul class="support-submenu">
                 <li class="support-item">
@@ -736,6 +736,24 @@
 
       <section id="location" class="location-section section section-bg">
         <div class="container flex-container">
+          <div class="map-container">
+            <iframe
+              src="https://maps.google.com/maps?q=37.178776,-7.448561&z=15&output=embed"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          
+            <a
+              class="map-button button secondary"
+              href="https://maps.google.com/maps?q=37.178776,-7.448561"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              📍 Open in Google Maps
+            </a>
+          </div>
+
           <div class="location-text">
             <h2 class="section-title">Discover Our <span class="highlight">Studio</span></h2>
             <ul class="location-list">
@@ -759,37 +777,11 @@
               </li>
             </ul>
           </div>
-
-          <div class="map-container">
-            <iframe
-              src="https://maps.google.com/maps?q=37.178776,-7.448561&z=15&output=embed"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          
-            <a
-              class="map-button button secondary"
-              href="https://maps.google.com/maps?q=37.178776,-7.448561"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              📍 Open in Google Maps
-            </a>
-          </div>
         </div>
       </section>
-      
-
-      <section class="section contact-form">
-        <div class="container flex">
-          <div class="bg-image">
-            <h2 class="section-title">
-              The largest community
-              <br />
-              of photo enthusiasts
-            </h2>
-          </div>
+ 
+      <section class="section contact-form" id="support">
+        <div class="container flex-container">
           <div class="form-wrapper support">
             <p class="form-title">We are happy to contact</p>
             <form class="js-contact-form form" autocomplete="on">
@@ -844,6 +836,49 @@
               </button>
             </form>
           </div>
+
+          <div class="bg-image">
+            <h2 class="section-title">
+              The largest community
+              <br />
+              of photo enthusiasts
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="section register section-bg">
+        <div class="container">
+          <h2 class="section-title centered-title">
+            The largest community of photo enthusiasts
+          </h2>
+          <form class="flex-form js-speaker-form" autocomplete="on">
+
+            <div class="form-field">
+            <input type="text" name="user-name" placeholder=" " id="name" />
+            <label for="name" class="form-label">Name</label>
+          </div>
+
+          <div class="form-field">
+            <input type="text"  name="user-surname" placeholder=" " id="surname" />
+            <label for="surname" class="form-label">Last name</label>
+            </div>
+            <div class="form-field">
+            <input type="email" name="user-email" placeholder=" " id="user-email"/>
+            <label  class="form-label" for="user-email">Email</label>
+            </div>
+
+            <div class="form-field">
+            <input type="password" name="user-password" placeholder=" " id="user-password" />
+            <label for="user-password" class="form-label">Password</label>
+          </div>
+            <button
+                type="submit"
+                class="primary form-button"
+              >
+                Register
+              </button>
+          </form>
         </div>
       </section>
     </main>

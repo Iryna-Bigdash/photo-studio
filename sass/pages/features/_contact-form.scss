@@ -1,37 +1,57 @@
-.section.contact-form {
-    // background-color: #191c26;
-    // background: #22130c;
-    // background-color: #180f07;
+.section.contact-form{
+    background-image: 
+    url('https://res.acdsee.com/media/uploads/2024/08/28200117/ACDSee2025-PD-Images-WavyLinesRpt-Home-Dark.png.webp'),
+    getColor(dark-bg-gradient);
+  background-repeat: repeat-x, no-repeat;
+  background-position: center left, center;
+  background-size: auto, cover;
 
-    .bg-image {
+    .flex-container{
+        justify-content: center;
+        gap:0;
+    }
+
+   
+     .bg-image{
         @media screen and (min-width:map-get($breakpoint, desktop)) {
             display: flex;
+            width: 50%;
             align-items: center;
-            width: 59%;
-            min-height: 784.48px;
-            padding-left: 64px;
-            background-image:
-                linear-gradient(90deg,
-                    rgba(13, 13, 12, 0.8) 0%,
-                    rgba(13, 13, 12, 0.05) 100%),
-                url('../../images/example-1.webp');
+            background-image: url('../../images/camera-2.png');;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
             background-position: center;
-            border: 1px solid rgba(0, 0, 0, .5);
-            border-right: 0;
         }
+    }
 
         .section-title {
+            display: none;
             @media screen and (min-width:map-get($breakpoint, desktop)) {
-                color: getColor('primary-white-color');
+                display: block;
+                color: getColor(accent-gold);
+                align-self: flex-start;
+                margin-left: auto;
+                margin-left: auto;
             }
         }
 
         .form-wrapper.support {
+            border: 1px solid getColor(accent-gold);
+
             @media screen and (min-width:map-get($breakpoint, desktop)) {
                 margin-left: 0;
+                width: 50%;
             }
-        }
-    }
+
+            .flex-form input:focus + .form-label,
+.flex-form input:not(:placeholder-shown) + .form-label,
+.form input:focus + .form-label,
+.form input:not(:placeholder-shown) + .form-label
+{
+    color: getColor(accent-gold);
+    transform: translateY(-50px);
 }
+        }
+
+        
+    }

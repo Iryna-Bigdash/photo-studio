@@ -15,7 +15,7 @@
 .preferences-list li {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 
     background-color: getColor(secondary-bg-color);
     border-radius: 31% 69% 0% 100% / 30% 98% 2% 70% ;
@@ -23,6 +23,7 @@
 
     @media screen and (min-width:768px) {
         @include flexed(10px, wrap);
+        align-items: flex-start;
         flex-basis: calc((100% - 80px)/3);
         margin-bottom: 0px;  
     }
@@ -75,5 +76,9 @@
     display: flex;
     flex-direction: column;
     row-gap: 24px;
-    margin-bottom: auto;
+    margin-bottom: 30px;
+
+    @media screen and (min-width:map-get($breakpoint, tablet)) {
+        margin-bottom: auto;
+    }
 }

@@ -10,11 +10,19 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      gap: 8rem;
+
     }
   }
   
   .location-text {
+    margin-top: 60px;
     flex: 1;
+
+ @media (min-width: 768px) {
+  padding-left: 100px;
+  border-left: 1px solid getColor(accent-color);
+ }
   }
   
   
