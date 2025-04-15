@@ -8,17 +8,18 @@
 }
 
 .description.with-padding {
-    padding-bottom: 31px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+    padding-top: 31px;
+    border-top: 1px solid rgba(0, 0, 0, 0.50);
     margin-bottom: 32px;
 
-    color: rgba(0, 0, 0, 0.80);
+    color: rgba(0, 0, 0, 0.60);
     font-size: 18px;
     line-height: 1.7;
 }
 
 .description {
-    color: rgba(0, 0, 0, 0.60);
+    color: rgba(0, 0, 0, 0.80);
+    margin-bottom: 32px;
 }
 
 .flex-container{

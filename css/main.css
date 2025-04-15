@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -760,7 +761,7 @@ button {
     background-color: #064a67;
     top: 100%;
     left: 0;
-    min-width: 240px;
+    width: 320px;
     text-align: start;
     display: none;
     transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1949,23 +1950,72 @@ button {
   }
 }
 
-.location-section {
-  background-color: #f5f5f5;
-  padding: 80px 20px;
-  text-align: center;
+.location-section .flex-container {
+  flex-direction: column;
+  gap: 2rem;
 }
-
-.map-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  border-radius: 16px;
+@media (min-width: 768px) {
+  .location-section .flex-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.location-section .location-text {
+  flex: 1;
+}
+.location-section .location-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 1560px) {
+  .location-section .location-list .flex-list {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+}
+.location-section .location-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.2rem;
+}
+.location-section .location-list .icon {
+  width: 34px;
+  height: 34px;
+  fill: currentColor;
+  flex-shrink: 0;
+  color: #18A0FB;
+}
+.location-section .map-container {
+  position: relative;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border: 4px solid #064a67;
+  background: linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
+  isolation: isolate;
+  flex: 1;
 }
-
-.map-container:hover {
-  transform: scale(1.01);
+.location-section .map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  filter: invert(90%) hue-rotate(180deg); /* робимо карту темною */
+  transition: filter 0.3s ease;
+}
+.location-section .map-container:hover iframe {
+  filter: invert(85%) hue-rotate(180deg) brightness(1.1);
+}
+.location-section .map-button {
+  position: absolute;
+  bottom: 16px;
+  right: 56px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (min-width: 1540px) {
@@ -2218,16 +2268,17 @@ button {
 }
 
 .description.with-padding {
-  padding-bottom: 31px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding-top: 31px;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
   margin-bottom: 32px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
   font-size: 18px;
   line-height: 1.7;
 }
 
 .description {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 32px;
 }
 
 @media screen and (min-width: 1540px) {
