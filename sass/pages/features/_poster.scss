@@ -41,6 +41,11 @@
 
 .poster-meta {
     max-width: 686px;
+    text-align: center;
+
+    @media screen and (min-width:map-get($breakpoint,tablet)){
+        text-align: start;
+    }
 }
 
 .flex-thumb {
