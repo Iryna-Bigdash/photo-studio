@@ -1,9 +1,9 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   const slider = document.querySelector('.slider');
   const resizer = document.querySelector('.resizer');
   const handle = document.querySelector('.handle');
   const section = document.querySelector('[data-compare]');
-  
+
   if (!slider || !resizer || !handle || !section) return;
 
   let isDragging = false;
@@ -11,42 +11,46 @@ document.addEventListener("DOMContentLoaded", () => {
   let animationCount = 0;
   const MAX_ANIMATIONS = 2;
 
-  const setPosition = (percentage) => {
+  const setPosition = percentage => {
     const clamped = Math.max(0, Math.min(percentage, 1));
     resizer.style.width = `${clamped * 100}%`;
     handle.style.left = `${clamped * 99}%`;
   };
 
-  const getPercentageFromEvent = (clientX) => {
+  const getPercentageFromEvent = clientX => {
     const rect = slider.getBoundingClientRect();
     return (clientX - rect.left) / rect.width;
   };
 
-  const updatePosition = (clientX) => {
+  const updatePosition = clientX => {
     if (!isDragging) return;
     setPosition(getPercentageFromEvent(clientX));
   };
 
-  const startDrag = (e) => {
+  const startDrag = e => {
     isDragging = true;
     e.preventDefault(); // запобігає виділенню тексту
   };
 
-  const endDrag = () => isDragging = false;
+  const endDrag = () => (isDragging = false);
 
   // Mouse events
   slider.addEventListener('mousedown', startDrag);
   slider.addEventListener('mouseup', endDrag);
   slider.addEventListener('mouseleave', endDrag);
-  slider.addEventListener('mousemove', (e) => updatePosition(e.clientX));
+  slider.addEventListener('mousemove', e => updatePosition(e.clientX));
 
   // Touch events
   slider.addEventListener('touchstart', startDrag);
-  slider.addEventListener('touchend', endDrag);
-  slider.addEventListener('touchcancel', endDrag);
-  slider.addEventListener('touchmove', (e) => {
-    if (e.touches.length > 0) updatePosition(e.touches[0].clientX);
-  });
+  slider.addEventListener('touchend', endDrag, { passive: true });
+  slider.addEventListener('touchcancel', endDrag, { passive: true });
+  slider.addEventListener(
+    'touchmove',
+    e => {
+      if (e.touches.length > 0) updatePosition(e.touches[0].clientX);
+    },
+    { passive: true },
+  );
 
   const animateSlider = () => {
     if (animationCount >= MAX_ANIMATIONS || isDragging || isAnimated) return;
@@ -86,11 +90,14 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(animateStep);
   };
 
-  const observer = new IntersectionObserver(([entry]) => {
-    if (entry.isIntersecting && animationCount < MAX_ANIMATIONS) {
-      animateSlider();
-    }
-  }, { threshold: 0.2 });
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting && animationCount < MAX_ANIMATIONS) {
+        animateSlider();
+      }
+    },
+    { threshold: 0.2 },
+  );
 
   observer.observe(section);
 });

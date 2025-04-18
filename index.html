@@ -56,13 +56,13 @@
                 </li>
 
                 <li class="support-item">
-                  <a href="tel:+1234567890" class="support-link"
+                  <a href="tel:+1234567890" class="support-link" aria-label="Phone number"
                     >contact by phone</a
                   >
                 </li>
 
                 <li class="support-item">
-                  <a href="mailto:imbigdash@email.com" class="support-link"
+                  <a href="mailto:imbigdash@email.com" class="support-link" aria-label="Email"
                     >contact by email</a
                   >
                 </li>
@@ -113,7 +113,7 @@
       <section class="section-hero">
         <div class="container">
           <h1 class="hero-title">
-            The largest online community for photographers, photo enthusiasts, and visual creators
+            Telling your story through the lens.
           </h1>
           <button class="primary" data-open-modal aria-label="Join the photo community today">Join Today</button>
         </div>
@@ -135,7 +135,7 @@
                   Hands-on training from renowned photographers covering lighting, composition, editing, and creative storytelling.
                 </p>
               </div>
-              <a href="#" class="secondary" aria-label="Learn more about workshops and masterclasses">Learn more</a>
+              <a href="#" class="primary" aria-label="Learn more about workshops and masterclasses">Learn more</a>
             </li>
             <li>
               <div class="preferences-description">
@@ -144,7 +144,7 @@
                   Modern, fully-equipped studio spaces with customizable interiors — perfect for portrait, fashion, or product photography.
                 </p>
               </div>
-              <a href="#" class="secondary" aria-label="Learn more about professional photo studios">Learn more</a>
+              <a href="#" class="primary" aria-label="Learn more about professional photo studios">Learn more</a>
             </li>
             <li>
               <div class="preferences-description">
@@ -153,7 +153,7 @@
                   Connect with photographers worldwide, get feedback, share your portfolio, and collaborate on creative photo projects.
                 </p>
               </div>
-              <a href="#" class="secondary pref-btn" aria-label="Learn more about the online community">Learn more</a>
+              <a href="#" class="primary" aria-label="Learn more about the online community">Learn more</a>
             </li>
           </ul>
         </div>
@@ -169,33 +169,33 @@
           </p>
           <div class="flex-container">
             <div class="swiper portfolio-swiper">
-              <ul class="swiper-wrapper portfolio-set">
-                <li class="swiper-slide">
+              <div class="swiper-wrapper portfolio-set">
+                <div class="swiper-slide">
                   <a href="./сommunity.html#gellary">
                     <img src="./images/baby.webp" alt="Newborn baby studio photo session" loading="lazy" />
                   </a>
-                </li>
-                <li class="swiper-slide">
+                </div>
+                <div class="swiper-slide">
                   <a href="./сommunity.html#gellary">
                     <img src="./images/examples-3.webp" alt="Creative portrait photography example" loading="lazy" />
                   </a>
-                </li>
-                <li class="swiper-slide">
+                </div>
+                <div class="swiper-slide">
                   <a href="./сommunity.html#gellary">
                     <img src="./images/portret-photo.webp" alt="Professional portrait with studio lighting" loading="lazy" />
                   </a>
-                </li>
-                <li class="swiper-slide">
+                </div>
+                <div class="swiper-slide">
                   <a href="./сommunity.html#gellary">
                     <img src="./images/good-company.webp" alt="Team photography in corporate setting" loading="lazy" />
                   </a>
-                </li>
-                <li class="swiper-slide">
+                </div>
+                <div class="swiper-slide">
                   <a href="./сommunity.html#gellary">
                     <img src="./images/comertial.jpg" alt="Commercial product photography setup" loading="lazy" />
                   </a>
-                </li>
-              </ul>
+                </div>
+              </div>
               <div class="swiper-pagination portfolio-pagination"></div>
             </div>
       
@@ -241,7 +241,7 @@
                 and share your shots instantly. Connect with a global community
                 and showcase your unique perspective!
               </p>
-              <a href="" class="features-link secondary">Learn more</a>
+              <a href="" class="primary">Learn more</a>
             </li>
             <li>
               <h3>
@@ -252,7 +252,7 @@
                 tools, and share it like a pro. Whether it’s a quick snap or a
                 work of art, your photos deserve to be seen.
               </p>
-              <a href="" class="features-link secondary">Learn more</a>
+              <a href="" class="primary">Learn more</a>
             </li>
             <li>
               <h3>Snap, Edit, and Share in Seconds</h3>
@@ -262,7 +262,7 @@
                 wider audience. It’s never been easier to express yourself
                 through photography.
               </p>
-              <a href="" class="features-link secondary">Learn more</a>
+              <a href="" class="primary">Learn more</a>
             </li>
             <li>
               <h3>Capture and Share Like a Pro</h3>
@@ -272,7 +272,7 @@
                 pro, our platform helps bring your vision to life and connect
                 with the world.
               </p>
-              <a href="" class="features-link secondary">Learn more</a>
+              <a href="" class="primary">Learn more</a>
             </li>
           </ul>
         </div>
@@ -281,22 +281,8 @@
       <section class="statistics section-bg-dark">
         <h2 class="section-title">¿Why people come to us?</h2>
         <div class="container">
-          <video
-            muted
-            playsinline
-            autoplay
-            loop
-            preload="auto"
-            class="video-background"
-            style="width: 100%; height: auto; display: block"
-            poster="./images/city.webp"
-          >
-            <source
-              src="https://res.cloudinary.com/dkw7ke78q/video/upload/v1744379697/rrjvpj8bd3di1c0b4n48.mov"
-              type="video/mp4"
-            />
-            Ваш браузер не підтримує відео.
-          </video>
+
+         <div id="videoContainer"></div>
 
           <div class="content">
             <h3>¿Why people come to us?</h3>
@@ -331,14 +317,6 @@
                 <p class="text">Gifts for regular customers</p>
               </li>
             </ul>
-            <!-- <div class="benefits-description">
-                    <p class="pre-title">Old traditional school</p>
-                    <h2 class="title second-title">¿Why people come to us?</h2>
-                    <p class="after-title">
-                      Only good things are said about us. But it's better to see and
-                      feel 1 time than read 10 times.
-                    </p>
-                </div> -->
           </div>
         </div>
       </section>
@@ -405,12 +383,12 @@
         </div>
         <div class="column">
           <img
-            src="https://res.acdsee.com/media/uploads/2024/08/20192549/ACDSee2025-PD-Images-NEW-Green.png.webp"
+            src="./images/lable.webp"
             alt="NEW"
             style="max-width: 50px; margin-bottom: 10px"
           />
           <p class="pre-title">PHOTO-STUDIO AI SUPER-RESOLUTION</p>
-          <h2 class="title">
+          <h2 class="section-title white">
             Transform Pixels into <span class="highlight">Perfection</span>
           </h2>
           <ul class="features-set">
@@ -431,7 +409,6 @@
 
       <article class="section" id="blurb">
         <div class="container">
-          <h2 class="section-title visually-hidden">Our networks</h2>
           <div class="flex-container">
             <div class="poster-meta">
               <h2 class="poster-title">
@@ -579,7 +556,7 @@
           </p>
           <ul class="client-list">
             <li>
-              <a href="" class="client-link">
+              <a href="" class="client-link" aria-label="Visit site">
                 <svg class="client-icon">
                   <use href="./images/icons.svg#icon-client-1"></use>
                 </svg>
@@ -587,7 +564,7 @@
             </li>
 
             <li>
-              <a href="" class="client-link">
+              <a href="" class="client-link" aria-label="Visit site">
                 <svg class="client-icon">
                   <use href="./images/icons.svg#icon-client-2"></use>
                 </svg>
@@ -595,7 +572,7 @@
             </li>
 
             <li>
-              <a href="" class="client-link">
+              <a href="" class="client-link" aria-label="Visit site">
                 <svg class="client-icon">
                   <use href="./images/icons.svg#icon-client-3"></use>
                 </svg>
@@ -603,7 +580,7 @@
             </li>
 
             <li>
-              <a href="" class="client-link">
+              <a href="" class="client-link" aria-label="Visit site">
                 <svg class="client-icon">
                   <use href="./images/icons.svg#icon-client-4"></use>
                 </svg>
@@ -611,7 +588,7 @@
             </li>
 
             <li>
-              <a href="" class="client-link">
+              <a href="" class="client-link" aria-label="Visit site">
                 <svg class="client-icon">
                   <use href="./images/icons.svg#icon-client-5"></use>
                 </svg>
@@ -619,7 +596,7 @@
             </li>
 
             <li>
-              <a href="" class="client-link">
+              <a href="" class="client-link" aria-label="Visit site">
                 <svg class="client-icon">
                   <use href="./images/icons.svg#icon-client-6"></use>
                 </svg>
@@ -627,7 +604,7 @@
             </li>
 
             <li>
-              <a href="" class="client-link">
+              <a href="" class="client-link" aria-label="Visit site">
                 <svg class="client-icon">
                   <use href="./images/icons.svg#icon-client-1"></use>
                 </svg>
@@ -635,7 +612,7 @@
             </li>
 
             <li>
-              <a href="" class="client-link">
+              <a href="" class="client-link" aria-label="Visit site">
                 <svg class="client-icon">
                   <use href="./images/icons.svg#icon-client-2"></use>
                 </svg>
@@ -650,8 +627,8 @@
           <h2 class="section-title white">Your reviews</h2>
 
           <div class="swiper reviews-swiper">
-            <ul class="swiper-wrapper reviews-set">
-              <li class="swiper-slide">
+            <div class="swiper-wrapper reviews-set">
+              <div class="swiper-slide">
                 <img
                   src="https://i.pravatar.cc/100?img=1"
                   alt="User"
@@ -664,10 +641,10 @@
                     odit aut fugit.
                   </p>
                 </div>
-              </li>
-              <li class="swiper-slide">
+              </div>
+              <div class="swiper-slide">
                 <img
-                  src="./images/example-1.webp"
+                  src="./images/clip-art.webp"
                   alt=""
                   class="reviews-icon"
                 />
@@ -678,8 +655,8 @@
                     odit aut fugit.
                   </p>
                 </div>
-              </li>
-              <li class="swiper-slide">
+              </div>
+              <div class="swiper-slide">
                 <img
                   src="https://i.pravatar.cc/100?img=2"
                   alt="User"
@@ -692,10 +669,10 @@
                     odit aut fugit.
                   </p>
                 </div>
-              </li>
-              <li class="swiper-slide">
+              </div>
+              <div class="swiper-slide">
                 <img
-                  src="./images/example-1.webp"
+                  src="./images/pregnent.webp"
                   alt=""
                   class="reviews-icon"
                 />
@@ -706,10 +683,10 @@
                     odit aut fugit.
                   </p>
                 </div>
-              </li>
-              <li class="swiper-slide">
+              </div>
+              <div class="swiper-slide">
                 <img
-                  src="./images/example-1.webp"
+                  src="./images/love-story.webp"
                   alt=""
                   class="reviews-icon"
                 />
@@ -720,8 +697,8 @@
                     odit aut fugit.
                   </p>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
 
             <!-- Pagination -->
             <div class="swiper-pagination reviews-pagination"></div>
@@ -737,6 +714,7 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              title="Map showing our studio location"
             ></iframe>
           
             <a
@@ -748,6 +726,8 @@
               📍 Open in Google Maps
             </a>
           </div>
+
+          <div class="divider"></div>
 
           <div class="location-text">
             <h2 class="section-title">Discover Our <span class="highlight">Studio</span></h2>
@@ -850,22 +830,22 @@
           <form class="flex-form js-speaker-form" autocomplete="on">
 
             <div class="form-field">
-            <input type="text" name="user-name" placeholder=" " id="name" />
-            <label for="name" class="form-label">Name</label>
+            <input type="text" name="us-name" placeholder=" " id="us-name" />
+            <label for="us-name" class="form-label">Name</label>
           </div>
 
           <div class="form-field">
-            <input type="text"  name="user-surname" placeholder=" " id="surname" />
-            <label for="surname" class="form-label">Last name</label>
+            <input type="text"  name="us-surname" placeholder=" " id="us-surname" />
+            <label for="us-surname" class="form-label">Last name</label>
             </div>
             <div class="form-field">
-            <input type="email" name="user-email" placeholder=" " id="user-email"/>
-            <label  class="form-label" for="user-email">Email</label>
+            <input  autocomplete="email" type="email" name="us-email" placeholder=" " id="us-email"/>
+            <label  class="form-label" for="us-email">Email</label>
             </div>
 
             <div class="form-field">
-            <input type="password" name="user-password" placeholder=" " id="user-password" />
-            <label for="user-password" class="form-label">Password</label>
+            <input  autocomplete="current-password" type="password" name="us-password" placeholder=" " id="us-password" />
+            <label for="us-password" class="form-label">Password</label>
           </div>
             <button
                 type="submit"
@@ -1006,6 +986,14 @@
         </button>
       </div>
     </div>
+    <div class="cookie-banner" id="cookieBanner">
+      <p>
+        We use cookies to ensure you get the best experience on our website.
+        <a href="./privacy-policy.html" target="_blank" >Learn more</a>
+      </p>
+      <button id="acceptCookies" class="cookie-button">Accept</button>
+    </div>
+    <script src="./scripts/cookie.js"></script>
     <script src="./scripts/send-form.js"></script>
     <script
       type="text/javascript"

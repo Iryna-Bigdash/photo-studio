@@ -20,9 +20,12 @@
   <body>
     <header class="page-header">
       <nav class="container main-nav">
-        <a class="logo" href="./community.html"
-          ><img src="./images/logo.svg" alt="Logo" />photo</a
-        >
+        <a class="logo" href="./index.html">
+          <svg class="logo-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+          photo
+        </a>
 
         <div
           class="hamburger-menu"
@@ -32,15 +35,13 @@
           <ul class="site-nav">
             <li><a href="./index.html">Features</a></li>
             <li><a href="./index.html#price">Pricing</a></li>
+            <li><a href="./сommunity.html" class="link current">Community</a></li>
             <li>
-              <a href="./community.html" class="link current">Community</a>
-            </li>
-            <li>
-              <a href="./support.html">Support</a>
+              <a href="./index.html#support">Support</a>
 
               <ul class="support-submenu">
                 <li class="support-item">
-                  <a href="#network-list" class="support-link"
+                  <a href="./index.html#network-list" class="support-link"
                     >contact by networks</a
                   >
                 </li>
@@ -58,7 +59,7 @@
                 </li>
               </ul>
             </li>
-            <li><a href="./poster.html">Blurb</a></li>
+            <li><a href="./index.html#blurb">Blurb</a></li>
           </ul>
           <ul class="auth-nav">
             <li>
@@ -66,7 +67,7 @@
                 <svg class="auth-icon icon-enter">
                   <use href="./images/icons.svg#icon-enter" />
                 </svg>
-                Login
+                <span>Login</span>
               </a>
             </li>
             <li>
@@ -80,7 +81,12 @@
           </ul>
         </div>
 
-        <button class="hamburger-btn" data-menu-btn aria-expanded="false">
+        <button
+          class="hamburger-btn"
+          data-menu-btn
+          aria-expanded="false"
+          aria-controls="menu-container"
+        >
           <svg class="hamburger-icon" aria-label="switcher for mobile menu">
             <use
               href="./images/sprite.svg#icon-open-menu"
@@ -475,43 +481,45 @@
       <div class="container">
         <div class="footer-upper">
           <div>
-            <a href="./community.html" class="logo">
-              <img src="./images/logo.svg" alt="" />
-              photo</a
-            >
+            <a class="logo" href="./community.html">
+              <svg class="logo-icon" width="32" height="32">
+                <use href="./images/icons.svg#icon-logo"></use>
+              </svg>
+              photo
+            </a>
           </div>
 
           <ul class="footer-list">
             <li class="item">
               <h3>Mobile app</h3>
               <ul class="footer-menu">
-                <li><a href="">Features</a></li>
-                <li><a href="">Live share</a></li>
-                <li><a href="">Video record</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Live share</a></li>
+                <li><a href="#">Video record</a></li>
               </ul>
             </li>
 
             <li class="item">
               <h3>Community</h3>
               <ul class="footer-menu">
-                <li><a href="">Featured artists</a></li>
-                <li><a href="">The Portal</a></li>
-                <li><a href="">Live events</a></li>
+                <li><a href="#">Featured artists</a></li>
+                <li><a href="#">The Portal</a></li>
+                <li><a href="#">Live events</a></li>
               </ul>
             </li>
 
             <li class="item">
               <h3>Company</h3>
               <ul class="footer-menu">
-                <li><a href="">About us</a></li>
-                <li><a href="">Contact us</a></li>
-                <li><a href="">History</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">History</a></li>
               </ul>
             </li>
           </ul>
           <ul class="footer-signup">
             <li class="item">
-              <a href="" class="secondary">
+              <a href="#" class="secondary">
                 <svg class="auth-icon icon-register">
                   <use href="./images/icons.svg#icon-user-plus" />
                 </svg>
@@ -519,7 +527,7 @@
               >
             </li>
             <li class="item footer-auth">
-              <a href="" class="primary">
+              <a href="#" class="primary">
                 <svg class="auth-icon icon-enter">
                   <use href="./images/icons.svg#icon-enter" />
                 </svg>

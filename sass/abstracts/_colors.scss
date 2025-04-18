@@ -16,6 +16,12 @@ $colors: (
     @return map-get($colors, $key);
 }
 
+.swiper-pagination-bullet{
+    min-width: 24px;
+    min-height: 24px;
+    margin: 0 6px;
+    cursor: pointer;
+}
 .swiper-pagination-bullet-active {
     color: getColor(accent-color);
 }

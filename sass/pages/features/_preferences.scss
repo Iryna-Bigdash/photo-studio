@@ -20,6 +20,9 @@
     background-color: getColor(secondary-bg-color);
     border-radius: 31% 69% 0% 100% / 30% 98% 2% 70% ;
     margin-bottom: 40px;
+  
+    min-height: 250px;
+    
 
     @media screen and (min-width:768px) {
         @include flexed(10px, wrap);

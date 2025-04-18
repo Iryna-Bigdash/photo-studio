@@ -11,6 +11,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 8rem;
+      align-items: stretch;
 
     }
   }
@@ -18,14 +19,8 @@
   .location-text {
     margin-top: 60px;
     flex: 1;
-
- @media (min-width: 768px) {
-  padding-left: 100px;
-  border-left: 1px solid getColor(accent-color);
- }
   }
-  
-  
+    
   .location-list {
     list-style: none;
     padding: 0;
@@ -48,11 +43,11 @@
   }
   
   .location-list .icon {
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
     fill: currentColor;
     flex-shrink: 0;
-    color: #18A0FB;
+    color: getColor(accent-color);
   }
   
   .map-container {
@@ -68,10 +63,14 @@
   
   .map-container iframe {
     width: 100%;
-    height: 450px;
+    height: 300px;
     border: none;
     filter: invert(90%) hue-rotate(180deg); /* робимо карту темною */
     transition: filter 0.3s ease;
+
+    @media screen and (min-width:map-get($breakpoint, tablet)) {
+      height: 400px;
+    }
   }
   
   .map-container:hover iframe {
@@ -87,4 +86,12 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   }
 
+}
+
+
+.divider {
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.1); // або #ccc
+  height: auto;
+  min-height: 100%;
 }

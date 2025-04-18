@@ -110,7 +110,7 @@ background: linear-gradient(180deg, #180f07 0%, #0e0703 100%);
     cursor: pointer;
 
     h3 {
-        @include font(17px, null, 1.6, rgba(0, 0, 0, 0.80));
+        @include font(17px, null, 1.6, getColor(primary-white-color));
         transition: color 300ms $transition-func;
 
         @media screen and (min-width:768px) {
@@ -123,7 +123,7 @@ background: linear-gradient(180deg, #180f07 0%, #0e0703 100%);
     }
 
     a {
-        @include font(15px, null, 1.6, rgba(0, 0, 0, 0.80));
+        @include font(15px, null, 1.6, getColor(primary-white-color));
         transition: color 300ms $transition-func;
     
         &:hover {
