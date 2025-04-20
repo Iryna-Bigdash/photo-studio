@@ -2500,4 +2500,8 @@ button {
   padding-bottom: 10px;
   border-top: 1px solid #F5F5F5;
   border-bottom: 1px solid #F5F5F5;
+}
+
+.privacy-content article {
+  padding: 20px 0;
 }/*# sourceMappingURL=main.css.map */
