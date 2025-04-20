@@ -35,7 +35,7 @@
           <ul class="site-nav">
             <li><a href="./index.html">Features</a></li>
             <li><a href="./index.html#price">Pricing</a></li>
-            <li><a href="./сommunity.html" class="link current">Community</a></li>
+            <li><a href="./community.html" class="link current">Community</a></li>
             <li>
               <a href="./index.html#support">Support</a>
 
@@ -63,20 +63,20 @@
           </ul>
           <ul class="auth-nav">
             <li>
-              <a class="primary">
-                <svg class="auth-icon icon-enter">
+              <button class="primary button-icon">
+                <svg class="auth-icon">
                   <use href="./images/icons.svg#icon-enter" />
                 </svg>
                 <span>Login</span>
-              </a>
+              </button>
             </li>
             <li>
-              <a class="secondary">
-                <svg class="auth-icon icon-register">
+              <button class="primary button-icon">
+                <svg class="auth-icon">
                   <use href="./images/icons.svg#icon-user-plus" />
                 </svg>
                 Register
-              </a>
+              </button>
             </li>
           </ul>
         </div>
@@ -153,7 +153,8 @@
                 <div class="card-thumb">
                   <img
                     src="./images/portret-photo.webp"
-                    alt=""
+                    alt="portraite photo of man"
+                    loading="lazy"
                     class="card-img"
                   />
                 </div>
@@ -170,7 +171,10 @@
             <li class="item">
               <article class="card">
                 <div class="card-thumb">
-                  <img src="./images/love-story.webp" alt="" class="card-img" />
+                  <img src="./images/love-story.webp" 
+                  alt="photo of lovers" 
+                  loading="lazy"
+                  class="card-img" />
                 </div>
                 <div class="card-content">
                   <h3>Lorem ipsum dolor</h3>
@@ -185,7 +189,11 @@
             <li class="item">
               <article class="card">
                 <div class="card-thumb">
-                  <img src="./images/pregnent.webp" alt="" class="card-img" />
+                  <img 
+                  src="./images/pregnent.webp"
+                   alt="photo of pregnant woman" 
+                   loading="lazy"
+                   class="card-img" />
                 </div>
                 <div class="card-content">
                   <h3>Nemo enim ipsam</h3>
@@ -200,7 +208,11 @@
             <li class="item">
               <article class="card">
                 <div class="card-thumb">
-                  <img src="./images/baby.webp" alt="" class="card-img" />
+                  <img 
+                  src="./images/baby.webp" 
+                  loading="lazy"
+                  alt="photo of baby" 
+                  class="card-img" />
                 </div>
                 <div class="card-content">
                   <h3>Nemo enim ipsam</h3>
@@ -215,7 +227,10 @@
             <li class="item">
               <article class="card">
                 <div class="card-thumb">
-                  <img src="./images/comertial.jpg" alt="" class="card-img" />
+                  <img src="./images/comertial.jpg" 
+                  alt="macarons" 
+                  loading="lazy"
+                  class="card-img" />
                 </div>
                 <div class="card-content">
                   <h3>Sed ut perspiciatis</h3>
@@ -230,7 +245,9 @@
             <li class="item">
               <article class="card">
                 <div class="card-thumb">
-                  <img src="./images/city.webp" alt="" class="card-img" />
+                  <img src="./images/city.webp" alt="city"
+                  loading="lazy"
+                   class="card-img" />
                 </div>
                 <div class="card-content">
                   <h3>Lorem ipsum dolor</h3>
@@ -256,42 +273,42 @@
 
             <ul class="company-list client-list">
               <li>
-                <a href="">
+                <a href="#">
                   <svg class="client-icon">
                     <use href="./images/icons.svg#icon-client-1" />
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="#">
                   <svg class="client-icon">
                     <use href="./images/icons.svg#icon-client-2" />
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="#">
                   <svg class="client-icon">
                     <use href="./images/icons.svg#icon-client-3" />
                   </svg>
                 </a>
               </li>
               <li class="">
-                <a href="">
+                <a href="#">
                   <svg class="client-icon">
                     <use href="./images/icons.svg#icon-client-4" />
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="#">
                   <svg class="client-icon">
                     <use href="./images/icons.svg#icon-client-5" />
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="#">
                   <svg class="client-icon">
                     <use href="./images/icons.svg#icon-client-6" />
                   </svg>
@@ -302,7 +319,9 @@
 
           <article class="company-card">
             <div class="card-thumb">
-              <img src="./images/good-company.webp" alt="" class="card-img" />
+              <img src="./images/good-company.webp" alt="camera"
+              loading="lazy"
+               class="card-img" />
             </div>
             <div class="card-content">
               <h3>Sed ut perspiciatis unde omnis</h3>
@@ -314,90 +333,6 @@
               </p>
             </div>
           </article>
-        </div>
-      </section>
-
-      <section class="section no-padding">
-        <div class="container">
-          <h2 class="section-title">Your reviews</h2>
-
-          <div class="swiper reviews-swiper">
-            <ul class="swiper-wrapper reviews-set">
-              <li class="swiper-slide">
-                <img
-                  src="https://i.pravatar.cc/100?img=1"
-                  alt="User"
-                  class="reviews-icon"
-                />
-                <div class="reviews-content">
-                  <h3>Name Surname</h3>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit.
-                  </p>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <img
-                  src="./images/example-1.webp"
-                  alt=""
-                  class="reviews-icon"
-                />
-                <div class="reviews-content">
-                  <h3>Name Surname</h3>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit.
-                  </p>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <img
-                  src="https://i.pravatar.cc/100?img=2"
-                  alt="User"
-                  class="reviews-icon"
-                />
-                <div class="reviews-content">
-                  <h3>Name Surname</h3>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit.
-                  </p>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <img
-                  src="./images/example-1.webp"
-                  alt=""
-                  class="reviews-icon"
-                />
-                <div class="reviews-content">
-                  <h3>Name Surname</h3>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit.
-                  </p>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <img
-                  src="./images/example-1.webp"
-                  alt=""
-                  class="reviews-icon"
-                />
-                <div class="reviews-content">
-                  <h3>Name Surname</h3>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit.
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <!-- Pagination -->
-            <div class="swiper-pagination reviews-pagination"></div>
-          </div>
         </div>
       </section>
 
@@ -519,20 +454,21 @@
           </ul>
           <ul class="footer-signup">
             <li class="item">
-              <a href="#" class="secondary">
-                <svg class="auth-icon icon-register">
+              <button class="primary button-icon">
+                <svg class="auth-icon">
                   <use href="./images/icons.svg#icon-user-plus" />
                 </svg>
-                Register</a
+                Register
+                </button
               >
             </li>
             <li class="item footer-auth">
-              <a href="#" class="primary">
-                <svg class="auth-icon icon-enter">
+              <button class="primary button-icon">
+                <svg class="auth-icon">
                   <use href="./images/icons.svg#icon-enter" />
                 </svg>
-                Log in</a
-              >
+                Log in
+                </button>
             </li>
           </ul>
         </div>

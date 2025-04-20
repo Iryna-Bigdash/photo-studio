@@ -142,8 +142,14 @@ background: linear-gradient(180deg, #180f07 0%, #0e0703 100%);
     }
 
     .item {
-        a {
+        button {
             @include flexed(10px, nowrap);
+            display: flex;
+            gap: 10px;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            min-width: 159px;
         }
 
         &:first-child{

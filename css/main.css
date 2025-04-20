@@ -203,7 +203,7 @@ body {
   background: #fff;
   font-family: Montserrat, sans-serif;
   letter-spacing: -0.01em;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.67;
 }
 
@@ -222,6 +222,10 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
 h1,
 h2,
 h3,
@@ -237,6 +241,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  aspect-ratio: 3/2;
 }
 
 button {
@@ -554,10 +559,16 @@ button {
     display: block;
   }
 }
-.footer-signup .item a {
+.footer-signup .item button {
   display: flex;
   gap: 10px;
   flex-wrap: nowrap;
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  min-width: 159px;
 }
 .footer-signup .item:first-child {
   margin-bottom: 16px;
@@ -799,7 +810,7 @@ button {
     margin-top: 0px;
   }
 }
-.auth-nav li a {
+.auth-nav li button {
   display: flex;
   gap: 10px;
   flex-wrap: nowrap;
@@ -809,7 +820,7 @@ button {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1540px) {
-  .auth-nav li a {
+  .auth-nav li button {
     margin-bottom: 0px;
   }
 }
@@ -818,26 +829,13 @@ button {
   display: block;
   width: 16px;
   height: 16px;
-}
-
-.icon-enter {
   fill: #fff;
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-register {
+.auth-nav li:hover .auth-icon,
+.auth-nav li:focus .auth-icon {
   fill: #064a67;
-  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.auth-nav li:hover .icon-enter,
-.auth-nav li:focus .icon-enter {
-  fill: #064a67;
-}
-
-.auth-nav li:hover .icon-register,
-.auth-nav li:focus .icon-register {
-  fill: #fff;
 }
 
 .cookie-banner {
@@ -1169,9 +1167,6 @@ button {
   padding: 40px;
   text-align: center;
   background: #fff;
-  background-image: linear-gradient(0deg, rgba(126, 126, 126, 0.8) 0%, rgba(244, 244, 244, 0.8) 100%), url("../../images/modal-bgr.webp");
-  background-position: center;
-  background-repeat: no-repeat;
   transform: translate(-50%, -50%) scale(1);
   overflow-y: auto;
   overflow-x: hidden;
@@ -1192,6 +1187,9 @@ button {
   .modal {
     min-width: 700px;
     min-height: 581px;
+    background-image: linear-gradient(0deg, rgba(126, 126, 126, 0.8) 0%, rgba(244, 244, 244, 0.8) 100%), url("../../images/modal-bgr.webp");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -1362,7 +1360,7 @@ button {
 
 .portfolio {
   color: #fff;
-  background-image: url("https://res.acdsee.com/media/uploads/2024/08/28200117/ACDSee2025-PD-Images-WavyLinesRpt-Home-Dark.png.webp"), linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
+  background-image: url("../../images/wavs-bgr.webp"), linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
   background-repeat: repeat-x, no-repeat;
   background-position: center left, center;
   background-size: auto, cover;
@@ -1818,7 +1816,7 @@ button {
 .ai-upscale {
   display: flex;
   flex-wrap: wrap;
-  background-image: url("https://res.acdsee.com/media/uploads/2024/08/28200117/ACDSee2025-PD-Images-WavyLinesRpt-Home-Dark.png.webp"), linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
+  background-image: url("../../"), linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
   background-repeat: repeat-x, no-repeat;
   background-position: center left, center;
   background-size: auto, cover;
@@ -1944,7 +1942,7 @@ button {
 }
 
 .reviews {
-  background-image: url("https://res.acdsee.com/media/uploads/2024/08/28200117/ACDSee2025-PD-Images-WavyLinesRpt-Home-Dark.png.webp"), linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
+  background-image: url("../../images/wavs-bgr.webp"), linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
   background-repeat: repeat-x, no-repeat;
   background-position: center left, center;
   background-size: auto, cover;
@@ -2235,7 +2233,7 @@ button {
 }
 
 .section.contact-form {
-  background-image: url("https://res.acdsee.com/media/uploads/2024/08/28200117/ACDSee2025-PD-Images-WavyLinesRpt-Home-Dark.png.webp"), linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
+  background-image: url("../../images/wavs-bgr.webp"), linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
   background-repeat: repeat-x, no-repeat;
   background-position: center left, center;
   background-size: auto, cover;
@@ -2454,6 +2452,7 @@ button {
 
 .hero-title {
   color: white;
+  font-weight: 400;
 }
 
 .support-register {

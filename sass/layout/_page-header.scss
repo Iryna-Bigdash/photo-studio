@@ -157,7 +157,7 @@
         margin-top: 0px;
     }
 
-    li a {
+    li button {
         @include flexed(10px, nowrap);
         align-items: center;
         justify-content: center;
@@ -174,27 +174,11 @@
     display: block;
     width: 16px;
     height: 16px;
-}
-
-.icon-enter {
     fill: getColor(primary-white-color);
-
     transition: fill 300ms $transition-func;
 }
 
-.icon-register {
+.auth-nav li:hover .auth-icon,
+.auth-nav li:focus .auth-icon {
     fill: getColor(accent-color);
-
-    transition: fill 300ms $transition-func;
-}
-
-.auth-nav li:hover .icon-enter,
-.auth-nav li:focus .icon-enter {
-    fill: getColor(accent-color);
-
-}
-
-.auth-nav li:hover .icon-register,
-.auth-nav li:focus .icon-register {
-    fill: getColor(primary-white-color);
 }
