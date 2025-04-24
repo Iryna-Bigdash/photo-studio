@@ -13,7 +13,7 @@
       content="If you need a website or a custom landing page, landing developer Iryna Bigdash offers professional web development services tailored to your business needs. Specializing in modern, responsive, and fast-loading websites that convert. Get a unique, eye-catching, and SEO-optimized site for your brand."
     />
 
-    <!-- Open Graph for social sharing -->
+    <!-- Open Graph for social sharingo -->
     <meta
       property="og:title"
       content="PHOTO-STUDIO | Web Design by Iryna Bigdash"
@@ -96,8 +96,8 @@
         >
           <ul class="site-nav">
             <li><a href="./index.html" class="link current">Features</a></li>
-            <li><a href="#price">Pricing</a></li>
-            <li><a href="./сommunity.html">Community</a></li>
+            <li><a href="#price">Services</a></li>
+            <li><a href="./packages.html">Packages</a></li>
             <li>
               <a href="#support">Support</a>
 
@@ -127,24 +127,35 @@
                 </li>
               </ul>
             </li>
-            <li><a href="#blurb">Blurb</a></li>
+            <li><a href="#blurb">About Us</a></li>
           </ul>
+      
           <ul class="auth-nav">
             <li>
-              <button class="primary button-icon">
-                <svg class="auth-icon">
-                  <use href="./images/icons.svg#icon-enter" />
+              <a
+                href="tel:+1234567890"
+                class="book-link primary button-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="icon" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-phone" />
                 </svg>
-                <span>Login</span>
-              </button>
+                Contact
+              </a>
             </li>
             <li>
-              <button class="primary button-icon">
-                <svg class="auth-icon">
-                  <use href="./images/icons.svg#icon-user-plus" />
+              <a
+                href="https://t.me/@i_fs_dev"
+                class="book-link primary button-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="icon" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-telegram"></use>
                 </svg>
-                Register
-              </button>
+                Book now
+              </a>
             </li>
           </ul>
         </div>
@@ -153,7 +164,7 @@
           class="hamburger-btn"
           data-menu-btn
           aria-expanded="false"
-          aria-controls="menu-container"
+          aria-controls="hamburger-menu-container"
         >
           <svg class="hamburger-icon" aria-label="switcher for mobile menu">
             <use
@@ -555,29 +566,32 @@
         </div>
       </section>
 
-      <article class="section" id="blurb">
+      <section class="section" id="blurb">
         <div class="container">
           <div class="flex-container">
             <div class="poster-meta">
               <h2 class="poster-title">
-                Capturing Precious Moments of Your Baby's First Years
+                Creating Timeless Memories with Every Click
               </h2>
               <p class="description">
-                Every giggle, every tiny yawn, every curious glance — we
-                preserve these magical moments with professional care and
-                artistic vision. Our baby photoshoots are safe, cozy, and made
-                with love.
+                At our studio, we believe in capturing the beauty of life's most
+                important moments. Whether it's a milestone, a special
+                celebration, or just the magic of everyday life, we’re here to
+                preserve those moments with artistry and care.
               </p>
 
               <p class="description">
-                Thousands of happy families trust us to document the most
-                touching moments of their little ones. Let's create warm
-                memories together — follow us on social media and feel the vibe.
+                With years of experience and a passion for photography, we
+                specialize in creating personalized photo sessions that tell
+                your unique story. Our team is dedicated to making every
+                photoshoot a comfortable and enjoyable experience.
               </p>
 
               <p class="description with-padding">
-                Only good things are said about us. But it's better to see and
-                feel 1 time than read 10 times.
+                Don’t just take our word for it—our clients' glowing reviews
+                speak for themselves. Join us in creating memories that last a
+                lifetime. Follow us on social media to stay connected and see
+                our latest work.
               </p>
             </div>
             <div class="poster-thumb">
@@ -587,13 +601,13 @@
                   alt="photo of baby"
                   class="poster-thumb-img"
                   loading="lazy"
-                  height="1200px"
+                  height="1200"
                 />
               </div>
 
               <ul class="network-list poster-networks">
                 <li>
-                  <a href="https://github.com/" aria-label="github link">
+                  <a href="https://github.com/" aria-label="GitHub link">
                     <svg class="social-networks-icon">
                       <use href="./images/icons.svg#icon-github"></use>
                     </svg>
@@ -603,7 +617,7 @@
                 <li>
                   <a
                     href="https://www.instagram.com/"
-                    aria-label="instagram link"
+                    aria-label="Instagram link"
                   >
                     <svg class="social-networks-icon">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -614,7 +628,7 @@
                 <li>
                   <a
                     href="https://www.whatsapp.com/"
-                    aria-label="whats app link"
+                    aria-label="WhatsApp link"
                   >
                     <svg class="social-networks-icon">
                       <use href="./images/icons.svg#icon-whatsapp"></use>
@@ -624,7 +638,7 @@
                 <li>
                   <a
                     href="https://www.telegram.com/"
-                    aria-label="telegram link"
+                    aria-label="Telegram link"
                   >
                     <svg class="social-networks-icon">
                       <use href="./images/icons.svg#icon-telegram"></use>
@@ -635,7 +649,7 @@
             </div>
           </div>
         </div>
-      </article>
+      </section>
 
       <section class="price section-bg-dark" id="price">
         <div class="container bg-image section">
@@ -645,53 +659,55 @@
           <div class="flex-list">
             <ul class="price-wrapper">
               <li class="flex-list price-item">
-                <p class="service-name">Some service</p>
+                <p class="service-name">Image consult</p>
                 <span class="dots"></span>
-                <p class="service-price">from 200£</p>
+                <p class="service-price">from 100£</p>
               </li>
               <li class="flex-list price-item">
-                <p class="service-name">Some service</p>
+                <p class="service-name">Couple photo</p>
                 <div class="dots"></div>
-                <p class="service-price">from 300£</p>
+                <p class="service-price">from 150£</p>
               </li>
               <li class="flex-list price-item">
-                <p class="service-name">Some service</p>
+                <p class="service-name">Fashion shoot</p>
                 <div class="dots"></div>
-                <p class="service-price">from 400£</p>
+                <p class="service-price">from 170£</p>
               </li>
               <li class="flex-list price-item">
-                <p class="service-name">Some service</p>
+                <p class="service-name">Video session</p>
                 <div class="dots"></div>
-                <p class="service-price">from 500£</p>
+                <p class="service-price">from 190£</p>
               </li>
             </ul>
 
             <ul class="price-wrapper">
               <li class="flex-list price-item">
-                <p class="service-name">Some service</p>
+                <p class="service-name">Studio session</p>
                 <div class="dots"></div>
-                <p class="service-price">from 200£</p>
+                <p class="service-price">from 50£</p>
               </li>
               <li class="flex-list price-item">
-                <p class="service-name">Some service</p>
+                <p class="service-name">Outdoor shoot</p>
                 <div class="dots"></div>
-                <p class="service-price">from 300£</p>
+                <p class="service-price">from 60£</p>
               </li>
               <li class="flex-list price-item">
-                <p class="service-name">Some service</p>
+                <p class="service-name">Style matching</p>
                 <div class="dots"></div>
-                <p class="service-price">from 400£</p>
+                <p class="service-price">from 70£</p>
               </li>
               <li class="flex-list price-item">
-                <p class="service-name">Some service</p>
+                <p class="service-name">Lookbook shoot</p>
                 <div class="dots"></div>
-                <p class="service-price">from 500£</p>
+                <p class="service-price">from 80£</p>
               </li>
             </ul>
           </div>
 
           <div class="booking-btn">
-            <a href="tel:+111111111" class="primary booking-btn">Booking</a>
+            <a href="./сommunity.html#gellary" class="primary booking-btn"
+              >See packages</a
+            >
           </div>
         </div>
       </section>
@@ -1167,7 +1183,7 @@
 
             <div class="form-field">
               <input
-                type="user-email"
+                type="email"
                 name="user-email"
                 id="user-email"
                 placeholder=" "

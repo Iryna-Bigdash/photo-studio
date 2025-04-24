@@ -35,7 +35,9 @@
           <ul class="site-nav">
             <li><a href="./index.html">Features</a></li>
             <li><a href="./index.html#price">Pricing</a></li>
-            <li><a href="./community.html" class="link current">Community</a></li>
+            <li>
+              <a href="./packages.html" class="link current">Packages</a>
+            </li>
             <li>
               <a href="./index.html#support">Support</a>
 
@@ -63,20 +65,30 @@
           </ul>
           <ul class="auth-nav">
             <li>
-              <button class="primary button-icon">
-                <svg class="auth-icon">
-                  <use href="./images/icons.svg#icon-enter" />
+              <a
+                href="tel:+1234567890"
+                class="book-link primary button-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="icon" aria-hidden="true">
+                  <use href="./images/sprite.svg#icon-phone" />
                 </svg>
-                <span>Login</span>
-              </button>
+                Contact
+              </a>
             </li>
             <li>
-              <button class="primary button-icon">
-                <svg class="auth-icon">
-                  <use href="./images/icons.svg#icon-user-plus" />
+              <a
+                href="https://t.me/@i_fs_dev"
+                class="book-link primary button-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="icon" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-telegram"></use>
                 </svg>
-                Register
-              </button>
+                Book now
+              </a>
             </li>
           </ul>
         </div>
@@ -102,50 +114,21 @@
     </header>
 
     <main>
-      <section class="section-hero community-hero">
+      <section class="section-hero">
         <div class="container">
           <h1 class="hero-title">
-            Learn about all the features of the Photo app
+            Capture your moment —  
+      let your story shine
           </h1>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section section-bg gellary" id="gellary">
         <div class="container">
-          <h2 class="section-title">Snap photos and share like never before</h2>
-          <ul class="community-set">
-            <li>
-              <div class="community-content">
-                <h3>Sed ut perspiciatis</h3>
-                <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit aut fugit, sed quia consequuntur magni dolores eos qui
-                  ratione voluptatem sequi nesciunt. Neque porro quisquam est.
-                </p>
-              </div>
-              <a href="" class="primary">Learn more</a>
-            </li>
-            <li>
-              <div class="community-content">
-                <h3>Sed ut perspiciatis</h3>
-                <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit aut fugit, sed quia consequuntur magni dolores eos qui
-                  ratione voluptatem sequi nesciunt. Neque porro quisquam est.
-                </p>
-              </div>
-              <a href="" class="primary">Learn more</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section no-padding" id="gellary">
-        <div class="container">
-          <h2 class="section-title">Snap photos and share like never before</h2>
+          <h2 class="section-title hidden">Capture Moments That Matter</h2>
           <p class="cards sub-title">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore
+            Discover timeless photography experiences designed to celebrate your
+            story — whether it’s love, family, or individuality.
           </p>
           <ul class="card-set">
             <li class="item">
@@ -153,17 +136,24 @@
                 <div class="card-thumb">
                   <img
                     src="./images/portret-photo.webp"
-                    alt="portraite photo of man"
+                    alt="Portrait photo of man"
                     loading="lazy"
                     class="card-img"
                   />
                 </div>
                 <div class="card-content">
-                  <h3>Sed ut perspiciatis</h3>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia.
+                  <h3>Portrait Session</h3>
+                  <p class="session-description">
+                    Individual shooting in the studio or outdoors. Highlight
+                    your personality.
                   </p>
+                  <p class="price">From 80£</p>
+                  <a href="https://t.me/@i_fs_dev" class="book-link primary button-icon"
+                    >Book via 
+                    <svg class="icon">
+                      <use href="./images/icons.svg#icon-telegram"></use>
+                    </svg>
+                    </a>
                 </div>
               </article>
             </li>
@@ -171,17 +161,26 @@
             <li class="item">
               <article class="card">
                 <div class="card-thumb">
-                  <img src="./images/love-story.webp" 
-                  alt="photo of lovers" 
-                  loading="lazy"
-                  class="card-img" />
+                  <img
+                    src="./images/love-story.webp"
+                    alt="Couple photo"
+                    loading="lazy"
+                    class="card-img"
+                  />
                 </div>
                 <div class="card-content">
-                  <h3>Lorem ipsum dolor</h3>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia.
+                  <h3>Love Story</h3>
+                  <p class="session-description">
+                    A romantic photo shoot for couples — capture your love
+                    story.
                   </p>
+                  <p class="price">From 100£</p>
+                  <a href="https://t.me/@i_fs_dev" class="book-link primary button-icon"
+                  >Book via 
+                  <svg class="icon">
+                    <use href="./images/icons.svg#icon-telegram"></use>
+                  </svg>
+                  </a>
                 </div>
               </article>
             </li>
@@ -189,18 +188,25 @@
             <li class="item">
               <article class="card">
                 <div class="card-thumb">
-                  <img 
-                  src="./images/pregnent.webp"
-                   alt="photo of pregnant woman" 
-                   loading="lazy"
-                   class="card-img" />
+                  <img
+                    src="./images/pregnent.webp"
+                    alt="Pregnant woman photo"
+                    loading="lazy"
+                    class="card-img"
+                  />
                 </div>
                 <div class="card-content">
-                  <h3>Nemo enim ipsam</h3>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia.
+                  <h3>Maternity Session</h3>
+                  <p class="session-description">
+                    Gentle and touching photos for expecting mothers.
                   </p>
+                  <p class="price">From 90£</p>
+                  <a href="https://t.me/@i_fs_dev" class="book-link primary button-icon"
+                  >Book via 
+                  <svg class="icon">
+                    <use href="./images/icons.svg#icon-telegram"></use>
+                  </svg>
+                  </a>
                 </div>
               </article>
             </li>
@@ -208,18 +214,25 @@
             <li class="item">
               <article class="card">
                 <div class="card-thumb">
-                  <img 
-                  src="./images/baby.webp" 
-                  loading="lazy"
-                  alt="photo of baby" 
-                  class="card-img" />
+                  <img
+                    src="./images/baby.webp"
+                    alt="Baby photo"
+                    loading="lazy"
+                    class="card-img"
+                  />
                 </div>
                 <div class="card-content">
-                  <h3>Nemo enim ipsam</h3>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia.
+                  <h3>Baby Session</h3>
+                  <p class="session-description">
+                    Adorable shots of your little one in their first months.
                   </p>
+                  <p class="price">From 70£</p>
+                  <a href="https://t.me/@i_fs_dev" class="book-link primary button-icon"
+                  >Book via 
+                  <svg class="icon">
+                    <use href="./images/icons.svg#icon-telegram"></use>
+                  </svg>
+                  </a>
                 </div>
               </article>
             </li>
@@ -227,17 +240,25 @@
             <li class="item">
               <article class="card">
                 <div class="card-thumb">
-                  <img src="./images/comertial.jpg" 
-                  alt="macarons" 
-                  loading="lazy"
-                  class="card-img" />
+                  <img
+                    src="./images/comertial.jpg"
+                    alt="Commercial shoot"
+                    loading="lazy"
+                    class="card-img"
+                  />
                 </div>
                 <div class="card-content">
-                  <h3>Sed ut perspiciatis</h3>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia.
+                  <h3>Commercial Shoot</h3>
+                  <p class="session-description">
+                    Professional photos for brands, ads, or e-commerce.
                   </p>
+                  <p class="price">From 120£</p>
+                  <a href="https://t.me/@i_fs_dev" class="book-link primary button-icon"
+                  >Book via 
+                  <svg class="icon">
+                    <use href="./images/icons.svg#icon-telegram"></use>
+                  </svg>
+                  </a>
                 </div>
               </article>
             </li>
@@ -245,16 +266,25 @@
             <li class="item">
               <article class="card">
                 <div class="card-thumb">
-                  <img src="./images/city.webp" alt="city"
-                  loading="lazy"
-                   class="card-img" />
+                  <img
+                    src="./images/city.webp"
+                    alt="City photo"
+                    loading="lazy"
+                    class="card-img"
+                  />
                 </div>
                 <div class="card-content">
-                  <h3>Lorem ipsum dolor</h3>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia.
+                  <h3>Art Session</h3>
+                  <p class="session-description">
+                    Creative, concept-based shoots in an urban style.
                   </p>
+                  <p class="price">From 110£</p>
+                  <a href="https://t.me/@i_fs_dev" class="book-link primary button-icon"
+                  >Book via 
+                  <svg class="icon">
+                    <use href="./images/icons.svg#icon-telegram"></use>
+                  </svg>
+                  </a>
                 </div>
               </article>
             </li>
@@ -263,85 +293,12 @@
       </section>
 
       <section class="section">
-        <div class="container flex-company">
-          <div class="company-right">
-            <h2 class="section-title">You’re in good company</h2>
-            <p class="sub-title">
-              Lorem ipsum dolor sit amet, consectetur <br />
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            </p>
-
-            <ul class="company-list client-list">
-              <li>
-                <a href="#">
-                  <svg class="client-icon">
-                    <use href="./images/icons.svg#icon-client-1" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="client-icon">
-                    <use href="./images/icons.svg#icon-client-2" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="client-icon">
-                    <use href="./images/icons.svg#icon-client-3" />
-                  </svg>
-                </a>
-              </li>
-              <li class="">
-                <a href="#">
-                  <svg class="client-icon">
-                    <use href="./images/icons.svg#icon-client-4" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="client-icon">
-                    <use href="./images/icons.svg#icon-client-5" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="client-icon">
-                    <use href="./images/icons.svg#icon-client-6" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <article class="company-card">
-            <div class="card-thumb">
-              <img src="./images/good-company.webp" alt="camera"
-              loading="lazy"
-               class="card-img" />
-            </div>
-            <div class="card-content">
-              <h3>Sed ut perspiciatis unde omnis</h3>
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-                ipsum quia dolor sit amet.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-bg">
         <div class="container flex">
           <h2 class="section-title">
-            The largest community
+            Book your
+            session today. 
             <br />
-            of photo enthusiasts
+          Let your light shine!
           </h2>
           <div class="form-wrapper support">
             <p class="form-title">We are happy to contact</p>
@@ -399,18 +356,6 @@
         </div>
       </section>
 
-      <!-- <section class="section no-padding">
-        <div class="container">
-          <h2 class="section-title centered">
-            Snap photos and share like never before
-          </h2>
-          <p class="section-description sub-title">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            minima quod atque repellat laboriosam cupiditate corporis harum!
-          </p>
-       
-        </div>
-      </section> -->
     </main>
     <footer class="footer">
       <div class="container">
@@ -459,8 +404,7 @@
                   <use href="./images/icons.svg#icon-user-plus" />
                 </svg>
                 Register
-                </button
-              >
+              </button>
             </li>
             <li class="item footer-auth">
               <button class="primary button-icon">
@@ -468,7 +412,7 @@
                   <use href="./images/icons.svg#icon-enter" />
                 </svg>
                 Log in
-                </button>
+              </button>
             </li>
           </ul>
         </div>

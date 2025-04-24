@@ -1,6 +1,5 @@
 .footer {
     padding: 20px 0;
-//    background:  linear-gradient(135deg, #180f07 0%, #3a1f0f 50%, #1a0d08 100%);
 background: linear-gradient(180deg, #180f07 0%, #0e0703 100%);
 }
 
@@ -144,12 +143,8 @@ background: linear-gradient(180deg, #180f07 0%, #0e0703 100%);
     .item {
         button {
             @include flexed(10px, nowrap);
-            display: flex;
-            gap: 10px;
-            flex-wrap: nowrap;
             align-items: center;
-            justify-content: center;
-            min-width: 159px;
+            width: 160px;
         }
 
         &:first-child{
