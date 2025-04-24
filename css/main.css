@@ -2284,6 +2284,55 @@ button {
   transform: translateY(-50px);
 }
 
+.faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0;
+}
+
+.faq-answer {
+  display: none;
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-question {
+  color: #064a67;
+}
+
+@media (max-width: 768px) {
+  .faq-question {
+    font-size: 16px;
+  }
+  .faq-answer {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .faq-question {
+    font-size: 14px;
+  }
+  .faq-answer {
+    font-size: 12px;
+  }
+  .faq-item {
+    padding-bottom: 10px;
+  }
+}
 .card-set {
   display: flex;
   gap: 84px;
