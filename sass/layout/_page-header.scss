@@ -158,15 +158,12 @@
     }
 
     li {
-        @include flexed(10px, nowrap);
-        align-items: center;
-        justify-content: center;
-        min-width: 159px;
         margin-bottom: 20px;
     
         @media screen and (min-width:1540px) {
             margin-bottom: 0px;
         }
+
     }
 }
 

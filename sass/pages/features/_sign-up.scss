@@ -1,22 +1,38 @@
 .signup {
-    align-items: center; 
+    text-align: center;
 
-    @media screen and (min-width:768px) {
+     @media screen and (min-width:map-get($breakpoint, desktop)) {
         display: flex;
+        align-items: center;
     }
-}
 
-.signup-content {
+    .signup-content {
     max-width: 944px;
+    }
+
+    .sub-title {
+        text-align: center;
+
+        @media screen and (min-width:map-get($breakpoint, desktop)) {
+            text-align: start;
+        }
+    }
+
+    .signup-list {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+
+        @media screen and (min-width:map-get($breakpoint, desktop)) {
+            margin-left: auto;
+            gap: 45px;
+        }
+
+    }    
+
+
 }
 
-.signup-list {
-    @include flexed(45px, null);
-    justify-content: center;
-    
-    @media screen and (min-width:768px) {
-        @include flexed(45px, null);
-        margin-left: auto;
-    }
-}
+
 

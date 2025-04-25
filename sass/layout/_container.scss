@@ -32,3 +32,9 @@ desktop:1540px,
         align-items: center;   
     }
 }
+
+.flex-container{
+    @media screen and (min-width:1540px) {
+        @include flexed(100px, nowrap);        
+    }
+}

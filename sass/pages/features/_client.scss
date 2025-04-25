@@ -1,36 +1,48 @@
-.client-title{
+.client {
+
+.title{
     text-align: center;
 }
 
-.client-list {
+.list {
     @include flexed(20px, wrap);
     justify-content: space-between;
 
+    
 
-    @media screen and (min-width:768px) {
-        @include flexed(64px, wrap);
+    li {
+        flex-basis: calc((100% - 40px)/2);
+        border-radius: 4px;
+
+        &:hover .client-icon,
+        &:focus .client-icon {
+            border: 2px solid getColor(accent-gold);
+            fill: getColor(accent-gold);
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoint, tablet)) {
+    .list {
         max-width: 900px;
         margin-left: auto;
         margin-right: auto;
+
+        li {
+            flex-basis: calc((100% - 60px) / 4);
+        }
     }
 }
 
-.client-list li {
-    flex-basis: calc((100% - 40px)/2);
-    border-radius: 4px;
-    
-    @media screen and (min-width:768px) {
-        flex-basis: calc((100% - 192px)/4);
+@media screen and (min-width: map-get($breakpoint, desktop)) {
+    .list {
+        @include flexed(40px, wrap);
+
+        li {
+            flex-basis: calc((100% - 120px) / 4);
+        }
     }
-
 }
-
-.client-list li:hover .client-icon,
-.client-list li:focus .client-icon {
-    border: 2px solid getColor(accent-gold);
-    fill: getColor(accent-gold);
-}
-
 
 .client-list li>a {
     display: block;
@@ -49,3 +61,7 @@
     fill 300ms $transition-func;
 
 }
+
+}
+
+

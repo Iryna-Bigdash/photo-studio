@@ -1,13 +1,3 @@
-.hero-title {
-    @include font(46px, 400, 1.2, getColor(primary-white-color));
-
-    @media screen and (min-width:768px) {
-        @include font(56px, 600, 1.2, getColor(primary-white-color));
-    }
-
-    margin-bottom: 40px;
-}
-
 .section-hero {
     @include section-hero(url('../../images/examples-3.webp'),
         getColor(title-text-color),
@@ -22,5 +12,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    .hero-title {
+        @include font(46px, 400, 1.2, getColor(primary-white-color));
+    
+        @media screen and (min-width:768px) {
+            @include font(56px, 600, 1.2, getColor(primary-white-color));
+        }
+    
+        margin-bottom: 40px;
+    }
+    
+    .hero-link{
+        display: inline-flex;
+    }
 }
 

@@ -32,8 +32,9 @@
 .button-icon {
     @extend %button;
     display: flex;
-    gap: 4px;
+    gap: 10px;
     align-items: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
 

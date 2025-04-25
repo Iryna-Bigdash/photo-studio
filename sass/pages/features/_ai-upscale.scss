@@ -24,17 +24,22 @@
   }
   
    .pre-title{
-        letter-spacing: 5px;
-         text-transform: uppercase;
+      letter-spacing: 5px;
+      text-transform: uppercase;
        margin-bottom: 24px;
+       margin-top: 14px;
        color: getColor(accent-gold);
     }
 
-    .title {
+    .section-title {
         font-size: 39px;
         line-height: 1.2;
         margin: 0 0 32px;
         color: getColor(primary-white-color);
+
+        @media screen and (min-width:map-get($breakpoint, tablet)) {
+          text-align: start;
+        }
       }
 
       .features-set{
