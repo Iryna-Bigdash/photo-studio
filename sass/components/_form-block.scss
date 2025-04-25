@@ -14,10 +14,6 @@ background: rgba(13, 13, 12, 0.05) ;
     margin-right: auto;
 }
 
-.form {
-    max-width: 622px;
-}
-
 .form-field{
     position: relative;
     margin-bottom: 40px;
@@ -37,8 +33,7 @@ background: rgba(13, 13, 12, 0.05) ;
 }
 }
 
-.form input,
-.flex-form input {
+.form input {
     height: 40px;
     width: 100%;
     border-radius: 3px;
@@ -54,8 +49,6 @@ background: rgba(13, 13, 12, 0.05) ;
     transition: transform 0.3s $transition-func;
 }
 
-.flex-form input:focus + .form-label,
-.flex-form input:not(:placeholder-shown) + .form-label,
 .form input:focus + .form-label,
 .form input:not(:placeholder-shown) + .form-label
 {
@@ -114,3 +107,24 @@ background: rgba(13, 13, 12, 0.05) ;
 .flex-form input {
     min-width: 300px;
 }
+
+  .error-message {
+    color: #ff4d4d;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+  }
+
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-6px); }
+    40% { transform: translateX(6px); }
+    60% { transform: translateX(-4px); }
+    80% { transform: translateX(4px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .input-error {
+    outline: 2px solid #ff4d4d;
+    animation: shake 0.3s ease;
+  }

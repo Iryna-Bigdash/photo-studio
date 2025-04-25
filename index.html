@@ -1005,8 +1005,10 @@
                     name="user-name"
                     id="user-name"
                     placeholder=" "
+                    required
                   />
                   <label for="user-name" class="form-label">First name</label>
+                  <span class="error-message"></span>
                 </div>
 
                 <div class="form-field">
@@ -1015,19 +1017,28 @@
                     name="last-name"
                     id="last-name"
                     placeholder=" "
+                    required
                   />
                   <label for="last-name" class="form-label">Last name</label>
+                  <span class="error-message"></span>
                 </div>
               </div>
 
               <div class="form-field">
-                <input name="phone" type="tel" id="phone" placeholder=" " />
+                <input name="phone" 
+                type="tel"
+                id="phone" 
+                placeholder=" " 
+                required 
+                />
                 <label for="phone" class="form-label">Phone</label>
+                <span class="error-message"></span>
               </div>
 
               <div class="form-field">
-                <input type="email" name="email" id="email" placeholder=" " />
+                <input type="email" name="email" id="email" placeholder=" "  required/>
                 <label for="email" class="form-label">Email</label>
+                <span class="error-message"></span>
               </div>
 
               <div class="form-field">
@@ -1037,7 +1048,9 @@
                   placeholder="Write your massage"
                   maxlength="350"
                   rows="10"
+                  required
                 ></textarea>
+                <span class="error-message"></span>
               </div>
               <input type="hidden" name="time" id="message-time" />
 
@@ -1169,7 +1182,6 @@
       <button id="acceptCookies" class="cookie-button">Accept</button>
     </div>
     <script src="./scripts/cookie.js" defer></script>
-    <script src="./scripts/send-form.js" defer></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
     <script src="./scripts/contact-form.js" defer></script>
     <script src="./scripts/fixed-header.js"></script>

@@ -301,7 +301,7 @@
           Let your light shine!
           </h2>
           <div class="form-wrapper support">
-            <p class="form-title">We are happy to contact</p>
+            <p class="sub-title centered">We are happy to contact</p>
             <form class="js-contact-form form" autocomplete="on">
               <div class="input-row">
                 <div class="form-field">
@@ -310,6 +310,7 @@
                     name="user-name"
                     id="user-name"
                     placeholder=" "
+                    required
                   />
                   <label for="user-name" class="form-label">First name</label>
                 </div>
@@ -320,18 +321,20 @@
                     name="last-name"
                     id="last-name"
                     placeholder=" "
+                    required
                   />
                   <label for="last-name" class="form-label">Last name</label>
                 </div>
               </div>
 
               <div class="form-field">
-                <input name="phone" type="tel" id="phone" placeholder=" " />
+                <input name="phone" type="tel" id="phone" placeholder=" " required />
                 <label for="phone" class="form-label">Phone</label>
               </div>
 
               <div class="form-field">
-                <input type="email" name="email" id="email" placeholder=" " />
+                <input type="email" name="email" id="email" placeholder=" " required
+                 />
                 <label for="email" class="form-label">Email</label>
               </div>
 
@@ -342,6 +345,7 @@
                   placeholder="Write your massage"
                   maxlength="350"
                   rows="10"
+                  required
                 ></textarea>
               </div>
 
@@ -463,6 +467,7 @@
     </footer>
     <script src="./scripts/fixed-header.js"></script>
     <script src="./scripts/mobile-menu.js"></script>
+    <script src="./scripts/contact-form.js" defer></script>
     <script src="./scripts/footer-munu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/reviews-swiper.js"></script>
