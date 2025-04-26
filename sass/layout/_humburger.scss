@@ -4,50 +4,58 @@
     text-align: center;
     background-color: transparent;
     border-radius: 4px;
+    position: relative;
+    z-index: 2;
 
-    @media screen  and (min-width:1540px){
+    @media screen and (min-width: 1540px) {
         display: none;
     }
 }
 
-.hamburger-icon{
+.hamburger-icon {
     width: 40px;
     height: 40px;
     fill: getColor(primary-white-color);
 }
 
-.icon-close-menu{
+.icon-close-menu {
     display: none;
 }
 
-.hamburger-btn.is-open .icon-close-menu{
-display: block;
+.hamburger-btn.is-open .icon-close-menu {
+    display: block;
 }
 
-.hamburger-btn.is-open .icon-open-menu{
+.hamburger-btn.is-open .icon-open-menu {
     display: none;
 }
 
-.hamburger-menu{
+.hamburger-menu {
     display: none;
     position: absolute;
-    top:100%;
+    top: 100%;
     left: 0;
     width: 100%;
-
     background-color: getColor(dark-bgr);
     padding: 20px;
     text-align: center;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
 
-    @media screen  and (min-width:1540px){
+    @media screen and (min-width: 1540px) {
         position: static;
         display: flex;
         align-items: center;
         background-color: transparent;
-
+        opacity: 1;
+        max-height: none;
     }
 
-    &.is-open{
+    &.is-open {
         display: block;
+        opacity: 1;
+        max-height: 500px; /* або інша висота, достатня для вашого меню */
     }
 }
