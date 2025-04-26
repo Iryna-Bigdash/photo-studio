@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const resizer = document.querySelector('.resizer');
   const handle = document.querySelector('.handle');
   const section = document.querySelector('[data-compare]');
+  const easeInOut = t => t < 0.5
+  ? 2 * t * t
+  : -1 + (4 - 2 * t) * t;
 
   if (!slider || !resizer || !handle || !section) return;
 
@@ -14,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const setPosition = percentage => {
     const clamped = Math.max(0, Math.min(percentage, 1));
     resizer.style.width = `${clamped * 100}%`;
-    handle.style.left = `${clamped * 99}%`;
+    handle.style.left = `${clamped * 100}%`;
   };
 
   const getPercentageFromEvent = clientX => {
@@ -28,8 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const startDrag = e => {
+    if (e.type === 'mousedown') {
+      e.preventDefault(); 
+    }
+
     isDragging = true;
-    e.preventDefault(); // запобігає виділенню тексту
   };
 
   const endDrag = () => (isDragging = false);
@@ -67,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const animateStep = () => {
       if (isDragging) return;
 
-      const progress = frame / frames;
+      const progress = easeInOut(frame / frames);
       const percentage = start + (end - start) * progress;
       setPosition(percentage);
       frame++;
