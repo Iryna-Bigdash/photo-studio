@@ -13,20 +13,20 @@ desktop:1540px,
     // outline: 2px solid palevioletred;
    
     // min-width: 768px & >
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: map-get($breakpoint, tablet)) {
         max-width: 768px; 
         // outline: 2px solid orange;
     }
 
     // min-width: 1540px & >
-    @media screen and (min-width: 1540px){
+    @media screen and (min-width: map-get($breakpoint, desktop)){
         max-width: 1540px;
         // outline: 2px solid red;
     }
 }
 
 .container.flex {
-    @media screen and (min-width:1540px){
+    @media screen and (min-width:map-get($breakpoint, desktop)){
         display: flex;
         justify-content: space-between;
         align-items: center;   
@@ -34,7 +34,7 @@ desktop:1540px,
 }
 
 .flex-container{
-    @media screen and (min-width:1540px) {
+    @media screen and (min-width:map-get($breakpoint, desktop)) {
         @include flexed(100px, nowrap);        
     }
 }

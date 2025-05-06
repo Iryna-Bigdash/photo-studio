@@ -4,7 +4,7 @@
         center);
         padding-bottom: 120px;
 
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: map-get($breakpoint, tablet)){
             @include section-hero(url('../../images/examples-3.webp'), null, null );
             padding-bottom: 180px;
         }
@@ -16,7 +16,7 @@
     .hero-title {
         @include font(46px, 400, 1.2, getColor(primary-white-color));
     
-        @media screen and (min-width:768px) {
+        @media screen and (min-width:map-get($breakpoint, tablet)) {
             @include font(56px, 600, 1.2, getColor(primary-white-color));
         }
     

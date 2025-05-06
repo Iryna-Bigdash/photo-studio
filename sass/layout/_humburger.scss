@@ -7,7 +7,7 @@
     position: relative;
     z-index: 2;
 
-    @media screen and (min-width: 1540px) {
+    @media screen and (min-width: map-get($breakpoint, desktop)) {
         display: none;
     }
 }
@@ -44,7 +44,7 @@
     overflow: hidden;
     transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
 
-    @media screen and (min-width: 1540px) {
+    @media screen and (min-width: map-get($breakpoint, desktop)) {
         position: static;
         display: flex;
         align-items: center;
@@ -56,6 +56,6 @@
     &.is-open {
         display: block;
         opacity: 1;
-        max-height: 500px; /* або інша висота, достатня для вашого меню */
+        max-height: 500px;
     }
 }

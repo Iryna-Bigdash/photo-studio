@@ -21,7 +21,7 @@
 }
 
 .examples {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:map-get($breakpoint, tablet)) {
     .item {
       &:nth-child(2n+1) {
         .content {

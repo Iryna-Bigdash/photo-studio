@@ -1,7 +1,7 @@
 .preferences-list {
     text-align: center;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:map-get($breakpoint, tablet)) {
         @include flexed(40px, wrap);
         text-align: start;
     }

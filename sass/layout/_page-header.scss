@@ -46,20 +46,15 @@
     }
 }
 
-.logo-img {
-    width: 32px;
-    height: 32px;
-}
-
 .site-nav {
-    @media screen and (min-width:1540px) {
+    @media screen and (min-width:map-get($breakpoint, desktop)) {
         @include flexed(10px, nowrap);
         margin-left: auto;
     }
 }
 
 .site-nav li {
-    @media screen and (min-width:1540px) {
+    @media screen and (min-width:map-get($breakpoint, desktop)) {
         position: relative;
         display: inline-block;
 

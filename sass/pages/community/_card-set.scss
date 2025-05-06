@@ -9,7 +9,7 @@
       flex-basis: calc((100% - 84px) / 2);
     }
 
-    @media screen and (min-width: 1560px) {
+    @media screen and (min-width: map-get($breakpoint, desktop)) {
       flex-basis: calc((100% - 168px) / 3);
     }
 
@@ -31,7 +31,7 @@
     width: 100%;
     object-fit: cover;
 
-    @media screen and (min-width: 1560px) {
+    @media screen and (min-width: map-get($breakpoint, desktop)) {
       height: 470px;
     }
   }

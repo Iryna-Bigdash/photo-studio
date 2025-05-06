@@ -4,7 +4,7 @@
     }
     
     .features-list {
-        @media screen and (min-width:768px) {
+        @media screen and (min-width:map-get($breakpoint, tablet)) {
             @include flexed(40px, wrap);
             column-gap: 30px;
         }
@@ -26,7 +26,7 @@
         align-items: center;
         gap: 24px;
     
-        @media screen and (min-width:768px) {
+        @media screen and (min-width:map-get($breakpoint, tablet)) {
             flex-basis: calc((100% - 30px) / 2);
             background-color: transparent;
             justify-content: space-between;

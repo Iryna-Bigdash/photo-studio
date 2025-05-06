@@ -10,7 +10,7 @@ background: linear-gradient(180deg, #180f07 0%, #0e0703 100%);
     padding-bottom: 20px;
     border-bottom: 1px solid getColor(primary-white-color);
 
-    @media screen and (min-width:1560px) {
+    @media screen and (min-width:map-get($breakpoint, desktop)) {
         padding-bottom: 48px;
     }
 
@@ -22,11 +22,11 @@ background: linear-gradient(180deg, #180f07 0%, #0e0703 100%);
     align-items: center;
     padding-top: 20px;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:map-get($breakpoint, tablet)) {
         @include flexed(20px, nowrap);
     }
 
-    @media screen and (min-width:1560px) {
+    @media screen and (min-width:map-get($breakpoint, desktop)) {
         @include flexed(40px, nowrap);
         padding-top: 60px;
     }
@@ -34,14 +34,14 @@ background: linear-gradient(180deg, #180f07 0%, #0e0703 100%);
     >p {
         font-size: 15px;
 
-        @media screen and (min-width:768px) {
+        @media screen and (min-width:map-get($breakpoint, tablet)) {
             font-size: 18px;
         }
     }
 }
 
 .flex-list {
-    @media screen and (min-width:1560px) {
+    @media screen and (min-width:map-get($breakpoint, desktop)) {
         @include flexed(80px, wrap);
     }
 
@@ -54,11 +54,11 @@ background: linear-gradient(180deg, #180f07 0%, #0e0703 100%);
     display: flex;
     justify-content: space-between;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:map-get($breakpoint, tablet)) {
         padding-bottom: 40px;
     }
 
-    @media screen and (min-width:1560px) {
+    @media screen and (min-width:map-get($breakpoint, desktop)) {
         padding-bottom: 60px;
     }
 
@@ -76,12 +76,12 @@ background: linear-gradient(180deg, #180f07 0%, #0e0703 100%);
 }
 
 .footer-list {
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:map-get($breakpoint, tablet)) {
         display: flex;
         column-gap: 80px;
     }
 
-    @media screen and (min-width:1540px) {
+    @media screen and (min-width:map-get($breakpoint, desktop)) {
         margin-right: 140px;
         margin-left: auto;
     }
@@ -92,7 +92,7 @@ background: linear-gradient(180deg, #180f07 0%, #0e0703 100%);
         flex-direction: column;
         margin-left: auto;
 
-        @media screen and (min-width:768px) {
+        @media screen and (min-width:map-get($breakpoint, tablet)) {
             margin-bottom: 0px;
         }
     }
@@ -112,7 +112,7 @@ background: linear-gradient(180deg, #180f07 0%, #0e0703 100%);
         @include font(17px, null, 1.6, getColor(primary-white-color));
         transition: color 300ms $transition-func;
 
-        @media screen and (min-width:768px) {
+        @media screen and (min-width:map-get($breakpoint, tablet)) {
             margin-bottom: 16px;
         }
 
@@ -136,7 +136,7 @@ background: linear-gradient(180deg, #180f07 0%, #0e0703 100%);
 .footer-signup {
     display: none;
 
-    @media screen and (min-width:1540px) {
+    @media screen and (min-width:map-get($breakpoint, desktop)) {
         display: block;
     }
 
@@ -174,7 +174,7 @@ background: linear-gradient(180deg, #180f07 0%, #0e0703 100%);
 .bottom-footer {
     text-align: center;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:map-get($breakpoint, tablet)) {
         display: flex;
         align-items: center;
     }
@@ -185,7 +185,7 @@ background: linear-gradient(180deg, #180f07 0%, #0e0703 100%);
 
     @include font(15px, null, 1.6, getColor(primary-white-color));
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:map-get($breakpoint, tablet)) {
         margin-bottom: 0;
     }
 }

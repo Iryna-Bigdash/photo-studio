@@ -4,7 +4,7 @@
     margin-left: auto;
     align-items: center;
 
-@media screen and (min-width:768px){
+@media screen and (min-width:map-get($breakpoint, tablet)){
     @include flexed(20px, nowrap);
     justify-content: start;
 }  
@@ -13,7 +13,7 @@
 .network-list {
     @include flexed(10px, nowrap);
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:map-get($breakpoint, tablet)) {
         @include flexed(21px, nowrap);      
     }
 }
@@ -57,7 +57,7 @@
 .network-text{
     display: none;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:map-get($breakpoint, tablet)) {
         display: block;      
     }
 }
